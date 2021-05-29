@@ -1,6 +1,17 @@
 import React, { Fragment } from "react";
+import Auth from '../../utils/cookies.config';
+import {useHistory,} from 'react-router-dom'
+import App from "../../utils/cookies.config";
 
 export default function Login() {
+  const {push} = useHistory();
+
+  async function handleLogin(e){
+    e.preventDefault();
+    App.setCipher("hello world")
+    push("/dashboard");
+  }
+
   return (
     <Fragment>
       <div class="min-h-screen bg-white flex">
@@ -39,7 +50,7 @@ export default function Login() {
 
             <div class="mt-8">
               <div class="mt-6">
-                <form action="#" method="POST" class="space-y-6">
+                <form onSubmit={e => handleLogin(e)} class="space-y-6">
                   <div>
                     <label
                       for="email"
