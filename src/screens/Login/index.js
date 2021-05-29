@@ -4,7 +4,7 @@ export default function Login() {
   return (
     <Fragment>
       <div class="min-h-screen bg-white flex">
-      <div class="hidden lg:block relative w-0 flex-1">
+        <div class="hidden lg:block relative w-0 flex-1">
           <img
             class="absolute inset-0 h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -28,10 +28,11 @@ export default function Login() {
               <p class="mt-2 text-sm text-gray-600">
                 Or
                 <a
-                  href="#"
+                  href="/"
                   class="font-medium text-indigo-600 hover:text-indigo-500"
                 >
-                {" "} create a merchant account
+                  {" "}
+                  create a merchant account
                 </a>
               </p>
             </div>
@@ -95,7 +96,7 @@ export default function Login() {
 
                     <div class="text-sm">
                       <a
-                        href="#"
+                        href="/"
                         class="font-medium text-indigo-600 hover:text-indigo-500"
                       >
                         Forgot your password?
@@ -116,7 +117,6 @@ export default function Login() {
             </div>
           </div>
         </div>
-       
       </div>
     </Fragment>
   );

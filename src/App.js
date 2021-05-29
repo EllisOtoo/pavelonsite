@@ -1,11 +1,7 @@
-import { Fragment } from 'react';
-import AppNavigator from './navigation/AppNavigator';
-
+import AppNavigator from "./navigation/AppNavigator";
 
 function App() {
-  return (
-      <AppNavigator />
-  );
+  return <AppNavigator />;
 }
 
 export default App;
