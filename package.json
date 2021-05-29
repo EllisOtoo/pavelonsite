@@ -1,9 +1,10 @@
 {
-  "name": "app-name",
+  "name": "credify-web-backoffice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
+    "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -14,6 +15,7 @@
     "react-scripts": "4.0.3",
     "react-spinners-css": "^2.0.1",
     "react-topbar-progress-indicator": "^4.1.0",
+    "react-transition-group": "^4.4.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
