@@ -1,0 +1,20 @@
+.logos-container {
+  position: relative;
+  top: 60px;
+  /* left: 250px; */
+  display: flex;
+  width: 60vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.img_placeholder {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(244, 244, 244);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

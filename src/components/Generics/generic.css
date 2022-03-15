@@ -1,0 +1,10 @@
+.genContainer {
+  /* background-color: #11243e !important; */
+  width: 100vw;
+  height: 1200px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  clip-path: polygon(0 29%, 100% 6%, 100% 77%, 0% 100%);
+  color: white;
+}

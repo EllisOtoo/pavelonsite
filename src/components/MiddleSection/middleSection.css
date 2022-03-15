@@ -1,0 +1,110 @@
+.middleSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.LoanAppImage {
+  width: 15vw;
+}
+
+.superGrid {
+  display: flex;
+  margin-top: 30px;
+}
+
+.visa {
+  width: 20vw;
+}
+.subPartition_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.subPartition_1_Item {
+  flex: 1;
+}
+
+.subPartition_1 {
+  flex: 1;
+  /* background-color: rgb(218, 214, 214); */
+  height: 60vh;
+  display: flex;
+}
+.subPartition_2 {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 50px;
+  column-gap: 10vw;
+}
+
+.subPartition_item {
+  height: 30vh;
+  width: 100%;
+  background-color: rgb(226, 227, 226);
+}
+
+.subPartition-item-2 {
+  height: 50vh;
+  width: auto;
+  position: relative;
+  bottom: 100px;
+  z-index: 20;
+}
+
+.subPartition-item-4 {
+  height: 20vh;
+  width: 300px;
+}
+
+.IntroText {
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+.IntroText_header_col_1 {
+  /* flex: 1; */
+  width: 35vw;
+}
+
+.IntroCol2 {
+  width: 35vw;
+  /* position: relative; */
+  /* top: -20px; */
+  justify-self: center;
+}
+
+.seemore {
+  background-color: black;
+  color: white;
+  padding: 0 15px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  /* padding: 70px; */
+  /* justify-content: space-between; */
+  /* background-color: #eee; */
+}
+
+.flexMiddle {
+  /* flex-direction: column; */
+}
+/* .marginBelowHeader {
+  margin-bottom: 50px;
+} */
+
+.mobile-only-loan-section {
+  position: relative;
+  top: 30vh;
+}
+
+.mobile-only-loan-img {
+  width: 60vw;
+}

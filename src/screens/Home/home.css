@@ -1,0 +1,173 @@
+.header-text {
+  color: white;
+  font-size: 6rem;
+}
+
+.lenderColor {
+  color: white;
+}
+
+.logo-mb {
+  filter: grayscale(80%);
+}
+
+.headerContainer {
+  height: 50vh !important;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  left: 0px;
+}
+
+.gradient__bg__blue {
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* opera 11.10+ */
+
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* global 92%+ browsers support */
+  background: linear-gradient(270deg, #5f3489, #270f59);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 57%, 0 100%);
+  /* overflow-y: visible !important; */
+  /* padding: 0px 250px; */
+}
+.gradient__bg__silver {
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* opera 11.10+ */
+
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* global 92%+ browsers support */
+  background: linear-gradient(270deg, #1c1c1c, #727272);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 6%, 0 63%);
+  /* padding: 0px 250px; */
+}
+
+.gradient__bg__green {
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #9f33b0 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* opera 11.10+ */
+
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    #9f33b0 0%
+  );
+
+  /* global 92%+ browsers support */
+  /* background: linear-gradient(270deg, #251574, #166351); */
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 300s ease infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 6%, 0 63%);
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
