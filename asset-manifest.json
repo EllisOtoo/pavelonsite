@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/pavelonsite/static/css/main.803ce787.chunk.css",
+    "main.js": "/pavelonsite/static/js/main.fb48f1bf.chunk.js",
+    "main.js.map": "/pavelonsite/static/js/main.fb48f1bf.chunk.js.map",
+    "runtime-main.js": "/pavelonsite/static/js/runtime-main.2258c235.js",
+    "runtime-main.js.map": "/pavelonsite/static/js/runtime-main.2258c235.js.map",
+    "static/css/2.70a57cdb.chunk.css": "/pavelonsite/static/css/2.70a57cdb.chunk.css",
+    "static/js/2.fbc9d81c.chunk.js": "/pavelonsite/static/js/2.fbc9d81c.chunk.js",
+    "static/js/2.fbc9d81c.chunk.js.map": "/pavelonsite/static/js/2.fbc9d81c.chunk.js.map",
+    "index.html": "/pavelonsite/index.html",
+    "static/css/2.70a57cdb.chunk.css.map": "/pavelonsite/static/css/2.70a57cdb.chunk.css.map",
+    "static/css/main.803ce787.chunk.css.map": "/pavelonsite/static/css/main.803ce787.chunk.css.map",
+    "static/js/2.fbc9d81c.chunk.js.LICENSE.txt": "/pavelonsite/static/js/2.fbc9d81c.chunk.js.LICENSE.txt",
+    "static/media/dashboard.061762d8.png": "/pavelonsite/static/media/dashboard.061762d8.png",
+    "static/media/dashboard_lenders.ee080b27.png": "/pavelonsite/static/media/dashboard_lenders.ee080b27.png",
+    "static/media/gif_ani.c3b387ed.gif": "/pavelonsite/static/media/gif_ani.c3b387ed.gif",
+    "static/media/lending _Image.872d961d.png": "/pavelonsite/static/media/lending _Image.872d961d.png",
+    "static/media/visa.86da8404.jpg": "/pavelonsite/static/media/visa.86da8404.jpg",
+    "static/media/vodafone.77c2b510.png": "/pavelonsite/static/media/vodafone.77c2b510.png",
+    "static/media/yango.f54ab341.png": "/pavelonsite/static/media/yango.f54ab341.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2258c235.js",
+    "static/css/2.70a57cdb.chunk.css",
+    "static/js/2.fbc9d81c.chunk.js",
+    "static/css/main.803ce787.chunk.css",
+    "static/js/main.fb48f1bf.chunk.js"
+  ]
+}
