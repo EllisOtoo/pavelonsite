@@ -88,12 +88,12 @@ function Home() {
         caption="A technology-first approach to payments and finance"
         features={[
           {
-            icon: "Feature Icon",
+            icon: "Feature Icon 1",
             caption: "Caption 1",
             featureText: "Lorem Ipsum",
           },
           {
-            icon: "Feature Icon",
+            icon: "Feature Icon 2",
             caption: "Caption 2",
             featureText: "Lorem Ipsum",
           },
