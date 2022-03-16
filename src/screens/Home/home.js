@@ -60,7 +60,7 @@ function Home() {
   return (
     <>
       <Header
-        Caption="Lending Infrastructure forr Africa."
+        Caption="Lending Infrastructure for Africa."
         headerGradientClass={"gradient__bg__blue"}
         SubCaption="Tap into our lenders’ pool and bring finance to your users"
         LeadIn="Join our Pool of lenders and access a merchant base that will drive retail finance revenues, without the need for complex program management.
