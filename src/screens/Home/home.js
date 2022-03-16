@@ -89,12 +89,12 @@ function Home() {
         features={[
           {
             icon: "Feature Icon 1",
-            caption: "Caption 1",
+            caption: "Caption One",
             featureText: "Lorem Ipsum",
           },
           {
             icon: "Feature Icon 2",
-            caption: "Caption 2",
+            caption: "Caption Two",
             featureText: "Lorem Ipsum",
           },
         ]}
