@@ -12,7 +12,7 @@
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   width: 100vw;
-  height: 70vh;
+  height: 50vh;
   clip-path: polygon(0 0, 100% 0, 100% 57%, 0 100%);
 }
 .parentDiv {
