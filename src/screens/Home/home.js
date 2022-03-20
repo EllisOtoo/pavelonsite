@@ -25,6 +25,7 @@ import tf from "../../assets/tf.png";
 import vodafone from "../../assets/vodafone.png";
 import yango from "../../assets/yango.png";
 import { useEffect, useCallback, useMemo } from "react";
+import NewHeader from "../../components/NewHeader/NewHeader";
 // import { useMemo } from "react/cjs/react.production.min";
 
 //* List Component
@@ -59,6 +60,7 @@ function Home() {
 
   return (
     <>
+      {/* <NewHeader /> */}
       <Header
         Caption="Lending Infrastructure for Africa."
         headerGradientClass={"gradient__bg__blue"}
@@ -66,6 +68,7 @@ function Home() {
         LeadIn="Join our Pool of lenders and access a merchant base that will drive retail finance revenues, without the need for complex program management.
         "
       />
+
       <Logos
         LogosData={[
           creditmall,
@@ -78,6 +81,7 @@ function Home() {
           vodafone,
         ]}
       />
+
       <MiddleSection />
       <GenericSection />
       <GenericSection

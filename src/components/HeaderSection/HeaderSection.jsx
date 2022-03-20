@@ -44,12 +44,12 @@ function HeaderSection({
   }, [matches]);
 
   return (
-    <>
+    <div className="parentDiv relative">
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav
-              className={`mt-4 relative flex items-center text-black justify-between sm:h-10 md:justify-center`}
+              className={`py-12 relative flex items-center text-black justify-between sm:h-10 md:justify-center`}
               aria-label="Global"
             >
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
@@ -253,12 +253,14 @@ function HeaderSection({
           </div>
         </div>
       </div>
-      <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
+
+      <div className="gradientBackground"></div>
+      {/*  <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
         <div class={`bg ${bg_colorClass}`}></div>
         <div class={`bg ${bg_colorClass} bg2 `}></div>
         <div class={`bg ${bg_colorClass} bg3`}></div>
       </div>
-
+ */}
       <div className={`relative  headerContainer`}>
         <div
           style={{ padding: "20px 0" }}
@@ -329,7 +331,7 @@ function HeaderSection({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
