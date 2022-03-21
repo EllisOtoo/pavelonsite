@@ -31,11 +31,6 @@ function GenericSection({
       fetchData("https://randomuser.me/api")
         .then((randomData) => setResponseData(randomData))
         .catch((error) => console.log(error));
-
-    // axios
-    //   .get("https://randomuser.me/api")
-    //   .then(({ data }) => console.log(data));
-
     window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
       setMatches(e.matches);
     });

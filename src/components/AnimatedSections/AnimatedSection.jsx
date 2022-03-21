@@ -94,8 +94,7 @@ const IconsTextCol = ({ subCaption = "Sample Text" }) => (
           style={{ color: "#ccc", marginTop: "20px" }}
           className="text-gray-500"
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-          accusamus facere soluta sequi.
+          Lorem ipsum, dolor sit
         </p>
       </Link>
     </div>
