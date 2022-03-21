@@ -4,6 +4,18 @@
 }
  */
 
+/* Target Mobile */
+@media only screen and (max-width: 600px) {
+  .parentDiv {
+    height: 50vh !important;
+  }
+  .gradientBackground {
+    /* display: none; */
+    height: 50vh !important;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
+  }
+}
+
 .gradientBackground {
   position: absolute;
   top: 0;
