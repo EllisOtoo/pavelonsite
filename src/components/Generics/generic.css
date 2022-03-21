@@ -12,6 +12,7 @@
 
 @media only screen and (max-width: 600px) {
   .genContainer {
+    padding: 1.5rem 0;
     clip-path: polygon(0 29%, 100% 20%, 100% 99%, 0% 100%);
   }
 }
