@@ -39,7 +39,7 @@ function GenericSection({
   return (
     <div
       style={{ marginTop: `${marginTop}px`, backgroundColor: backgroundColor }}
-      className="genContainer"
+      className="genContainer md:py-24"
     >
       <div
         style={{ marginTop: "280px" }}

@@ -4,6 +4,7 @@ import { TopBarLoader } from "../components/Loaders";
 import Home from "../screens/Home/home";
 import Lenders from "../screens/ForLenders/Lenders";
 import UseCases from "../screens/UseCases/UseCases";
+import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
   return (
@@ -13,6 +14,12 @@ function RootNavigator() {
           <Route component={Home} path={"/"} exact={true} />
           <Route component={Lenders} path={"/forLenders"} exact={true} />
           <Route component={UseCases} path={"/use_cases"} exact={true} />
+          <Route component={Lenders} path={"/forLenders"} exact={true} />
+          <Route
+            component={DigitalAccounts}
+            path={"/digitalAccounts"}
+            exact={true}
+          />
         </Switch>
       </Suspense>
     </BrowserRouter>

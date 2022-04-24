@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import "./headersection.css";
 import loansImage from "../../assets/lending _Image.png";
 import loans_dashboard from "../../assets/dashboard_lenders.png";
+import ResponsiveNav from "../ResponsiveNav/ResponsiveNav";
 /* This example requires Tailwind CSS v2.0+ */
 
 function classNames(...classes) {
@@ -19,12 +20,21 @@ function classNames(...classes) {
 }
 
 function HeaderSection({
+  makeMenuDark = false,
+  isDarkHeaderText = false,
+  introLogo = null,
   headerGradientClass,
+  BelowCaptionText = "lorem ",
   Caption = "Pavelon Page Caption",
+  oneImageHeader = false,
   SubCaption = "",
   LeadIn = "Lead In Text Sample",
   bg_colorClass = "bg_default",
   smallerBgGradient,
+  logoBlack = false,
+  showImage = true,
+  noGradient = false,
+  headerImages = [loansImage, loans_dashboard],
 }) {
   const [showMenu, setMenu] = useState(false);
   const [matches, setMatches] = useState(
@@ -35,9 +45,9 @@ function HeaderSection({
   const element = useRef();
 
   useEffect(() => {
-    element.current.addEventListener("click", () => {
+    /*   element.current.addEventListener("click", () => {
       alert.show("Hello Package!");
-    });
+    }); */
     window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
       setMatches(e.matches);
     });
@@ -48,127 +58,8 @@ function HeaderSection({
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <nav
-              className={`py-12 relative flex items-center text-black justify-between sm:h-10 md:justify-center`}
-              aria-label="Global"
-            >
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
-                  <Link to="#">
-                    <span className="sr-only">Workflow</span>
-                    <Link to={"/"}>
-                      <img
-                        style={
-                          smallerBgGradient && {
-                            width: "10px !important",
-                          }
-                        }
-                        width={"130px"}
-                        src={smallerBgGradient ? darklogo : logo}
-                        alt="Company logo"
-                      />
-                    </Link>
-                  </Link>
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setMenu(!showMenu);
-                        console.log("Menu button clicked");
-                      }}
-                      className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                      aria-expanded="false"
-                    >
-                      <span className="sr-only">Open main menu</span>
-
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden md:flex md:space-x-10">
-                <a
-                  style={{ color: smallerBgGradient ? "black" : "white" }}
-                  href="#"
-                  className="font-medium text-gray-500"
-                >
-                  <Dropdown
-                    MenuItems={[
-                      "Commerce API",
-                      "Digital Lending API",
-                      "Capital by API",
-                      "KYC/Onboarding API",
-                      "Loan Collections API",
-                      "Financial Data API",
-                      "Digital Accounts API",
-                    ]}
-                    Options={"Products"}
-                  />
-                </a>
-
-                <a
-                  style={{ color: smallerBgGradient ? "black" : "white" }}
-                  href="/forLenders"
-                  className="font-medium text-gray-500"
-                >
-                  For Lenders
-                </a>
-
-                <Link
-                  style={{ color: smallerBgGradient ? "black" : "white" }}
-                  to="/use_cases"
-                  className="font-medium text-gray-500"
-                >
-                  Use Case
-                </Link>
-                <Link
-                  style={{ color: smallerBgGradient ? "black" : "white" }}
-                  to="/use_cases"
-                  className="font-medium text-gray-500"
-                >
-                  <Dropdown
-                    MenuItems={[
-                      "Credit Mall",
-                      "Bosea",
-                      "TF Financial Services",
-                      "TF",
-                    ]}
-                    Options={"Products"}
-                  />
-                </Link>
-                <Link
-                  style={{ color: smallerBgGradient ? "black" : "white" }}
-                  to="/use_cases"
-                  className="font-medium text-gray-500"
-                >
-                  <Dropdown
-                    MenuItems={[
-                      "Our Story",
-                      "About Us",
-                      "Our team",
-                      "Our Partners",
-                      "Join us",
-                    ]}
-                    Options={"Company"}
-                  />
-                  {/* Company */}
-                </Link>
-              </div>
-            </nav>
+            {/* Nav goes here */}
+            <ResponsiveNav makeMenuDark={makeMenuDark} />
           </div>
 
           <div
@@ -254,18 +145,15 @@ function HeaderSection({
         </div>
       </div>
 
-      <div className="gradientBackground"></div>
+      {noGradient ? "" : <div className="gradientBackground"></div>}
       {/*  <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
         <div class={`bg ${bg_colorClass}`}></div>
         <div class={`bg ${bg_colorClass} bg2 `}></div>
         <div class={`bg ${bg_colorClass} bg3`}></div>
       </div>
- */}
+      */}
       <div className={`relative  headerContainer`}>
-        <div
-          style={{ padding: "20px 0" }}
-          className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
-        >
+        <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
             className="flex"
             style={{
@@ -275,10 +163,14 @@ function HeaderSection({
             }}
           >
             <div
-              style={{
-                width: "55vw",
-              }}
+              className="w-6/12"
+              // style={{
+              //   width: "55vw",
+              // }}
             >
+              {introLogo && (
+                <img src={introLogo} className="w-4/12" alt="Intro Logo" />
+              )}
               <p
                 style={{
                   fontSize: !matches ? "2rem" : "5rem ",
@@ -286,13 +178,9 @@ function HeaderSection({
                 }}
                 className="py-6 mt-1 text-7xl font-extrabold text-gray-900   sm:text-5xl sm:tracking-tight lg:text-6xl"
               >
-                Lending <br /> Infrastructure <br /> for Africa
+                {Caption}
               </p>
-              <p style={{ flex: 1 }}>
-                Millions of businesses of all sizes – from startups to Fortune{" "}
-                <br /> – 500s use Stripe's software and APIs to accept payments
-                <br /> – send payouts, and manage their businesses online.
-              </p>
+              <p style={{ flex: 1 }}>{BelowCaptionText}</p>
 
               <div style={{ flex: 1 }} className="py-6">
                 <button className="p-2 mt-4 rounded-full bg-black text-white">
@@ -306,28 +194,43 @@ function HeaderSection({
                 </button>
               </div>
             </div>
-
-            <div style={{ alignItems: "flex-end" }} className="flex">
-              <img
-                className="animate__animated animate__slideInRight animate__slow"
-                style={{ marginTop: "3rem" }}
-                width={250}
-                src={loansImage}
-                alt=""
-              />
-              <img
-                ref={element}
-                className="animate__animated animate__slideInRight"
-                style={{
-                  marginTop: "3rem",
-                  width: "30vw",
-                  position: "relative",
-                  right: "100px",
-                }}
-                src={loans_dashboard}
-                alt=""
-              />
-            </div>
+            {showImage ? (
+              <div style={{ alignItems: "flex-end" }} className="flex w-6/12">
+                {headerImages
+                  ? headerImages.map((eachImgSrc, idx, array) => {
+                      if (idx > 0) {
+                        return (
+                          <img
+                            src={eachImgSrc}
+                            className="w-6/12 animate__animated animate__slideInRight  animate__slow"
+                            style={{
+                              marginTop: "3rem",
+                            }}
+                            alt=""
+                          />
+                        );
+                      }
+                      return (
+                        <img
+                          src={eachImgSrc}
+                          className={`${
+                            oneImageHeader ? "w-full" : "w-4/12"
+                          } animate__animated animate__slideInRight`}
+                          style={{
+                            marginTop: "3rem",
+                            // width: "25vw",
+                            // position: "relative",
+                            // right: "100px",
+                          }}
+                          alt=""
+                        />
+                      );
+                    })
+                  : ""}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>

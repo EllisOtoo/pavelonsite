@@ -26,6 +26,7 @@ import vodafone from "../../assets/vodafone.png";
 import yango from "../../assets/yango.png";
 import { useEffect, useCallback, useMemo } from "react";
 import NewHeader from "../../components/NewHeader/NewHeader";
+import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 // import { useMemo } from "react/cjs/react.production.min";
 
 //* List Component
@@ -61,6 +62,7 @@ function Home() {
   return (
     <>
       {/* <NewHeader /> */}
+      {/* <ResponsiveNav /> */}
       <Header
         Caption="Lending Infrastructure for Africa."
         headerGradientClass={"gradient__bg__blue"}
