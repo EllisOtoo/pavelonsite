@@ -4,7 +4,7 @@ import NavSectionImage from "../../../assets/thirdImage.png";
 function Third() {
   return (
     <>
-      <h2 className="text-3xl my-0">Lorem 3</h2>
+      <h2 className="text-4xl my-0">Lorem 3</h2>
       <div className="flex flex-col md:flex-row justify-around items-center gap-32">
         <div className="w-full md:w-6/12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

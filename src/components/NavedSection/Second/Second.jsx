@@ -4,7 +4,7 @@ import NavSectionImage from "../../../assets/inControl2.png";
 function Second() {
   return (
     <>
-      <h2 className="text-3xl my-0">Lorem 2</h2>
+      <h2 className="text-4xl my-0">Lorem 2</h2>
 
       <div className="flex flex-col md:flex-row justify-around items-center gap-32">
         <img className="w-12/12 md:w-6/12" src={NavSectionImage} alt="" />

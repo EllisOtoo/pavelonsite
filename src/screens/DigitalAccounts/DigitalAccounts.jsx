@@ -22,10 +22,11 @@ function DigitalAccounts() {
     <div>
       {/* <ResponsiveNav makeMenuDark /> */}
       <HeaderSection
+        smallerHeader
         makeMenuDark
         isDarkHeaderText
         introLogo={introLogo}
-        Caption="Offer GDPC- Insured accounts with a few lines of code"
+        Caption={"Offer GDPC- Insured accounts with a few lines of code"}
         showImage={true}
         noGradient
         oneImageHeader={true}

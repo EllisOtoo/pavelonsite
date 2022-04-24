@@ -4,7 +4,8 @@ import NavSectionImage from "../../../assets/navsection-1.png";
 function First() {
   return (
     <>
-      <h2 className="text-3xl my-0">Lorem 1</h2>
+      <h2 className="text-4xl my-0">Lorem 1</h2>
+
       <div className="flex flex-col md:flex-row justify-around items-center gap-32">
         <div className="w-12/12 md:w-6/12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

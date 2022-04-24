@@ -20,6 +20,7 @@ function classNames(...classes) {
 }
 
 function HeaderSection({
+  smallerHeader,
   makeMenuDark = false,
   isDarkHeaderText = false,
   introLogo = null,
@@ -163,7 +164,7 @@ function HeaderSection({
             }}
           >
             <div
-              className="w-6/12"
+              className="w-5/12"
               // style={{
               //   width: "55vw",
               // }}
@@ -173,10 +174,12 @@ function HeaderSection({
               )}
               <p
                 style={{
-                  fontSize: !matches ? "2rem" : "5rem ",
+                  fontSize: !matches ? "2rem" : smallerHeader ? "3rem" : "5rem",
                   alignSelf: "center",
                 }}
-                className="py-6 mt-1 text-7xl font-extrabold text-gray-900   sm:text-5xl sm:tracking-tight lg:text-6xl"
+                className={`py-6 mt-1 ${
+                  smallerHeader ? "font-bold" : "font-extrabold"
+                } text-7xl  text-gray-900   sm:text-5xl sm:tracking-tight lg:text-6xl`}
               >
                 {Caption}
               </p>
