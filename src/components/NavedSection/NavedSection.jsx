@@ -32,7 +32,6 @@ function NavedSection() {
       style={{
         position: "relative",
         top: "200px",
-        backgroundColor: "#eee",
       }}
     >
       <div className="my-12">
@@ -46,29 +45,30 @@ function NavedSection() {
           balance however they want.
         </p>
       </div>
-
-      <div className="flex justify-start gap-32 divide-x">
-        <p
-          className="cursor-pointer font-bold hover:underline"
-          onClick={() => filterToShowText(firstButton)}
-        >
-          {firstButton}
-        </p>
-        <p
-          className="cursor-pointer  font-bold hover:underline"
-          onClick={() => filterToShowText(SecondButton)}
-        >
-          {SecondButton}
-        </p>
-        <p
-          className="cursor-pointer  font-bold hover:underline"
-          onClick={() => filterToShowText(ThirdButton)}
-        >
-          {ThirdButton}
-        </p>
-      </div>
-      <div style={{ minHeight: "400px" }} className="min-h-[500px]">
-        {currentSection}
+      <div className="p-8" style={{ backgroundColor: "#eee" }}>
+        <div className="flex justify-start gap-32 divide-x">
+          <p
+            className="cursor-pointer font-bold hover:underline"
+            onClick={() => filterToShowText(firstButton)}
+          >
+            {firstButton}
+          </p>
+          <p
+            className="cursor-pointer  font-bold hover:underline"
+            onClick={() => filterToShowText(SecondButton)}
+          >
+            {SecondButton}
+          </p>
+          <p
+            className="cursor-pointer  font-bold hover:underline"
+            onClick={() => filterToShowText(ThirdButton)}
+          >
+            {ThirdButton}
+          </p>
+        </div>
+        <div style={{ minHeight: "400px" }} className="min-h-[500px]">
+          {currentSection}
+        </div>
       </div>
     </div>
   );
