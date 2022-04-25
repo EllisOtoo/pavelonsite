@@ -38,7 +38,7 @@ function HeaderSection({
   headerImages = [loansImage, loans_dashboard],
 }) {
   const [showMenu, setMenu] = useState(false);
-  const [matches, setMatches] = useState(
+  const [isLarger, setisLarger] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
 
@@ -46,23 +46,19 @@ function HeaderSection({
   const element = useRef();
 
   useEffect(() => {
-    /*   element.current.addEventListener("click", () => {
-      alert.show("Hello Package!");
-    }); */
     window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-      setMatches(e.matches);
+      setisLarger(e.matches);
     });
-  }, [matches]);
+  }, [isLarger]);
 
   return (
-    <div className="parentDiv relative">
+    <div className="headerSectionOnly relative">
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            {/* Nav goes here */}
             <ResponsiveNav makeMenuDark={makeMenuDark} />
+            {/* Tailwind Navbar */}
           </div>
-
           <div
             className={`${
               showMenu ? "" : "hidden"
@@ -107,12 +103,12 @@ function HeaderSection({
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50"
                 >
                   Product
-                </a>
+                </Link>
 
                 <Link
                   to="/use_cases"
@@ -121,26 +117,26 @@ function HeaderSection({
                   Use Cases
                 </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700  hover:bg-gray-50"
                 >
                   Marketplace
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 >
                   Company
-                </a>
+                </Link>
               </div>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="hidden block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -163,18 +159,17 @@ function HeaderSection({
               padding: "25px",
             }}
           >
-            <div
-              className="w-5/12"
-              // style={{
-              //   width: "55vw",
-              // }}
-            >
+            <div className={`${isLarger ? "w-5/12" : "w-full"}`}>
               {introLogo && (
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}
               <p
                 style={{
-                  fontSize: !matches ? "2rem" : smallerHeader ? "3rem" : "5rem",
+                  fontSize: !isLarger
+                    ? "2rem"
+                    : smallerHeader
+                    ? "3rem"
+                    : "5rem",
                   alignSelf: "center",
                 }}
                 className={`py-6 mt-1 ${
@@ -197,7 +192,7 @@ function HeaderSection({
                 </button>
               </div>
             </div>
-            {showImage ? (
+            {isLarger && showImage ? (
               <div style={{ alignItems: "flex-end" }} className="flex w-6/12">
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {

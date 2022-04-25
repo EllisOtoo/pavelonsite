@@ -34,7 +34,6 @@ function DigitalAccounts() {
         headerImages={[codeSnippet]}
         logoBlack
       />
-
       <NavedSection />
     </div>
   );

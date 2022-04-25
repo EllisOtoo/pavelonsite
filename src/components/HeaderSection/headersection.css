@@ -1,4 +1,4 @@
-/* .parentDiv {
+/* .headerSectionOnly {
   background-color: silver;
   height: 80vh;
 }
@@ -6,7 +6,7 @@
 
 /* Target Mobile */
 @media only screen and (max-width: 600px) {
-  .parentDiv {
+  .headerSectionOnly {
     height: 50vh !important;
   }
   .gradientBackground {
@@ -27,8 +27,9 @@
   height: 50vh;
   clip-path: polygon(0 0, 100% 0, 100% 57%, 0 100%);
 }
-.parentDiv {
-  height: 70vh;
+
+.headerSectionOnly {
+  height: 45vh;
 }
 
 @keyframes gradient {

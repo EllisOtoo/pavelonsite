@@ -6,8 +6,10 @@ import SecondSection from "./Second/Second";
 import ThirdSection from "./Third/Third.jsx";
 
 function NavedSection() {
+  const [isLarger, setisLarger] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
   const [currentSection, setCurrentSection] = useState(<FirstSection />);
-
   const firstButton = "Step One";
   const SecondButton = "Second Button";
   const ThirdButton = "Third Button";
@@ -28,7 +30,9 @@ function NavedSection() {
 
   return (
     <div
-      className="px-16 py-12 bg-slate-300 my-16 mx-auto w-10/12 drop-shadow-sm"
+      className={`px-16 py-12 bg-slate-300 my-16 mx-auto ${
+        isLarger ? "w-9/12" : "w-full"
+      } drop-shadow-sm`}
       style={{
         position: "relative",
         top: "200px",
