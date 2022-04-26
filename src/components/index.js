@@ -5,6 +5,7 @@ import MiddleSection from "./MiddleSection/MiddleSection.jsx";
 import Logos from "./LogosSection/LogosSection.jsx";
 import GenericSection from "./Generics/GenericSection";
 import AnimatedSection from "./AnimatedSections/AnimatedSection.jsx";
+import FeatureSection from "./FeatureSection/FeatureSection.jsx";
 
 export {
   Footer,
@@ -14,4 +15,5 @@ export {
   Logos,
   GenericSection,
   AnimatedSection,
+  FeatureSection,
 };

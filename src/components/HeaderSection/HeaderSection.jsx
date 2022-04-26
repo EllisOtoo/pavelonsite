@@ -98,9 +98,9 @@ function HeaderSection({
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
@@ -148,21 +148,13 @@ function HeaderSection({
       </div>
 
       {noGradient ? "" : <div className="gradientBackground"></div>}
-      {/*
-       <>
-      <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
-        <div class={`bg ${bg_colorClass}`}></div>
-        <div class={`bg ${bg_colorClass} bg2 `}></div>
-        <div class={`bg ${bg_colorClass} bg3`}></div>
-      </div></> 
-      */}
+
       <div className={`relative  headerContainer`}>
         <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
             className={`${reverse ? "flex flex-row-reverse" : "flex"}`}
             style={{
               justifyContent: "space-between",
-              // alignItems: "flex-end",
               padding: "25px",
             }}
           >
@@ -211,6 +203,7 @@ function HeaderSection({
                       if (idx > 0) {
                         return (
                           <img
+                            key={idx}
                             src={eachImgSrc}
                             className={`animate__animated ${
                               animateClasses
@@ -226,6 +219,7 @@ function HeaderSection({
                       }
                       return (
                         <img
+                          key={idx}
                           src={eachImgSrc}
                           className={`${
                             oneImageHeader

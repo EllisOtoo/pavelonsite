@@ -49,7 +49,7 @@ function LogosSection({
             width: "80vw",
             margin: "0 auto",
           }}
-          class="mt-6 grid grid-cols-4 gap-0.5 md:grid-cols-3 lg:mt-8"
+          class={`mt-6 grid grid-cols-4 gap-0.5 md:grid-cols-3 lg:mt-8`}
         >
           {LogosData.map((item, index) => (
             <LogoItem key={index} imgSrc={item} />

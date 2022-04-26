@@ -25,7 +25,7 @@ const solutions = [
     name: "Commerce API",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+    href: "/commerceApi",
     icon: ChartBarIcon,
   },
   {
@@ -37,7 +37,7 @@ const solutions = [
   {
     name: "Capital by API",
     description: "Your customers' data will be safe and secure.",
-    href: "#",
+    href: "/capitalByApi",
     icon: ShieldCheckIcon,
   },
   {

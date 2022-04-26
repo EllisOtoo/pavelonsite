@@ -9,6 +9,7 @@ import Kyc from "../screens/KYC/Kyc";
 import CommerceApi from "../screens/CommerceApi/CommerceApi";
 import CardPlatform from "../screens/CardPlatform/CardPlatform";
 import CapitalByApi from "../screens/CapitalByApi/CapitalByApi";
+import CapitalByApi_Lenders from "../screens/CapitalByApi_Lenders/CapitalByApi_Lenders";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -17,9 +18,13 @@ function RootNavigator() {
       <Suspense fallback={TopBarLoader()}>
         <Switch>
           <Route component={Home} path={"/"} exact={true} />
-          <Route component={Lenders} path={"/forLenders"} exact={true} />
+          {/* <Route component={Lenders} path={"/forLenders"} exact={true} /> */}
           <Route component={UseCases} path={"/use_cases"} exact={true} />
-          <Route component={Lenders} path={"/forLenders"} exact={true} />
+          <Route
+            component={CapitalByApi_Lenders}
+            path={"/forLenders"}
+            exact={true}
+          />
           <Route
             component={DigitalAccounts}
             path={"/digitalAccounts"}
@@ -29,6 +34,11 @@ function RootNavigator() {
           <Route component={CommerceApi} path={"/commerceApi"} exact={true} />
           <Route component={CardPlatform} path={"/cardPlatform"} exact={true} />
           <Route component={CapitalByApi} path={"/capitalByApi"} exact={true} />
+          <Route
+            component={CapitalByApi_Lenders}
+            path={"/capitalByApi_Lenders"}
+            exact={true}
+          />
         </Switch>
       </Suspense>
     </BrowserRouter>
