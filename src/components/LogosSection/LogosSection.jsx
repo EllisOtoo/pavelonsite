@@ -24,6 +24,7 @@ const LogoItem = ({ imgSrc }) => {
 };
 
 function LogosSection({
+  _3cols = false,
   title = "",
   LogosData = ["#", "#", "#", "#", "#", "#"],
 }) {
@@ -45,7 +46,9 @@ function LogosSection({
         </p>
         <div
           style={{
-            gridTemplateColumns: matches ? "1fr 1fr 1fr 1fr" : "1fr 1fr 1fr",
+            gridTemplateColumns: matches
+              ? `${_3cols ? "1fr 1fr 1f" : "1fr 1fr 1fr 1fr"}`
+              : "1fr 1fr 1fr",
             width: "80vw",
             margin: "0 auto",
           }}

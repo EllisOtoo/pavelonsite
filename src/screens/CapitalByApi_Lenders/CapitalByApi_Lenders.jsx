@@ -254,6 +254,7 @@ function CapitalByApi() {
         </div>
       </div>
       <LogosSection
+        _3cols
         LogosData={[
           stanbic,
           gcb,
