@@ -43,7 +43,7 @@ const solutions = [
   {
     name: "KYC/Onboarding API",
     description: "Connect with third-party tools that you're already using.",
-    href: "#",
+    href: "/Kyc",
     icon: ViewGridIcon,
   },
   {
@@ -153,7 +153,7 @@ function classNames(...classes) {
 export default function ResponsiveNav({ makeMenuDark = false }) {
   return (
     <Popover className="relative ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">

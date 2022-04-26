@@ -5,6 +5,11 @@ import Home from "../screens/Home/home";
 import Lenders from "../screens/ForLenders/Lenders";
 import UseCases from "../screens/UseCases/UseCases";
 import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
+import Kyc from "../screens/KYC/Kyc";
+import CommerceApi from "../screens/CommerceApi/CommerceApi";
+import CardPlatform from "../screens/CardPlatform/CardPlatform";
+import CapitalByApi from "../screens/CapitalByApi/CapitalByApi";
+// import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
   return (
@@ -20,6 +25,10 @@ function RootNavigator() {
             path={"/digitalAccounts"}
             exact={true}
           />
+          <Route component={Kyc} path={"/kyc"} exact={true} />
+          <Route component={CommerceApi} path={"/commerceApi"} exact={true} />
+          <Route component={CardPlatform} path={"/cardPlatform"} exact={true} />
+          <Route component={CapitalByApi} path={"/capitalByApi"} exact={true} />
         </Switch>
       </Suspense>
     </BrowserRouter>

@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useAlert } from "react-alert";
 
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+// import { Fragment } from "react";
+// import { Disclosure, Menu, Transition } from "@headlessui/react";
+// import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
+// import Dropdown from "../Dropdown/Dropdown";
 import darklogo from "../../assets/pav_logo_mob.png";
-import Dropdown from "../Dropdown/Dropdown";
 import { Link } from "react-router-dom";
 import "./headersection.css";
 import loansImage from "../../assets/lending _Image.png";
@@ -20,12 +20,19 @@ function classNames(...classes) {
 }
 
 function HeaderSection({
+  children,
+  noHeader = false,
+  reverse = false,
+  showSingleButton,
+  controlSectionImage,
   smallerHeader,
+  buttonText = "Start Now",
   makeMenuDark = false,
   isDarkHeaderText = false,
   introLogo = null,
   headerGradientClass,
   BelowCaptionText = "lorem ",
+  animateClasses,
   Caption = "Pavelon Page Caption",
   oneImageHeader = false,
   SubCaption = "",
@@ -52,13 +59,11 @@ function HeaderSection({
   }, [isLarger]);
 
   return (
-    <div className="headerSectionOnly relative">
+    <div className={`headerSectionOnly relative ${noHeader ? "my-24" : ""}`}>
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <ResponsiveNav makeMenuDark={makeMenuDark} />
-            {/* Tailwind Navbar */}
-          </div>
+          {noHeader ? "" : <ResponsiveNav makeMenuDark={makeMenuDark} />}
+
           <div
             className={`${
               showMenu ? "" : "hidden"
@@ -143,23 +148,25 @@ function HeaderSection({
       </div>
 
       {noGradient ? "" : <div className="gradientBackground"></div>}
-      {/*  <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
+      {/*
+       <>
+      <div className={`headerSlider ${smallerBgGradient && "smallerClipPath"}`}>
         <div class={`bg ${bg_colorClass}`}></div>
         <div class={`bg ${bg_colorClass} bg2 `}></div>
         <div class={`bg ${bg_colorClass} bg3`}></div>
-      </div>
+      </div></> 
       */}
       <div className={`relative  headerContainer`}>
         <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
-            className="flex"
+            className={`${reverse ? "flex flex-row-reverse" : "flex"}`}
             style={{
-              justifyContent: "space-around",
-              alignItems: "flex-end",
+              justifyContent: "space-between",
+              // alignItems: "flex-end",
               padding: "25px",
             }}
           >
-            <div className={`${isLarger ? "w-5/12" : "w-full"}`}>
+            <div className={`${isLarger ? "w-5/12 " : "w-full"} flex flex-col`}>
               {introLogo && (
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}
@@ -170,7 +177,6 @@ function HeaderSection({
                     : smallerHeader
                     ? "3rem"
                     : "5rem",
-                  alignSelf: "center",
                 }}
                 className={`py-6 mt-1 ${
                   smallerHeader ? "font-bold" : "font-extrabold"
@@ -178,29 +184,39 @@ function HeaderSection({
               >
                 {Caption}
               </p>
-              <p style={{ flex: 1 }}>{BelowCaptionText}</p>
-
+              {children ? children : BelowCaptionText}
               <div style={{ flex: 1 }} className="py-6">
-                <button className="p-2 mt-4 rounded-full bg-black text-white">
-                  Start Now
+                <button className="p-2 px-4 mt-4 rounded-full bg-black text-white">
+                  {buttonText}
                 </button>
-                <button
-                  style={{ marginLeft: "5px" }}
-                  className="p-2 pl-4 mt-4 rounded-full bg-black text-white"
-                >
-                  Contact Sales
-                </button>
+                {(buttonText === "Read the Docs") | showSingleButton ? (
+                  ""
+                ) : (
+                  <button
+                    style={{ marginLeft: "5px" }}
+                    className="py-2 px-4 mt-4 rounded-full bg-black text-white"
+                  >
+                    Contact Sales
+                  </button>
+                )}
               </div>
             </div>
             {isLarger && showImage ? (
-              <div style={{ alignItems: "flex-end" }} className="flex w-6/12">
+              <div
+                style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
+                className="flex w-5/12 justify-center"
+              >
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {
                       if (idx > 0) {
                         return (
                           <img
                             src={eachImgSrc}
-                            className="w-6/12 animate__animated animate__slideInRight  animate__slow"
+                            className={`animate__animated ${
+                              animateClasses
+                                ? animateClasses
+                                : "animate__slideInRight"
+                            }  animate__slow`}
                             style={{
                               marginTop: "3rem",
                             }}
@@ -212,15 +228,20 @@ function HeaderSection({
                         <img
                           src={eachImgSrc}
                           className={`${
-                            oneImageHeader ? "w-full" : "w-4/12"
-                          } animate__animated animate__slideInRight`}
+                            oneImageHeader
+                              ? controlSectionImage
+                                ? "w-6/12"
+                                : "w-full"
+                              : "w-4/12"
+                          }  animate__animated ${
+                            animateClasses
+                              ? animateClasses
+                              : " animate__slideInRight"
+                          }`}
                           style={{
                             marginTop: "3rem",
-                            // width: "25vw",
-                            // position: "relative",
-                            // right: "100px",
                           }}
-                          alt=""
+                          alt="Product Card "
                         />
                       );
                     })

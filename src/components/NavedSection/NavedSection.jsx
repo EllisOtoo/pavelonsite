@@ -10,8 +10,8 @@ function NavedSection() {
     window.matchMedia("(min-width: 768px)").matches
   );
   const [currentSection, setCurrentSection] = useState(<FirstSection />);
-  const firstButton = "Step One";
-  const SecondButton = "Second Button";
+  const firstButton = "Phone Number Verification";
+  const SecondButton = "ID Verification";
   const ThirdButton = "Third Button";
 
   const filterToShowText = (currentButton) => {
@@ -31,7 +31,7 @@ function NavedSection() {
   return (
     <div
       className={`px-16 py-12 bg-slate-300 my-16 mx-auto ${
-        isLarger ? "w-9/12" : "w-full"
+        isLarger ? "w-10/12" : "w-full"
       } drop-shadow-sm`}
       style={{
         position: "relative",
@@ -58,7 +58,7 @@ function NavedSection() {
             {firstButton}
           </p>
           <p
-            className="cursor-pointer  font-bold hover:underline"
+            className="cursor-pointer font-bold hover:underline"
             onClick={() => filterToShowText(SecondButton)}
           >
             {SecondButton}
