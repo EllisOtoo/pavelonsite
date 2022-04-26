@@ -17,8 +17,8 @@ const LogoItem = ({ imgSrc }) => {
   };
 
   return (
-    <div class=" col-span-1 flex justify-center py-8 px-8">
-      <img className="w-28" src={imgSrc} alt="In Good Hands" />
+    <div class="flex justify-center py-8 px-8">
+      <img className="w-6/12" src={imgSrc} alt="In Good Hands" />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import CardProgram from "../../assets/cardProgram.png";
 import stanbic from "../../assets/stanbic.png";
 import gcb from "../../assets/gcb_logo.png";
 import bosea from "../../assets/bosea.png";
-import aymicrocredit from "../../assets/ay_logo.png";
+import aymicrocredit from "../../assets/ay_logo.jpg";
 import tffinancialservices from "../../assets/tf.jpg";
 import teachersfund from "../../assets/tf_logo.png";
 import { FeatureSection, Footer } from "../../components";
