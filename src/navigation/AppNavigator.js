@@ -20,7 +20,7 @@ function RootNavigator() {
         <Switch>
           <Route component={Home} path={"/"} exact={true} />
           {/* <Route component={Lenders} path={"/forLenders"} exact={true} /> */}
-          <Route component={UseCases} path={"/use_cases"} exact={true} />
+          <Route component={CaseStudy} path={"/use_cases"} exact={true} />
           <Route
             component={CapitalByApi_Lenders}
             path={"/forLenders"}

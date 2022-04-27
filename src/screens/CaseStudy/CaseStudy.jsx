@@ -7,6 +7,20 @@ function CaseStudy() {
   return (
     <>
       <ResponsiveNav makeMenuDark />
+      <div>
+        <div class="purple"></div>
+        <div class="medium-blue"></div>
+        <div class="light-blue"></div>
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="yellow"></div>
+        <div class="cyan"></div>
+        <div class="light-green"></div>
+        <div class="lime"></div>
+        <div class="magenta"></div>
+        <div class="lightish-red"></div>
+        <div class="pink"></div>
+      </div>
       <div className="h-screen bg-gray-100">
         <div className="flex mx-auto pt-32 w-10/12 gap-24 flex-row  bg-slate-100">
           <ul className="text-2xl leading-10">
