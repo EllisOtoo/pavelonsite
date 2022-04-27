@@ -219,6 +219,7 @@ function HeaderSection({
                       }
                       return (
                         <img
+                          // width={"1000px"}
                           key={idx}
                           src={eachImgSrc}
                           className={`${
