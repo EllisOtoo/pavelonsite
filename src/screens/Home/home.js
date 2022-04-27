@@ -3,6 +3,8 @@ import "./home.css";
 import logo from "../../assets/logo.png";
 import darklogo from "../../assets/pav_logo_mob.png";
 import LogosSection from "../../components/LogosSection/LogosSection";
+
+import landingImage from "../../assets/landing_Image.png";
 import {
   Header,
   Footer,
@@ -69,6 +71,13 @@ function Home() {
         SubCaption="Tap into our lenders’ pool and bring finance to your users"
         LeadIn="Join our Pool of lenders and access a merchant base that will drive retail finance revenues, without the need for complex program management.
         "
+        headerImages={[landingImage]}
+        BelowCaptionText={
+          <>
+            Only Pavelon’s embedded credit platform gives companies everything
+            they need to build, embed or enhance credit products.
+          </>
+        }
       />
 
       <Logos

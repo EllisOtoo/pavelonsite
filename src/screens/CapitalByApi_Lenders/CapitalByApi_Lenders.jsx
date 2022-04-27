@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 
 import Section from "../../components/HeaderSection/HeaderSection";
-import CardProgram from "../../assets/cardProgram.png";
 import stanbic from "../../assets/stanbic.png";
 import gcb from "../../assets/gcb_logo.png";
 import bosea from "../../assets/bosea.png";
 import aymicrocredit from "../../assets/ay_logo.jpg";
 import tffinancialservices from "../../assets/tf.jpg";
 import teachersfund from "../../assets/tf_logo.png";
-import { FeatureSection, Footer } from "../../components";
+import { FeatureSection, Footer, Logos } from "../../components";
 import customers from "../../assets/customers.webp";
-import LogosSection from "../../components/LogosSection/LogosSection";
+// import LogosSection from "../../components/LogosSection/ LogosSection";
 
 function Features({ features }) {
   return (
@@ -53,9 +52,9 @@ const BreakingHeader = () => {
   return (
     <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
       <div className="mb-24">
-        <div className="mb-8 text-5xl font-bold">Lending, simplified</div>
+        <h2 className="text-5xl mb-8 font-bold">Lending, simplified</h2>
         <hr />
-        <div className="text-3xl pt-8">
+        <div className="text-xl pt-8">
           Acquire borrowers via their favorite apps—Whatsapp, Telegram and more.
           Enable partial or complete loan application journeys. Pavelon builds
           on top of your existing APIs to support any loan construct—Personal
@@ -70,13 +69,13 @@ const BreakingHeader = () => {
           Fully Digitized Controller Loans.
         </div>
         <hr />
-        <div className="text-3xl pt-8">
+        <div className=" text-xl pt-8">
           Offer end-to-end, from loan application to disbursement, fully digital
           loans for over 1.5M Government Workers on the Controller and
           Accountant General Platform. Features
         </div>
 
-        <ul className="text-2xl flex flex-col gap-2 pl-8">
+        <ul className="text-base flex text-xl  mt-8 flex-col gap-2 pl-8">
           <li> Lend on your Own Controller Code, or Use our Controller Code</li>
           <li>
             Enhanced KYC to prevent Fraud - ID Verification, Address
@@ -98,13 +97,13 @@ const BreakingHeader = () => {
           Fully Digitized Tier-3 Pensions Backed Loans.
         </div>
         <hr />
-        <div className="text-3xl pt-8">
+        <div className="text-base pt-8">
           Pavelon enables Lenders to offer loans to Tier 3 Pensions contributors
           fully secured by the contributions of the borrower. Pavelon works with
           NPRA-licensed service providers. Features
         </div>
 
-        <ul className="text-2xl flex flex-col gap-2 pl-8">
+        <ul className="text-base flex mt-8   flex-col gap-2 pl-8">
           <li> Lend up to 85% of the Borrower's total contributions</li>
           <li>
             Enhanced KYC to prevent Fraud - ID Verification, Address
@@ -127,7 +126,7 @@ const BreakingHeader = () => {
           Digital Scheme Loans Loans enabled on multiple platforms
         </div>
         <hr />
-        <div className="text-3xl pt-8">
+        <div className="text-base pt-8">
           Pavelon does the hard work of integrating with your existing lending
           APIs and building easy-to-use loan application flows. You can simply
           redirect borrowers to ready-made loan journeys.
@@ -168,7 +167,7 @@ const BreakingHeader = () => {
           Verified leads from digital channels
         </div>
         <hr />
-        <div className="text-3xl pt-8">
+        <div className="text-xl pt-8">
           Utilise Pavelon’s pre-qualification engine and network of loan
           providers to source leads from various digital channels. Or run your
           own digital loan campaigns for preferred, trusted customers who are
@@ -208,10 +207,14 @@ const BreakingHeader = () => {
 function CapitalByApi() {
   const [testValue, setTestValue] = useState("");
 
+  const fetchProducts = async (url) => {
+    const response = await fetch(url);
+    const products = await response.json();
+    console.log(products);
+  };
+
   useEffect(() => {
-    setTimeout(() => {
-      setTestValue("Hello");
-    }, 3000);
+    fetchProducts("https://fakestoreapi.com/products/");
   }, []);
 
   return (
@@ -253,7 +256,7 @@ function CapitalByApi() {
           <hr />
         </div>
       </div>
-      <LogosSection
+      <Logos
         _3cols
         LogosData={[
           stanbic,

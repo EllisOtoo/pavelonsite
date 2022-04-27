@@ -152,7 +152,7 @@ function HeaderSection({
       <div className={`relative  headerContainer`}>
         <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
-            className={`${reverse ? "flex flex-row-reverse" : "flex"}`}
+            className={`${reverse ? "flex flex-row-reverse " : "flex gap-12"}`}
             style={{
               justifyContent: "space-between",
               padding: "25px",
@@ -196,7 +196,7 @@ function HeaderSection({
             {isLarger && showImage ? (
               <div
                 style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
-                className="flex w-5/12 justify-center"
+                className="flex w-full"
               >
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {
@@ -226,12 +226,12 @@ function HeaderSection({
                               ? controlSectionImage
                                 ? "w-6/12"
                                 : "w-full"
-                              : "w-4/12"
+                              : ""
                           }  animate__animated ${
                             animateClasses
                               ? animateClasses
                               : " animate__slideInRight"
-                          }`}
+                          } `}
                           style={{
                             marginTop: "3rem",
                           }}
