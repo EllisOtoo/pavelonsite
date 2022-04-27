@@ -8,6 +8,7 @@ import landingImage from "../../assets/landing_Image.png";
 import {
   Header,
   Footer,
+  HomeHeroBanner,
   Navbar,
   MiddleSection,
   Logos,
@@ -18,12 +19,12 @@ import FooterSection from "../../components/FooterSection/FooterSection";
 // import MiddleSection from "../../components/MiddleSection/MiddleSection";
 
 /*Images Import for React*/
-import creditmall from "../../assets/cml.png";
+import creditmall from "../../assets/creditmall.png";
 import credify from "../../assets/credify.png";
 import stanbic from "../../assets/stanbic.png";
 import gcb from "../../assets/gcb_logo.png";
 import bosea from "../../assets/bosea.png";
-import tf from "../../assets/tf.png";
+import tf from "../../assets/teachers_fund.png";
 import vodafone from "../../assets/vodafone.png";
 import yango from "../../assets/yango.png";
 import { useEffect, useCallback, useMemo } from "react";
@@ -65,7 +66,7 @@ function Home() {
     <>
       {/* <NewHeader /> */}
       {/* <ResponsiveNav /> */}
-      <Header
+      <HomeHeroBanner
         Caption="Lending Infrastructure for Africa."
         headerGradientClass={"gradient__bg__blue"}
         SubCaption="Tap into our lenders’ pool and bring finance to your users"

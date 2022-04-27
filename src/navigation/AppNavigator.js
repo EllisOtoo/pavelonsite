@@ -10,6 +10,7 @@ import CommerceApi from "../screens/CommerceApi/CommerceApi";
 import CardPlatform from "../screens/CardPlatform/CardPlatform";
 import CapitalByApi from "../screens/CapitalByApi/CapitalByApi";
 import CapitalByApi_Lenders from "../screens/CapitalByApi_Lenders/CapitalByApi_Lenders";
+import CaseStudy from "../screens/CaseStudy/CaseStudy";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -39,6 +40,7 @@ function RootNavigator() {
             path={"/capitalByApi_Lenders"}
             exact={true}
           />
+          <Route component={CaseStudy} path={"/caseStudy"} exact={true} />
         </Switch>
       </Suspense>
     </BrowserRouter>

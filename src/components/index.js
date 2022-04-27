@@ -6,6 +6,7 @@ import Logos from "./LogosSection/LogosSection.jsx";
 import GenericSection from "./Generics/GenericSection";
 import AnimatedSection from "./AnimatedSections/AnimatedSection.jsx";
 import FeatureSection from "./FeatureSection/FeatureSection.jsx";
+import HomeHeroBanner from "./HomeHeroBanner/HomeHeroBanner.jsx";
 
 export {
   Footer,
@@ -16,4 +17,5 @@ export {
   GenericSection,
   AnimatedSection,
   FeatureSection,
+  HomeHeroBanner,
 };

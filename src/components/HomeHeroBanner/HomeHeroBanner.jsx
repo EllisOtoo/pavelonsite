@@ -1,15 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useAlert } from "react-alert";
-
-// import { Fragment } from "react";
-// import { Disclosure, Menu, Transition } from "@headlessui/react";
-// import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-
-// import logo from "../../assets/logo.png";
-// import Dropdown from "../Dropdown/Dropdown";
 import darklogo from "../../assets/pav_logo_mob.png";
 import { Link } from "react-router-dom";
-import "./headersection.css";
 import loansImage from "../../assets/lending _Image.png";
 import loans_dashboard from "../../assets/dashboard_lenders.png";
 import ResponsiveNav from "../ResponsiveNav/ResponsiveNav";
@@ -150,13 +142,20 @@ function HeaderSection({
       {noGradient ? "" : <div className="gradientBackground"></div>}
 
       <div className={`relative  headerContainer`}>
-        <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
-            className={`${reverse ? "flex flex-row-reverse" : "flex"}`}
-            style={{
-              justifyContent: "space-between",
-              padding: "25px",
-            }}
+            className={`${
+              reverse
+                ? "flex flex-row-reverse "
+                : "flex gap-12 my-8 justify-between"
+            }`}
+            style={
+              {
+                // height: "70vh",
+                // justifyContent: "space-between",
+                // padding: "25px",
+              }
+            }
           >
             <div className={`${isLarger ? "w-5/12 " : "w-full"} flex flex-col`}>
               {introLogo && (
@@ -196,7 +195,7 @@ function HeaderSection({
             {isLarger && showImage ? (
               <div
                 style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
-                className="flex w-5/12 justify-center"
+                className="flex w-full"
               >
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {
@@ -219,6 +218,7 @@ function HeaderSection({
                       }
                       return (
                         <img
+                          // width={"1000px"}
                           key={idx}
                           src={eachImgSrc}
                           className={`${
@@ -226,7 +226,7 @@ function HeaderSection({
                               ? controlSectionImage
                                 ? "w-6/12"
                                 : "w-full"
-                              : "w-4/12"
+                              : ""
                           }  animate__animated ${
                             animateClasses
                               ? animateClasses
