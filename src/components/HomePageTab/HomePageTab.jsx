@@ -79,7 +79,7 @@ function HomePageTab() {
       }}
       className="bg-gray-200"
     >
-      <div className="flex py-52 w-8/12 my-32 pt-52 pb-96 ml-56 gap-24">
+      <div className="flex py-52 w-6/12 my-32 pt-52 pb-96 ml-96 gap-12">
         <div className="w-full">
           <h1 className="text-4xl font-bold text-gray-600">
             Build-in minutes, launch in weeks Designed by developers, for
