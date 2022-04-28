@@ -55,7 +55,6 @@ function HeaderSection({
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
           {noHeader ? "" : <ResponsiveNav makeMenuDark={makeMenuDark} />}
-
           <div
             className={`${
               showMenu ? "" : "hidden"

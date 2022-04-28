@@ -30,6 +30,7 @@ import yango from "../../assets/yango.png";
 import { useEffect, useCallback, useMemo } from "react";
 import NewHeader from "../../components/NewHeader/NewHeader";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
+import HomePageTab from "../../components/HomePageTab/HomePageTab";
 // import { useMemo } from "react/cjs/react.production.min";
 
 //* List Component
@@ -82,42 +83,114 @@ function Home() {
         }
       />
 
-      <Logos
-        LogosData={[
-          creditmall,
-          credify,
-          stanbic,
-          gcb,
-          tf,
-          bosea,
-          yango,
-          vodafone,
-        ]}
-      />
+      <Logos LogosData={[creditmall, credify, stanbic, gcb, yango, vodafone]} />
 
       <MiddleSection />
-      <GenericSection />
-      <GenericSection
-        backgroundColor="#eee"
-        marginTop={-350}
-        captionColor={"black"}
-        callApi
-        caption="A technology-first approach to payments and finance"
-        features={[
-          {
-            icon: "Feature Icon 1",
-            caption: "Caption One",
-            featureText: "Lorem Ipsum",
-          },
-          {
-            icon: "Feature Icon 2",
-            caption: "Caption Two",
-            featureText: "Lorem Ipsum",
-          },
-        ]}
-      />
-      <AnimatedSection />
-      <Footer />
+
+      <div
+        style={{
+          marginTop: "-400px",
+        }}
+      >
+        <HomePageTab />
+        {/* <GenericSection /> */}
+        {false && (
+          <GenericSection
+            backgroundColor="#eee"
+            marginTop={-250}
+            captionColor={"black"}
+            callApi
+            caption="Launch and scale faster"
+          />
+        )}
+        <AnimatedSection customColor={"#11243e"} caption="Why Pavelon?">
+          <div>
+            <p
+              className="mb-4"
+              style={{
+                borderLeft: "2px solid #60d1fa",
+                paddingLeft: "10px",
+                fontSize: "1.3rem",
+              }}
+            >
+              Get to market faster, no fintech experience required
+            </p>
+            From credit cards to Buy-Now-Pay-Later and bill payments, Pavelon
+            can help you build and launch credit products in minutes, not
+            months. One single API, one contract and you’re ready to go live
+            with a full credit operation.
+          </div>
+          <div>
+            <p
+              className="mb-4"
+              style={{
+                borderLeft: "2px solid #60d1fa",
+                paddingLeft: "10px",
+                fontSize: "1.3rem",
+              }}
+            >
+              Modern, Modular, reliable, and
+              <br /> well-documented API
+            </p>
+            Get a good developer experience with our well-documented and
+            easy-to-use API. Modular API design. All our products are API-first,
+            pick and choose just the parts you need.
+          </div>
+          <div>
+            <p
+              className="mb-4"
+              style={{
+                borderLeft: "2px solid #60d1fa",
+                paddingLeft: "10px",
+                fontSize: "1.3rem",
+              }}
+            >
+              Technology and banking experts—at your service{" "}
+            </p>
+            We work side-by-side with each of our partners, from concept to
+            integration to launch—and beyond—to create an experience that is
+            right for their customers and their brand. Our experienced team
+            guides partners through the technical aspects of embedding lending
+            in their app, but we go farther, helping them navigate the
+            complexities of a highly regulated market.
+          </div>
+          <div>
+            <p
+              className="mb-4"
+              style={{
+                borderLeft: "2px solid #60d1fa",
+                paddingLeft: "10px",
+                fontSize: "1.3rem",
+              }}
+            >
+              Unparalleled Customization{" "}
+            </p>
+            Pavelon’s multi-bank approach creates options so you can find the
+            right banking partner to maximize your profitability and optionality
+            down the road.
+          </div>
+        </AnimatedSection>
+        <AnimatedSection
+          marginTop="-285px"
+          darker
+          customColor={"#ddd"}
+          caption="Ready to Get Started?"
+        >
+          <div>
+            See how Pavelon can help you build, embed or enhance your credit
+            products so you can acquire more customers, increase revenue and
+            accelerate growth.
+          </div>
+          <br />
+          <div>
+            <button className="p-2 text-2xl px-4 mt-4 rounded-full bg-black text-white">
+              {"Contact Sales"}
+            </button>
+          </div>
+        </AnimatedSection>
+
+        <Footer />
+      </div>
     </>
   );
 

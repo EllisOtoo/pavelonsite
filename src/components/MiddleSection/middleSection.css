@@ -49,7 +49,7 @@
 .subPartition_item {
   height: 30vh;
   width: 100%;
-  background-color: rgb(226, 227, 226);
+  background-color: rgb(220, 237, 220);
 }
 
 .subPartition-item-2 {
@@ -60,7 +60,7 @@
   z-index: 20;
 }
 
-.subPartition-item-4 {
+container .subPartition-item-4 {
   height: 20vh;
   width: 300px;
 }
@@ -89,22 +89,13 @@
   padding: 0 15px;
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   width: 73vw;
-  /* padding: 70px; */
-  /* justify-content: space-between; */
-  /* background-color: #eee; */
-}
-
-.flexMiddle {
-  /* flex-direction: column; */
-}
-/* .marginBelowHeader {
-  margin-bottom: 50px;
+ 
 } */
 
 .mobile-only-loan-section {

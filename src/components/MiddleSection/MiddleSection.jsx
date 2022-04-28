@@ -22,18 +22,16 @@ function MiddleSection() {
       setMatches(e.matches);
     });
   }, []);
+
   // console.log(matches);
   return (
-    <div ref={refContainer} className={`container`}>
+    <div ref={refContainer} className="max-w-5xl ml-56  ">
       {/* BLOCKS STARTS HERE */}
-      <h3
-        style={{ fontSize: "2rem", width: "40vw" }}
-        className="tracking-tight font-semibold text-gray-500 sm:text-5xl md:text-6xl"
-      >
+      <h3 className="tracking-tight  font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.
       </h3>
-      <div className="flex my-6">
-        <p className="text-gray-500">
+      <div className="flex gap-24 my-6">
+        <p className="text-md text-gray-500">
           We bring together everything that’s required to build lending into any
           product - from End User Application using our{" "}
           <Link style={{ color: "blue" }} class="" to={"#"}>

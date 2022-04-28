@@ -6,6 +6,7 @@ import axios from "axios";
 function GenericSection({
   marginTop = 0,
   backgroundColor = "#11243e",
+  subCaption = "Sample",
   captionColor = "white",
   caption = "The world’s most powerful and easy-to-use APIs",
   features,
@@ -43,20 +44,20 @@ function GenericSection({
     >
       <div
         style={{ marginTop: "280px" }}
-        className="m-auto py-16 xl:py-36 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        className="ml-72 mb-72 w-8/12 overflow-hidden"
       >
         <div className="max-w-max lg:max-w-7xl mx-auto">
           {/* New Section */}
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="text-base max-w-prose lg:max-w-none">
               <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-                Transactions
+                {caption}
               </h2>
               <p
                 style={{ color: captionColor }}
                 className={`mt-2 text-3xl leading-8 font-extrabold tracking-tight ${captionColor} sm:text-4xl`}
               >
-                {caption}
+                {subCaption}
               </p>
             </div>
           </div>

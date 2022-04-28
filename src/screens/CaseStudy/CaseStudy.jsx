@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import creditmall from "../../assets/cml_logo.png";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import CaseStudySection from "./CaseStudySection.jsx/CaseStudySection";
 
 function CaseStudy() {
+  const [hideCaseStudy, setHideCaseStudy] = useState(true);
   return (
     <>
       <ResponsiveNav makeMenuDark />
@@ -28,34 +29,44 @@ function CaseStudy() {
               fuga cupiditate, dolor ab ex placeat quis esse modi quas
               perferendis!
             </p>
-            <img className="mt-12 w-2/12" src={creditmall} alt="" />
+            <img className="mt-12 w-4/12" src={creditmall} alt="" />
+            <button
+              onClick={() => {
+                setHideCaseStudy(false);
+              }}
+            >
+              Unmount CaseStudy
+            </button>
           </div>
         </div>
       </div>
-      <CaseStudySection
-        leadIn={
-          "How MoneyLion used DriveWealth to launch the leading financial membership app for empowering the US middle-class and underbanked to take control of their finances"
-        }
-        title={"The Problem"}
-      >
-        <p className="my-12">
-          MoneyLion’s goal was to create a financial ecosystem that would help
-          its underserved US customers improve their credit and access a broad
-          range of customized financial products, save money on banking fees,
-          and learn more how to manage their finances.
-        </p>
+      {hideCaseStudy && (
+        <CaseStudySection
+          hideCaseStudy={hideCaseStudy}
+          leadIn={
+            "How MoneyLion used DriveWealth to launch the leading financial membership app for empowering the US middle-class and underbanked to take control of their finances"
+          }
+          title={"The Problem"}
+        >
+          <p className="my-12">
+            MoneyLion’s goal was to create a financial ecosystem that would help
+            its underserved US customers improve their credit and access a broad
+            range of customized financial products, save money on banking fees,
+            and learn more how to manage their finances.
+          </p>
 
-        <p className="my-12">
-          MoneyLion’s core lending product helped members access credit in times
-          of need but didn’t necessarily lend itself to creating an engaged
-          long-term customer or allow customers to develop good financial habits
-          and build savings during periods where they had the capacity to put
-          money away. In order to do that, they needed a particularly engaging
-          and sticky financial product—investing. They wanted to offer automated
-          managed investing to a demographic where most were newer or first time
-          investors.
-        </p>
-      </CaseStudySection>
+          <p className="my-12">
+            MoneyLion’s core lending product helped members access credit in
+            times of need but didn’t necessarily lend itself to creating an
+            engaged long-term customer or allow customers to develop good
+            financial habits and build savings during periods where they had the
+            capacity to put money away. In order to do that, they needed a
+            particularly engaging and sticky financial product—investing. They
+            wanted to offer automated managed investing to a demographic where
+            most were newer or first time investors.
+          </p>
+        </CaseStudySection>
+      )}
 
       <CaseStudySection
         bgColorClass="bg-gray-200"
