@@ -4,7 +4,11 @@ import darklogo from "../../assets/pav_logo_mob.png";
 
 function FooterSection() {
   return (
-    <footer class="bg-white footerTopMargin" aria-labelledby="footer-heading">
+    <footer
+      style={{ position: "relative", zIndex: 6 }}
+      class="bg-white footerTopMargin"
+      aria-labelledby="footer-heading"
+    >
       <h2 id="footer-heading" class="sr-only">
         Footer
       </h2>

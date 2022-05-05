@@ -1,11 +1,14 @@
 .lastSection {
   /* background-color: #11243e; */
-  clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%); */
   /* margin-top: -30vh; */
-  height: 120vh;
+  height: 100vh;
+  position: relative;
+  top: 200px;
   display: flex;
-  padding-top: 13vh;
+  /* padding-top: 13vh; */
   justify-items: center;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 600px) {

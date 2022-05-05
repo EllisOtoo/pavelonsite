@@ -76,11 +76,11 @@ function HomePageTab() {
   return (
     <div
       style={{
-        clipPath: "polygon(0 0, 100% 0, 100% 79%, 0% 100%)",
+        // clipPath: "polygon(0 0, 100% 0, 100% 79%, 0% 100%)",
         position: "relative",
         top: "450px",
       }}
-      className="bg-gray-200"
+      className="bg-[]"
     >
       <div className="flex py-52 w-6/12 my-32 pt-52 pb-96 ml-56 gap-12">
         <div className="w-full">

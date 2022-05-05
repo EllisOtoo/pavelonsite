@@ -173,7 +173,7 @@ function Home() {
           </div>
         </AnimatedSection>
         <AnimatedSection
-          marginTop="-285px"
+          // marginTop="-285px"
           darker
           customColor={"#ddd"}
           caption="Ready to Get Started?"
