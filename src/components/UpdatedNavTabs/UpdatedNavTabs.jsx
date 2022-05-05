@@ -1,75 +1,73 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import shell from "../../assets/tabbedImages/shell.png";
 import python from "../../assets/tabbedImages/python.png";
 import js from "../../assets/tabbedImages/js.png";
 import ruby from "../../assets/tabbedImages/ruby.png";
-import UpdatedNavTabs from "../UpdatedNavTabs/UpdatedNavTabs";
 
-function Shell() {
-  return <img src={shell} alt="" />;
-}
+function UpdatedNavTabs() {
+  const [tabbedImages] = useState([
+    {
+      id: 0,
+      name: "Shell",
+      src: shell,
+    },
+    { id: 1, name: "Python", src: python },
+    { id: 2, name: "Ruby", src: ruby },
+    { id: 3, name: "Js", src: js },
+  ]);
 
-function Python() {
-  return <img src={python} alt="" />;
-}
+  const [currentImageToShow, setCurrentImageToShow] = useState(0);
 
-function Ruby() {
-  return <img src={ruby} alt="" />;
-}
-
-function JS() {
-  return <img src={js} alt="" />;
-}
-
-function HomeNavedSection() {
-  const [currentSection, setCurrentSection] = useState(<Shell />);
-
-  const filterToShowText = (currentButton) => {
-    switch (currentButton) {
+  const showImageOnFilter = (imageName) => {
+    switch (imageName) {
       case "Python":
-        setCurrentSection(<Python />);
+        setCurrentImageToShow(1);
         break;
       case "Ruby":
-        setCurrentSection(<Ruby />);
+        setCurrentImageToShow(2);
         break;
+
       case "Js":
-        setCurrentSection(<JS />);
+        setCurrentImageToShow(3);
         break;
       default:
-        setCurrentSection(<Shell />);
-        return;
+        setCurrentImageToShow(0);
     }
   };
+
+  useEffect(() => {}, []);
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex justify-start gap-4">
         <p
           className="cursor-pointer text-2xl  hover:underline"
-          onClick={() => filterToShowText("Shell")}
+          onClick={() => showImageOnFilter("Shell")}
         >
-          {"Shell"}
+          Shell
         </p>
         <p
           className="cursor-pointer text-2xl hover:underline"
-          onClick={() => filterToShowText("Python")}
+          onClick={() => showImageOnFilter("Python")}
         >
-          {"Python"}
+          Python
         </p>
         <p
           className="cursor-pointer text-2xl  hover:underline"
-          onClick={() => filterToShowText("Ruby")}
+          onClick={() => showImageOnFilter("Ruby")}
         >
           {"Ruby"}
         </p>
         <p
           className="cursor-pointer text-2xl hover:underline"
-          onClick={() => filterToShowText("Js")}
+          onClick={() => showImageOnFilter("Js")}
         >
           {"Js"}
         </p>
       </div>
-      {currentSection}
+      <div>
+        <img src={tabbedImages[currentImageToShow]["src"]} alt="" />
+      </div>
     </div>
   );
 }
@@ -84,7 +82,7 @@ function HomePageTab() {
       }}
       className="bg-gray-200"
     >
-      <div className="flex py-52 w-8/12 my-32 pt-52 pb-96 ml-56 gap-12">
+      <div className="flex py-52 w-6/12 my-32 pt-52 pb-96 ml-56 gap-12">
         <div className="w-full">
           <h1 className="text-4xl font-bold text-gray-600">
             Build-in minutes, launch in weeks Designed by developers, for
@@ -96,13 +94,12 @@ function HomePageTab() {
             love, from Node to Shell to Python
           </p>
         </div>
-        <div>
+        <div className="w-6/12">
           <UpdatedNavTabs />
-          {/* <HomeNavedSection className="w-12/12" /> */}
         </div>
       </div>
     </div>
   );
 }
 
-export default HomePageTab;
+export default UpdatedNavTabs;

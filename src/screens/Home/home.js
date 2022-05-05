@@ -31,6 +31,7 @@ import { useEffect, useCallback, useMemo } from "react";
 import NewHeader from "../../components/NewHeader/NewHeader";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import HomePageTab from "../../components/HomePageTab/HomePageTab";
+import UpdatedNavTabs from "../../components/UpdatedNavTabs/UpdatedNavTabs";
 // import { useMemo } from "react/cjs/react.production.min";
 
 //* List Component
@@ -92,6 +93,7 @@ function Home() {
           marginTop: "-400px",
         }}
       >
+        {/* <UpdatedNavTabs /> */}
         <HomePageTab />
         {/* <GenericSection /> */}
         {false && (

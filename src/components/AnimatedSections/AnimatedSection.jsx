@@ -15,7 +15,7 @@ function AnimatedSection({
       style={{ backgroundColor: customColor, marginTop: marginTop }}
       className="lastSection"
     >
-      <div className="m-auto py-16 xl:py-36 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="ml-56 py-16 xl:py-36 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-max lg:max-w-5xl mx-auto">
           {/* New Section */}
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
