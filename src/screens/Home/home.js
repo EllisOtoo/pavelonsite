@@ -105,7 +105,7 @@ function Home() {
             caption="Launch and scale faster"
           />
         )}
-        <AnimatedSection customColor={"#11243e"} caption="Why Pavelon?">
+        <AnimatedSection darker customColor={"#f9f9f9"} caption="Why Pavelon?">
           <div>
             <p
               className="mb-4"
@@ -174,8 +174,8 @@ function Home() {
         </AnimatedSection>
         <AnimatedSection
           // marginTop="-285px"
-          darker
-          customColor={"#ddd"}
+          // darker
+          customColor={"#11243e"}
           caption="Ready to Get Started?"
         >
           <div>

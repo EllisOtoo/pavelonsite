@@ -78,18 +78,21 @@ function HomePageTab() {
   return (
     <div
       style={{
+        backgroundColor: "#11243e",
+        color: "white",
         // clipPath: "polygon(0 0, 100% 0, 100% 79%, 0% 100%)",x
         position: "relative",
         top: "400px",
       }}
-      className="bg-gray-200"
     >
       <div className="flex py-32 w-8/12 my-32 ml-56 gap-12">
         <div className="w-full">
-          <h1 className="text-4xl font-bold text-gray-600">
-            Build-in minutes, launch in weeks Designed by developers, for
-            developers
+          <h1 className="text-4xl font-bold text-gray-100">
+            Build-in minutes <br /> launch in weeks
           </h1>
+          <h3 className="text-2xl my-4 font-bold text-gray-100">
+            Designed by developers, for developers
+          </h3>
           <p className="my-8">
             With modern APIs and webhooks, you can build financial features
             using our clear, instructive guides in all the languages you use and
