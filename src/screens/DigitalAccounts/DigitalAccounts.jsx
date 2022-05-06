@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../../components";
+import { Footer, Navbar } from "../../components";
 import HeaderSection from "../../components/HeaderSection/HeaderSection";
 import introLogo from "../../assets/treasury.png";
 import codeSnippet from "../../assets/codeSnippet.png";
@@ -35,6 +35,7 @@ function DigitalAccounts() {
         logoBlack
       />
       <NavedSection />
+      <Footer />
     </div>
   );
 }

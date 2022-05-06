@@ -107,7 +107,7 @@ function FooterSection() {
             <div class="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Solutions
+                  Products
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li>
@@ -115,8 +115,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Marketing{" "}
+                      Commerce API
                     </a>
                   </li>
 
@@ -125,8 +124,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Analytics{" "}
+                      Digital Lending API
                     </a>
                   </li>
 
@@ -135,8 +133,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Commerce{" "}
+                      Capital by API
                     </a>
                   </li>
 
@@ -145,8 +142,31 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Insights{" "}
+                      KYC/Onboarding API
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Loans Collections API{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Financial Data API{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Digital Accounts API{" "}
                     </a>
                   </li>
                 </ul>
@@ -191,8 +211,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      API Status{" "}
+                      API Status
                     </a>
                   </li>
                 </ul>
@@ -210,7 +229,7 @@ function FooterSection() {
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       {" "}
-                      About{" "}
+                      Our Story{" "}
                     </a>
                   </li>
 
@@ -220,7 +239,7 @@ function FooterSection() {
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       {" "}
-                      Blog{" "}
+                      About Us{" "}
                     </a>
                   </li>
 
@@ -230,7 +249,7 @@ function FooterSection() {
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       {" "}
-                      Jobs{" "}
+                      Our Team{" "}
                     </a>
                   </li>
 
@@ -250,7 +269,16 @@ function FooterSection() {
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       {" "}
-                      Partners{" "}
+                      Our Partners{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      {" "}
+                      Join Us{" "}
                     </a>
                   </li>
                 </ul>

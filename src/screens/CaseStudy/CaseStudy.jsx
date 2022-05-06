@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import creditmall from "../../assets/cml_logo.png";
+import { Footer } from "../../components";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import CaseStudySection from "./CaseStudySection.jsx/CaseStudySection";
 
@@ -93,6 +94,7 @@ function CaseStudy() {
           investors.
         </p>
       </CaseStudySection>
+      <Footer />
     </>
   );
 }
