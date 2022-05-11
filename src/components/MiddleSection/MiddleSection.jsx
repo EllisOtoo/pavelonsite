@@ -25,13 +25,13 @@ function MiddleSection() {
 
   // console.log(matches);
   return (
-    <div ref={refContainer} className="max-w-5xl ml-56  ">
+    <div ref={refContainer} className="max-w-5xl ml-8 md:ml-12 lg:ml-56 ">
       {/* BLOCKS STARTS HERE */}
-      <h3 className="tracking-tight  font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
+      <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.
       </h3>
-      <div className="flex gap-24 my-6">
-        <p className="text-md text-gray-500">
+      <div className="flex gap-8 md:gap-24 my-6">
+        <div className="text-md text-gray-500">
           We bring together everything that’s required to build lending into any
           product - from End User Application using our{" "}
           <Link style={{ color: "blue" }} class="" to={"#"}>
@@ -53,12 +53,12 @@ function MiddleSection() {
           >
             Learn About
           </button>
-        </p>
-        <p className="text-gray-500">
+        </div>
+        <div className="text-gray-500">
           Pavelon’s products also power “Buy Now, Pay Later” Services using our
           Commerce API. We also help companies onboard their users, process
           loans, collect loans, access financial data, and much more.
-        </p>
+        </div>
       </div>
       {!matches ? (
         <div className="mobile-only-loan-section">

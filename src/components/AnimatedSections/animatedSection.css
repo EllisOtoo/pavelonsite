@@ -4,16 +4,16 @@
   /* margin-top: -30vh; */
   height: 100vh;
   position: relative;
-  top: 200px;
-  display: flex;
+  /* top: 200px; */
+  /* display: flex; */
   /* padding-top: 13vh; */
-  justify-items: center;
-  z-index: 2;
+  /* justify-items: center; */
+  /* z-index: 2; */
 }
 
 @media only screen and (max-width: 600px) {
   .lastSection {
     padding: 15rem 0;
-    clip-path: polygon(0 29%, 100% 20%, 100% 99%, 0% 100%);
+    /* clip-path: polygon(0 29%, 100% 20%, 100% 99%, 0% 100%); */
   }
 }

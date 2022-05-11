@@ -80,12 +80,11 @@ function HomePageTab() {
       style={{
         backgroundColor: "#11243e",
         color: "white",
-        // clipPath: "polygon(0 0, 100% 0, 100% 79%, 0% 100%)",x
-        position: "relative",
-        top: "400px",
+        // position: "relative",
+        // top: "0px",
       }}
     >
-      <div className="flex py-32 w-8/12 my-32 ml-56 gap-12">
+      <div className="flex flex-col md:flex-row py-32 w-8/12 my-32 ml-12 md:ml-56 gap-12">
         <div className="w-full">
           <h1 className="text-4xl font-bold text-gray-100">
             Build-in minutes <br /> launch in weeks

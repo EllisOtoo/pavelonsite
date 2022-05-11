@@ -4,7 +4,7 @@ import axios from "axios";
 import "./animatedSection.css";
 
 function AnimatedSection({
-  customColor = "#11243e",
+  customColor = "#fff",
   caption,
   children = false,
   marginTop = "0",
@@ -15,8 +15,8 @@ function AnimatedSection({
       style={{ backgroundColor: customColor, marginTop: marginTop }}
       className="lastSection"
     >
-      <div className="ml-56 py-16 xl:py-36 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="max-w-max lg:max-w-5xl mx-auto">
+      <div className="ml-12 md:px-12 md:ml-56 md:w-8/12  xl:py-36 overflow-hidden">
+        <div className="">
           {/* New Section */}
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="text-base max-w-prose lg:max-w-none">
@@ -43,6 +43,7 @@ function AnimatedSection({
                 {children}
               </div>
             </div>
+            -
           </div>
           {/* New Section */}
           {/* <div

@@ -88,11 +88,7 @@ function Home() {
 
       <MiddleSection />
 
-      <div
-        style={{
-          marginTop: "-400px",
-        }}
-      >
+      <div>
         {/* <UpdatedNavTabs /> */}
         <HomePageTab />
         {/* <GenericSection /> */}
@@ -105,7 +101,7 @@ function Home() {
             caption="Launch and scale faster"
           />
         )}
-        <AnimatedSection darker customColor={"#f9f9f9"} caption="Why Pavelon?">
+        <AnimatedSection darker customColor={"#fff"} caption="Why Pavelon?">
           <div>
             <p
               className="mb-4"
