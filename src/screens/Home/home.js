@@ -77,9 +77,9 @@ function Home() {
         headerImages={[landingImage]}
         BelowCaptionText={
           <p className="text-lg">
-            Millions of companies of all sizes—from startups to Fortune 500s—use
-            software and APIs to accept payments, send payouts, and manage their
-            businesses online.
+            Technology and infrastructure to launch and scale your fintech in
+            Africa. Use Pavelon’s APIs to embed a full range of credit services
+            on your platform to increase revenue streams.
           </p>
         }
       />
