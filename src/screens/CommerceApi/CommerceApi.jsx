@@ -80,7 +80,7 @@ function KYC() {
 
   return (
     <div className="commerceContainer">
-      <img width={"100%"} src={Image} alt="" />
+      <p>In Development</p>
     </div>
   );
 }
