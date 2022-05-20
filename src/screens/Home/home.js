@@ -160,7 +160,7 @@ function Home() {
                 fontSize: "1.3rem",
               }}
             >
-              Unparalleled Customization{" "}
+              Unparalleled Customization
             </p>
             Pavelon’s multi-bank approach creates options so you can find the
             right banking partner to maximize your profitability and optionality
