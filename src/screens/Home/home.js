@@ -84,7 +84,7 @@ function Home() {
         }
       />
 
-      <Logos LogosData={[creditmall, credify, stanbic, gcb, yango, vodafone]} />
+      <Logos LogosData={[creditmall, credify, stanbic, gcb]} />
       <MiddleSection />
 
       <div>
