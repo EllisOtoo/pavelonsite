@@ -148,13 +148,6 @@ function HeaderSection({
                 ? "flex flex-row-reverse "
                 : "flex gap-12 my-8 justify-between"
             }`}
-            style={
-              {
-                // height: "70vh",
-                // justifyContent: "space-between",
-                // padding: "25px",
-              }
-            }
           >
             <div className={`${isLarger ? "w-5/12 " : "w-full"} flex flex-col`}>
               {introLogo && (

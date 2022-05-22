@@ -371,9 +371,9 @@ export default function ResponsiveNav({ makeMenuDark = false }) {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
                       <item.icon
@@ -383,26 +383,26 @@ export default function ResponsiveNav({ makeMenuDark = false }) {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <aL
-                  href="#"
+                <Link
+                  to="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Pricing
-                </aL>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Docs
-                </a>
+                  Doc
+                </Link>
                 {/*   {resources.map((item) => (
                   <a
                     key={item.name}
