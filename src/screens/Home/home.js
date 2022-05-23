@@ -72,11 +72,10 @@ function Home() {
         Caption="Lending Infrastructure for Africa."
         headerGradientClass={"gradient__bg__blue"}
         SubCaption="Tap into our lenders’ pool and bring finance to your users"
-        LeadIn="Join our Pool of lenders and access a merchant base that will drive retail finance revenues, without the need for complex program management.
-        "
+        LeadIn="Join our Pool of lenders and access a merchant base that will drive retail finance revenues, without the need for complex program management."
         headerImages={[landingImage]}
         BelowCaptionText={
-          <p className="text-lg">
+          <p className="mt-8 text-lg">
             Technology and infrastructure to launch and scale your fintech in
             Africa. Use Pavelon’s APIs to embed a full range of credit services
             on your platform to increase revenue streams.
