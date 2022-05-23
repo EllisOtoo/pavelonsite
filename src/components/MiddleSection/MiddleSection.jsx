@@ -3,6 +3,7 @@ import "./middleSection.css";
 import LoanAppImage from "../../assets/lending _Image.png";
 import gifAni from "../../assets/gif_ani.gif";
 import dashboard from "../../assets/dashboard.png";
+import visafirst from "../../assets/visa.jpg";
 import visa from "../../assets/visa.jpg";
 import { Link } from "react-router-dom";
 
@@ -74,7 +75,9 @@ function MiddleSection() {
       ) : (
         <div className="superGrid">
           <div className="subPartition_1">
-            <div className="subPartition_1_Item"></div>
+            <div className="subPartition_1_Item">
+              <img src={visafirst} alt="" />
+            </div>
             <div className="subPartition_1_Item">
               <img src={gifAni} alt="" />
             </div>
