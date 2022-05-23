@@ -1,5 +1,5 @@
 import React from "react";
-import "./logossection.css";
+// import "./logossection.css";
 import stanbic from "../../assets/stanbic.png";
 import { useEffect, useState } from "react";
 
@@ -51,7 +51,7 @@ function LogosSection({
             //   : "1fr 1fr 1fr",
           }
         }
-        class={`mt-12 w-10/12 px-12 mx-auto grid grid-cols-4 sm:grid-cols-3 gap-12 md:grid-cols-5`}
+        class={`mt-24 w-10/12 px-12 mx-auto grid grid-cols-4 sm:grid-cols-3 gap-12 md:grid-cols-5`}
       >
         {LogosData.map((item, index) => {
           console.log("idx", index);
