@@ -7,6 +7,7 @@ import visafirst from "../../assets/visa.jpg";
 import checkout from "../../assets/checkout.png";
 import pav_dashboard from "../../assets/pav_dashboard.jpeg";
 import middleImage from "../../assets/middleImage.png";
+import middleImage2 from "../../assets/middleImage_2.png";
 import visa from "../../assets/visa.jpg";
 import { Link } from "react-router-dom";
 
@@ -77,7 +78,7 @@ function MiddleSection() {
         </div>
       ) : (
         <>
-          <img src={middleImage} alt="" />
+          <img src={middleImage2} alt="" />
         </>
       )}
     </div>
