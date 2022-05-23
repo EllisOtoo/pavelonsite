@@ -152,7 +152,7 @@ function HeaderSection({
             }`}
           >
             <div
-              className={`py-24 ${
+              className={`py-24 px-12 lg:px-0 ${
                 isLarger ? "w-5/12 " : "w-full"
               } flex flex-col`}
             >

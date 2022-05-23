@@ -30,7 +30,7 @@ function MiddleSection() {
 
   // console.log(matches);
   return (
-    <div ref={refContainer} className="max-w-7xl lg:ml-56">
+    <div ref={refContainer} className="max-w-7xl lg:ml-56 px-12 md:px-0">
       {/* BLOCKS STARTS HERE */}
       <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.
@@ -66,14 +66,9 @@ function MiddleSection() {
         </div>
       </div>
       {!matches ? (
-        <div className="mobile-only-loan-section">
-          <div className="mobile-only-loan-img">
-            <img
-              style={{ display: "none" }}
-              width={200}
-              src={LoanAppImage}
-              alt=""
-            />
+        <div className="">
+          <div className="">
+            <img src={middleImage2} alt="" />
           </div>
         </div>
       ) : (
