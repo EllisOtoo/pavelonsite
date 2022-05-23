@@ -171,7 +171,7 @@ function HeaderSection({
                 }
                 className={`py-6 mt-1 ${
                   smallerHeader ? "font-bold" : "font-extrabold"
-                }  text-gray-900   text-6xl md:text-8xl  sm:tracking-tight lg:text-6xl`}
+                }  text-gray-900   text-5xl md:text-8xl  sm:tracking-tight lg:text-6xl`}
               >
                 {Caption}
               </p>
