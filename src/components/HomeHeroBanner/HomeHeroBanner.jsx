@@ -11,6 +11,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+/* max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8 */
+
 function HeaderSection({
   children,
   noHeader = false,
@@ -141,7 +143,7 @@ function HeaderSection({
       {noGradient ? "" : <div className="gradientBackground"></div>}
 
       <div className={`relative  headerContainer`}>
-        <div className="max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="md:ml-56">
           <div
             className={`${
               reverse

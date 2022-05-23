@@ -46,7 +46,7 @@ function LogosSection({
       <div
         style={{
           gridTemplateColumns: matches
-            ? `${_3cols ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr"}`
+            ? `${_3cols ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr 1fr"}`
             : "1fr 1fr 1fr",
           width: "73vw",
           margin: "0 auto",
