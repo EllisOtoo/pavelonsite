@@ -151,7 +151,11 @@ function HeaderSection({
                 : "flex gap-12 my-8 justify-between"
             }`}
           >
-            <div className={`${isLarger ? "w-5/12 " : "w-full"} flex flex-col`}>
+            <div
+              className={`py-24 ${
+                isLarger ? "w-5/12 " : "w-full"
+              } flex flex-col`}
+            >
               {introLogo && (
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}

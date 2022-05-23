@@ -44,18 +44,37 @@ function LogosSection({
         {title}
       </p>
       <div
-        style={{
-          gridTemplateColumns: matches
-            ? `${_3cols ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr 1fr"}`
-            : "1fr 1fr 1fr",
-          width: "73vw",
-          margin: "0 auto",
-        }}
-        class={`mt-6 grid grid-cols-4 gap-12 md:grid-cols-3 lg:mt-8`}
+        style={
+          {
+            // gridTemplateColumns: matches
+            //   ? `${_3cols ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr 1fr"}`
+            //   : "1fr 1fr 1fr",
+          }
+        }
+        class={`mt-12 w-10/12 px-12 mx-auto grid grid-cols-4 sm:grid-cols-3 gap-12 md:grid-cols-5 lg:mt-8`}
       >
-        {LogosData.map((item, index) => (
-          <img key={index} className="w-8/12" src={item} alt="In Good Hands" />
-        ))}
+        {LogosData.map((item, index) => {
+          console.log("idx", index);
+          if (index === 4) {
+            return (
+              <img
+                key={index}
+                className=" w-8/12"
+                src={item}
+                alt="In Good Hands"
+              />
+            );
+          }
+
+          return (
+            <img
+              key={index}
+              className="w-12/12"
+              src={item}
+              alt="In Good Hands"
+            />
+          );
+        })}
       </div>
     </div>
   );
