@@ -68,7 +68,7 @@ function LogosSection({
           return (
             <img
               key={index}
-              className="w-12/12"
+              className="w-10/12"
               src={item}
               alt="In Good Hands"
             />
