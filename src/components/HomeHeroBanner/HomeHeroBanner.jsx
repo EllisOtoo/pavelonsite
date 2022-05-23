@@ -148,7 +148,7 @@ function HeaderSection({
             className={`${
               reverse
                 ? "flex flex-row-reverse "
-                : "flex gap-12 my-8 justify-between"
+                : "flex gap-10 my-8 justify-between"
             }`}
           >
             <div
@@ -216,7 +216,6 @@ function HeaderSection({
                       }
                       return (
                         <img
-                          // width={"1000px"}
                           key={idx}
                           src={eachImgSrc}
                           className={`${
@@ -224,7 +223,7 @@ function HeaderSection({
                               ? controlSectionImage
                                 ? "w-6/12"
                                 : "w-full"
-                              : ""
+                              : "w-full h-5/6"
                           }  animate__animated ${
                             animateClasses
                               ? animateClasses

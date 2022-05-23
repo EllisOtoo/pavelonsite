@@ -51,7 +51,7 @@ function LogosSection({
             //   : "1fr 1fr 1fr",
           }
         }
-        class={`mt-12 w-10/12 px-12 mx-auto grid grid-cols-4 sm:grid-cols-3 gap-12 md:grid-cols-5 lg:mt-8`}
+        class={`mt-2 w-10/12 px-12 mx-auto grid grid-cols-4 sm:grid-cols-3 gap-12 md:grid-cols-5`}
       >
         {LogosData.map((item, index) => {
           console.log("idx", index);
