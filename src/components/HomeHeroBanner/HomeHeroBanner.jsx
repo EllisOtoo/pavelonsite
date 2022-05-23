@@ -143,7 +143,7 @@ function HeaderSection({
       {noGradient ? "" : <div className="gradientBackground"></div>}
 
       <div className={`relative  headerContainer`}>
-        <div className="md:ml-12 mt-24 lg:ml-56">
+        <div className="md:ml-12 mt-24 lg:ml-12 2xl:ml-56">
           <div
             className={`${
               reverse
