@@ -160,16 +160,18 @@ function HeaderSection({
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}
               <p
-                style={{
-                  fontSize: !isLarger
-                    ? "2rem"
-                    : smallerHeader
-                    ? "3rem"
-                    : "5rem",
-                }}
+                style={
+                  {
+                    // fontSize: !isLarger
+                    //   ? "2rem"
+                    //   : smallerHeader
+                    //   ? "3rem"
+                    //   : "5rem",
+                  }
+                }
                 className={`py-6 mt-1 ${
                   smallerHeader ? "font-bold" : "font-extrabold"
-                } text-7xl  text-gray-900   sm:text-5xl sm:tracking-tight lg:text-6xl`}
+                }  text-gray-900   text-6xl md:text-8xl  sm:tracking-tight lg:text-6xl`}
               >
                 {Caption}
               </p>
