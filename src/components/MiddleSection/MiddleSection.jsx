@@ -4,6 +4,9 @@ import LoanAppImage from "../../assets/lending _Image.png";
 import gifAni from "../../assets/gif_ani.gif";
 import dashboard from "../../assets/dashboard.png";
 import visafirst from "../../assets/visa.jpg";
+import checkout from "../../assets/checkout.png";
+import pav_dashboard from "../../assets/pav_dashboard.jpeg";
+import middleImage from "../../assets/middleImage.png";
 import visa from "../../assets/visa.jpg";
 import { Link } from "react-router-dom";
 
@@ -26,7 +29,7 @@ function MiddleSection() {
 
   // console.log(matches);
   return (
-    <div ref={refContainer} className="max-w-5xl ml-8 md:ml-12 lg:ml-56 ">
+    <div ref={refContainer} className="max-w-7xl lg:ml-56">
       {/* BLOCKS STARTS HERE */}
       <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.
@@ -73,28 +76,9 @@ function MiddleSection() {
           </div>
         </div>
       ) : (
-        <div className="superGrid">
-          <div className="subPartition_1">
-            <div className="subPartition_1_Item">
-              <img src={visafirst} alt="" />
-            </div>
-            <div className="subPartition_1_Item">
-              <img src={gifAni} alt="" />
-            </div>
-          </div>
-          <div className="subPartition_2">
-            <div className="subPartition-item">
-              <img width={420} src={dashboard} alt="" />
-            </div>
-            <div className="subPartition-item subPartition-item-2">
-              <img className="LoanAppImage" src={LoanAppImage} alt="" />
-            </div>
-            <div className="subPartition-item"></div>
-            <div className="subPartition-item subPartition-item-4">
-              <img className="visa" src={visa} alt="" />
-            </div>
-          </div>
-        </div>
+        <>
+          <img src={middleImage} alt="" />
+        </>
       )}
     </div>
   );

@@ -38,12 +38,28 @@
   height: 60vh;
   display: flex;
 }
+
+/* .pav-dashboard {
+  grid-area: third;
+  width: 700px !important; */
+
 .subPartition_2 {
   flex: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 50px;
-  column-gap: 10vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "first first"
+    "second second"
+    "fourth fourth";
+  column-gap: 3vw;
+}
+
+.partition-1 {
+  grid: first !important;
+}
+.partition-2 {
+  grid: second !important;
 }
 
 .subPartition_item {
