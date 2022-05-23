@@ -65,7 +65,6 @@ function LogosSection({
               />
             );
           }
-
           return (
             <img
               key={index}
