@@ -31,7 +31,7 @@ const solutions = [
   {
     name: "Digital Lending API",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "/digitalAccounts",
+    href: "/digitalLending",
     icon: CursorClickIcon,
   },
   {

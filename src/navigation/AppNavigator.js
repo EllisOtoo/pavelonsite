@@ -11,6 +11,7 @@ import CardPlatform from "../screens/CardPlatform/CardPlatform";
 import CapitalByApi from "../screens/CapitalByApi/CapitalByApi";
 import CapitalByApi_Lenders from "../screens/CapitalByApi_Lenders/CapitalByApi_Lenders";
 import CaseStudy from "../screens/CaseStudy/CaseStudy";
+import DigitalLending from "../screens/DigitalLending/DigitalLending";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -29,6 +30,11 @@ function RootNavigator() {
           <Route
             component={DigitalAccounts}
             path={"/digitalAccounts"}
+            exact={true}
+          />
+          <Route
+            component={DigitalLending}
+            path={"/digitalLending"}
             exact={true}
           />
           <Route component={Kyc} path={"/kyc"} exact={true} />
