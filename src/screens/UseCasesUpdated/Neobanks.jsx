@@ -52,8 +52,8 @@ For Automated Digital Lending.
           <div className="flex">
             <h2 className="w-4/12">The Solution</h2>
             <p className="w-8/12">
-              Use Treasury Prime APIs to embed a full range of banking services
-              from account opening to payments to cards. Our usage-based pricing
+              Use Pavelon APIs to embed a full range of banking services from
+              account opening to payments to cards. Our usage-based pricing
               ensures our incentives are aligned with yours.
             </p>
           </div>
@@ -65,7 +65,7 @@ For Automated Digital Lending.
           <h3 className="my-4">Products</h3>
           <h2 className="text-5xl my-2">Everything you need to get started</h2>
           <p className="text-3xl my-2">
-            Using Treasury Prime is 5x faster and cheaper than doing your own
+            Using Pavelon is 5x faster and cheaper than doing your own
             integration
           </p>
           <Link class="underline" to="">
