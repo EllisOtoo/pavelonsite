@@ -12,6 +12,7 @@ import CapitalByApi from "../screens/CapitalByApi/CapitalByApi";
 import CapitalByApi_Lenders from "../screens/CapitalByApi_Lenders/CapitalByApi_Lenders";
 import CaseStudy from "../screens/CaseStudy/CaseStudy";
 import DigitalLending from "../screens/DigitalLending/DigitalLending";
+import Neobanks from "../screens/UseCasesUpdated/Neobanks";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -32,6 +33,7 @@ function RootNavigator() {
             path={"/digitalAccounts"}
             exact={true}
           />
+          <Route component={Neobanks} path={"/neobanks"} exact={true} />
           <Route
             component={DigitalLending}
             path={"/digitalLending"}

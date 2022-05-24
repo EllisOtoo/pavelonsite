@@ -50,11 +50,18 @@ function Features({ features }) {
 }
 
 const BreakingHeader = ({ breakingCaption, children }) => {
-  console.log("--------------");
   return (
     <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
       <div className="mb-24">
-        <h2 className="text-5xl mb-8 font-bold"> {breakingCaption}</h2>
+        {/Pavelon/.test(breakingCaption) ? ( // * Ignore caption and use hardcoded string
+          <h2 className="text-5xl mb-8 font-bold">
+            The Future Of Lending Is Digital <br />
+            Pavelon Helps You Get There{" "}
+          </h2>
+        ) : (
+          <h2 className="text-5xl mb-8 font-bold"> {breakingCaption}</h2>
+        )}
+
         <hr />
         <div className="text-xl pt-8">{children}</div>
       </div>
@@ -235,6 +242,7 @@ For Automated Digital Lending.
 
       <Section
         {...sectionOptions}
+        /* {...sectionOptions} */
         animateClasses="animate__fadeIn animate__slow"
         // showSingleButton
         noButton={false}
@@ -261,9 +269,8 @@ For Automated Digital Lending.
       />
 
       <BreakingHeader
-        breakingCaption={
-          "The Future Of Lending Is Digital Pavelon Helps You Get There"
-        }
+        breakingCaption={`The Future Of Lending Is Digital 
+          Pavelon Helps You Get There`}
       >
         <p>
           We’re changing how lenders launch digital products. In contrast to

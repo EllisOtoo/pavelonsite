@@ -85,7 +85,6 @@ function Home() {
 
       <Logos LogosData={[creditmall, credify, stanbic, gcb, yango]} />
       <MiddleSection />
-
       <div>
         {/* <UpdatedNavTabs /> */}
         <HomePageTab />

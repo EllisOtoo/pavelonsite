@@ -220,7 +220,7 @@ function HeaderSection({
                         <img
                           key={idx}
                           src={eachImgSrc}
-                          className={`${
+                          className={`h-2/6 ${
                             oneImageHeader
                               ? controlSectionImage
                                 ? "w-6/12"
@@ -233,6 +233,7 @@ function HeaderSection({
                           } `}
                           style={{
                             marginTop: "3rem",
+                            width: "70vw",
                           }}
                           alt="Product Card "
                         />
