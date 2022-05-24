@@ -43,6 +43,7 @@ function HeaderSection({
   showImage = true,
   noGradient = false,
   headerImages = [loansImage, loans_dashboard],
+  noButton = true,
 }) {
   const [showMenu, setMenu] = useState(false);
   const [isLarger, setisLarger] = useState(
@@ -59,7 +60,7 @@ function HeaderSection({
   }, [isLarger]);
 
   return (
-    <div className={`headerSectionOnly relative ${noHeader ? "my-24" : ""}`}>
+    <div className={`headerSectionOnly relative ${noHeader ? "my-2" : ""}`}>
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
           {noHeader ? "" : <ResponsiveNav makeMenuDark={makeMenuDark} />}
@@ -176,21 +177,23 @@ function HeaderSection({
                 {Caption}
               </p>
               {children ? children : BelowCaptionText}
-              <div style={{ flex: 1 }} className="py-6">
-                <button className="p-2 px-4 mt-4 rounded-full bg-black text-white">
-                  {buttonText}
-                </button>
-                {(buttonText === "Read the Docs") | showSingleButton ? (
-                  ""
-                ) : (
-                  <button
-                    style={{ marginLeft: "5px" }}
-                    className="py-2 px-4 mt-4 rounded-full bg-black text-white"
-                  >
-                    Contact Sales
+              {noButton && (
+                <div style={{ flex: 1 }} className="py-6">
+                  <button className="p-2 px-4 mt-4 rounded-full bg-black text-white">
+                    {buttonText}
                   </button>
-                )}
-              </div>
+                  {(buttonText === "Read the Docs") | showSingleButton ? (
+                    ""
+                  ) : (
+                    <button
+                      style={{ marginLeft: "5px" }}
+                      className="py-2 px-4 mt-4 rounded-full bg-black text-white"
+                    >
+                      Contact Sales
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
             {isLarger && showImage ? (
               <div

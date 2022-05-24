@@ -10,6 +10,7 @@ import tffinancialservices from "../../assets/tf.jpg";
 import teachersfund from "../../assets/tf_logo.png";
 import { FeatureSection, Footer, Logos } from "../../components";
 import customers from "../../assets/customers.webp";
+import { chipClasses } from "@mui/material";
 // import LogosSection from "../../components/LogosSection/ LogosSection";
 
 function Features({ features }) {
@@ -48,161 +49,25 @@ function Features({ features }) {
   );
 }
 
-const BreakingHeader = () => {
+const BreakingHeader = ({ breakingCaption, children }) => {
   console.log("--------------");
   return (
     <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
       <div className="mb-24">
-        <h2 className="text-5xl mb-8 font-bold">Lending, simplified</h2>
+        <h2 className="text-5xl mb-8 font-bold"> {breakingCaption}</h2>
         <hr />
-        <div className="text-xl pt-8">
-          Acquire borrowers via their favorite apps—Whatsapp, Telegram and more.
-          Enable partial or complete loan application journeys. Pavelon builds
-          on top of your existing APIs to support any loan construct—Personal
-          Loans, Buy Now, Pay Later Unsecured or Secured against Payroll, or
-          Tier 3 Pensions Contributions.
-        </div>
-      </div>
-
-      <div className="mb-24">
-        <div className="mb-8 text-5xl font-bold">Use Cases</div>
-        <div className="mb-8 text-4xl font-bold">
-          Fully Digitized Controller Loans.
-        </div>
-        <hr />
-        <div className=" text-xl pt-8">
-          Offer end-to-end, from loan application to disbursement, fully digital
-          loans for over 1.5M Government Workers on the Controller and
-          Accountant General Platform. Features
-        </div>
-
-        <ul className="text-base flex text-xl  mt-8 flex-col gap-2 pl-8">
-          <li> Lend on your Own Controller Code, or Use our Controller Code</li>
-          <li>
-            Enhanced KYC to prevent Fraud - ID Verification, Address
-            Verification, etc.
-          </li>
-          <li>
-            {" "}
-            Lend to more than 1.5 M Workers on the CAGD Platform Support for Buy
-          </li>
-          <li>
-            Now, Pay Later, and Personal Loans Automatic Connection to Credit
-            Bureau for Credit Reports on Applicants
-          </li>
-        </ul>
-      </div>
-      {/* ********* */}
-      <div className="mb-24">
-        <div className="mb-8 text-4xl font-bold">
-          Fully Digitized Tier-3 Pensions Backed Loans.
-        </div>
-        <hr />
-        <div className="text-base pt-8">
-          Pavelon enables Lenders to offer loans to Tier 3 Pensions contributors
-          fully secured by the contributions of the borrower. Pavelon works with
-          NPRA-licensed service providers. Features
-        </div>
-
-        <ul className="text-base flex mt-8   flex-col gap-2 pl-8">
-          <li> Lend up to 85% of the Borrower's total contributions</li>
-          <li>
-            Enhanced KYC to prevent Fraud - ID Verification, Address
-            Verification, etc.
-          </li>
-          <li>
-            Lend to more than 1.5 million Tier-3 Contributors Support for Buy
-            Now
-          </li>
-          <li>Support for Buy Now, Pay Later, and Personal Loans</li>
-          <li>
-            Automatic Connection to Credit Bureau for Credit Reports on Loan
-            Applicants
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <div className="mb-8 text-4xl font-bold">
-          Digital Scheme Loans Loans enabled on multiple platforms
-        </div>
-        <hr />
-        <div className="text-base pt-8">
-          Pavelon does the hard work of integrating with your existing lending
-          APIs and building easy-to-use loan application flows. You can simply
-          redirect borrowers to ready-made loan journeys.
-        </div>
-        <Features
-          features={[
-            {
-              name: "Convert more customers",
-              description:
-                "Pavelon does seamless integrations, with real-time actions and notifications to improve conversions for your borrowers.",
-              list: [
-                "One-stop-shop for acquisition, underwriting, origination, and onboarding",
-                " Specialized lender marketplace across multiple industries",
-                "Expert funding advisors",
-                "Flexible platform to enhance, build, embed financial products",
-              ],
-              // img: placeholderFeatureImage,
-            },
-            {
-              name: "Evolve your lending platform              ",
-              description:
-                "Offer loans via custom-branded web URLs, Whatsapp chatbots, or any of Pavelon’s channel partners.",
-              list: [
-                "One-stop-shop for acquisition, underwriting, origination, and onboarding",
-                " Specialized lender marketplace across multiple industries",
-                "Expert funding advisors",
-                "Flexible platform to enhance, build, embed financial products",
-              ],
-            },
-          ]}
-        />
-        {/* ------ */}
-      </div>
-
-      {/* ----- */}
-      <div>
-        <div className="mb-8 text-4xl font-bold">
-          Verified leads from digital channels
-        </div>
-        <hr />
-        <div className="text-xl pt-8">
-          Utilise Pavelon’s pre-qualification engine and network of loan
-          providers to source leads from various digital channels. Or run your
-          own digital loan campaigns for preferred, trusted customers who are
-          already banking with you. ys.
-        </div>
-        <Features
-          features={[
-            {
-              name: "Benefit from lower Customer Acquisition Costs",
-              description:
-                "Pavelon’s digital channel partners offer a lower acquisition cost and high traffic, with millions of Indians already using their products.",
-            },
-            {
-              name: "Evolve your lending platform              ",
-              description:
-                "Our pre-qualification engine ingests customer data, applies your underwriting rules and sends the prepared lead directly to your LOS.",
-            },
-          ]}
-        />
-        {/* ------ */}
-        <div>
-          <div className="mb-8 text-4xl font-bold">
-            Verified leads from digital channels
-          </div>
-          <hr />
-          <div className="text-3xl pt-8">
-            Tap into the first and only consumer credit marketplace. Get instant
-            access to thousands of customers shopping in real-time, leveraging
-            our infrastructure.
-          </div>
-        </div>
+        <div className="text-xl pt-8">{children}</div>
       </div>
     </div>
   );
+};
+
+const sectionOptions = {
+  reverse: true,
+  noHeader: true,
+  smallerHeader: true,
+  makeMenuDark: true,
+  isDarkHeaderText: true,
 };
 
 function DigitalLending() {
@@ -215,11 +80,11 @@ function DigitalLending() {
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
         buttonText="Join the waitlist"
-        // introLogo={introLogo}
         Caption={`The Next-Gen Platform
 For Automated Digital Lending.
 
         `}
+        noButton={false}
         showImage={true}
         noGradient
         oneImageHeader={true}
@@ -231,7 +96,7 @@ For Automated Digital Lending.
             leads and offer complete or partial loan application journeys.
           </>
         }
-        headerImages={[customers]}
+        headerImages={[]}
         logoBlack
       />
       <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
@@ -243,6 +108,54 @@ For Automated Digital Lending.
         </div>
       </div>
       <LogosSection LogosData={[jireh, credify, aymicrocredit, vroom]} />
+      <Section
+        reverse
+        noHeader
+        smallerHeader
+        makeMenuDark
+        noButton={false}
+        isDarkHeaderText
+        animateClasses="animate__fadeIn animate__slow"
+        showSingleButton
+        buttonText="Join the waitlist"
+        // introLogo={introLogo}
+        Caption={`Originate Loans Your
+        Way With The Most
+        Flexible LOS Ever Built
+        
+        `}
+        showImage={true}
+        noGradient
+        oneImageHeader={true}
+        BelowCaptionText={
+          <>
+            Streamline loan origination with modern user interfaces, an open API
+            and built-in underwriting, process automation, document management
+            and CRM features. You’re in control, with the ability to set up your
+            exact data structure, lending products and origination workflow.
+          </>
+        }
+        headerImages={[]}
+        logoBlack
+      />
+      <BreakingHeader breakingCaption={"Better Loan Origination"}>
+        <p>
+          Every lender is unique and needs a loan origination system that meets
+          their origination process - not the other way around. In contrast to
+          cookie-cutter legacy systems, Pavelon’s LOS was built to support the
+          unique needs of innovative lenders, with modular capabilities and a
+          modern design that streamlines work and increases productivity.
+        </p>
+        <br />
+        <p>
+          Pavelon includes everything that’s required to operate a best-in-class
+          lending business, from digital and automation features to credit and
+          regulatory tools. Our platform’s unparalleled flexibility lets you
+          customize the data structure, application views, underwriting
+          processes and borrower communications to optimize your origination
+          workflow.
+        </p>
+      </BreakingHeader>
       <>
         {/*  */}
         {/* <BreakingHeader /> */}
@@ -270,6 +183,104 @@ For Automated Digital Lending.
 
         {/* <FeatureSection /> */}
       </>
+
+      <Section
+        noHeader
+        smallerHeader
+        makeMenuDark
+        isDarkHeaderText
+        animateClasses="animate__fadeIn animate__slow"
+        showSingleButton
+        noButton={false}
+        buttonText="Join the waitlist"
+        // introLogo={introLogo}
+        Caption={`Automate, Control And
+        Optimize Complex
+        Lending Decisions
+        `}
+        showImage={true}
+        noGradient
+        oneImageHeader={true}
+        BelowCaptionText={
+          <>
+            Digitize your underwriting, verification and other lending decisions
+            to improve credit performance, ensure compliance and increase
+            efficiency. Pavelon’s Decision Engine makes it easy to integrate
+            data sources and build decision workflows – without writing any
+            code.
+          </>
+        }
+        headerImages={[]}
+        logoBlack
+      />
+      <BreakingHeader
+        breakingCaption={
+          "Completely Automated Decisioning For Underwriting, Verification And More"
+        }
+      >
+        <p>
+          Delivering a streamlined lending experience to your borrowers requires
+          digitizing complex underwriting and verification decisions – going
+          from manual to automated and from in-person to online. Pavelon’s
+          Decision Engine was built to simplify and accelerate this effort.
+        </p>
+        <br />
+        <p>
+          Unlike legacy systems that are rigid due to hard-coded logic, our
+          Decision Engine enables decision automation with a powerful no-code
+          user interface for implementing complex decision logic and a flexible
+          open-API architecture for near-instant decision processing.
+        </p>
+      </BreakingHeader>
+
+      <Section
+        {...sectionOptions}
+        animateClasses="animate__fadeIn animate__slow"
+        // showSingleButton
+        noButton={false}
+        buttonText="Join the waitlist"
+        // introLogo={introLogo}
+        Caption={`Launch A Best-In-Class
+        Digital Channel And
+        Fund More Loans, Faster
+        
+        `}
+        showImage={true}
+        noGradient
+        oneImageHeader={true}
+        BelowCaptionText={
+          <>
+            Create a self-service online application process for your borrowers
+            with Pavelon’s flexible, multi-product digital lending portals. Our
+            platform enables automated processing and we white-label your portal
+            with a unique design and the ideal workflow for your customers.
+          </>
+        }
+        headerImages={[]}
+        logoBlack
+      />
+
+      <BreakingHeader
+        breakingCaption={
+          "The Future Of Lending Is Digital Pavelon Helps You Get There"
+        }
+      >
+        <p>
+          We’re changing how lenders launch digital products. In contrast to
+          traditional lending platforms that limit innovation, Pavelon’s
+          platform was built to enable it and our flexible technical
+          architecture lets you quickly launch a best-in-class online
+          application experience.{" "}
+        </p>
+        <br />
+        <p>
+          Our lending portals are customized for you by a team that understands
+          the challenges of digital lending. We previously built and sold our
+          own lending platform and now combine deep lending and technical
+          expertise to help our customers launch amazing products.{" "}
+        </p>
+      </BreakingHeader>
+
       <Footer />
     </>
   );
@@ -291,7 +302,7 @@ function LogosSection({
   }, [matches]);
 
   return (
-    <div class="max-w-10xl mx-auto mb-12 py-12 px-4 lg:py-16 lg:px-8">
+    <div class="max-w-10xl mx-auto py-12 px-4  lg:px-8">
       <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
         {title}
       </p>
