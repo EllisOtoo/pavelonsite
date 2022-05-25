@@ -13,6 +13,10 @@ import CapitalByApi_Lenders from "../screens/CapitalByApi_Lenders/CapitalByApi_L
 import CaseStudy from "../screens/CaseStudy/CaseStudy";
 import DigitalLending from "../screens/DigitalLending/DigitalLending";
 import Neobanks from "../screens/UseCasesUpdated/Neobanks";
+import CommercialFintechs from "../screens/CommercialFintechs/CommercialFintechs";
+import RetailFintechs from "../screens/RetailFintechs/RetailFintechs";
+import Banks from "../screens/Banks/Bank";
+import EmbeddedBanking from "../screens/EmbeddedBanking/EmbeddedBanking.jsx";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -48,6 +52,23 @@ function RootNavigator() {
             path={"/capitalByApi_Lenders"}
             exact={true}
           />
+
+          <Route
+            component={CommercialFintechs}
+            path={"/commercialFintechs"}
+            exact={true}
+          />
+          <Route
+            component={RetailFintechs}
+            path={"/retailFintechs"}
+            exact={true}
+          />
+          <Route
+            component={EmbeddedBanking}
+            path={"/embeddedBanking"}
+            exact={true}
+          />
+          <Route component={Banks} path={"/banks"} exact={true} />
           <Route component={CaseStudy} path={"/caseStudy"} exact={true} />
         </Switch>
       </Suspense>

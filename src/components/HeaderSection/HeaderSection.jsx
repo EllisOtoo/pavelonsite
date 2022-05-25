@@ -20,6 +20,7 @@ function classNames(...classes) {
 }
 
 function HeaderSection({
+  title = false,
   children,
   noHeader = false,
   reverse = false,
@@ -162,6 +163,7 @@ function HeaderSection({
               {introLogo && (
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}
+              {title && <p className="text-xl font-bold">{title}</p>}
               <p
                 style={{
                   fontSize: !isLarger

@@ -7,18 +7,14 @@ function Neobanks() {
   return (
     <>
       <Section
-        title="For Neobanks"
+        title="For Retail Fintechs"
         smallerHeader
-        SubCaption="asjjsjsj"
         makeMenuDark
         isDarkHeaderText
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
         buttonText="Join the waitlist"
-        Caption={`The Next-Gen Platform
-For Automated Digital Lending.
-
-        `}
+        Caption={`Open accounts, issue cards, and facilitate payments`}
         noButton={false}
         showImage={true}
         noGradient
@@ -41,23 +37,24 @@ For Automated Digital Lending.
       <div className="bg-gray-100 py-12 w-full">
         <div div className="flex w-8/12 my-12  mx-auto flex-col gap-24">
           <div className="flex">
-            <h2 className="w-4/12">The Problem</h2>
+            <h2 className="w-4/12">Problem</h2>
             <p className="w-8/12">
-              Successful neobanks identify underserved customer segments and
-              tailor offerings to meet their needs. You need a banking partner
-              who can help navigate the complexities of money transfer, mitigate
-              risk, and provide access to the infrastructure of a chartered
-              bank. Additionally, you need a banking as a service partner that
-              handles integrations into the banks’ infrastructure and do it
-              quickly.
+              Fintechs serving retail customers need to be able to track
+              deposits and payments at scale. A fintech creating a new HSA needs
+              to take deposits for multiple individuals at multiple companies
+              and be able to disburse payments to a wide variety of businesses
+              and healthcare organizations. A fintech serving companies with
+              hourly workers needs to pay wages at the end of every shift by
+              making account deposits or sending earnings to a worker’s debit
+              card.
             </p>
           </div>
           <div className="flex">
-            <h2 className="w-4/12">The Solution</h2>
+            <h2 className="w-4/12">Solution</h2>
             <p className="w-8/12">
-              Use Pavelon APIs to embed a full range of banking services from
-              account opening to payments to cards. Our usage-based pricing
-              ensures our incentives are aligned with yours.
+              Working with Pavelon and a banking partner, a fintech can open
+              either an FBO or multiple FDIC insured bank accounts, issue cards,
+              and facilitate payments using wires, ACH, or bill pay.
             </p>
           </div>
         </div>
@@ -67,10 +64,7 @@ For Automated Digital Lending.
         <div className="mx-auto w-8/12">
           <h3 className="my-4 text-lg font-bold">Products</h3>
           <h2 className="text-5xl my-2">Everything you need to get started</h2>
-          <p className="text-3xl my-2">
-            Using Pavelon is 5x faster and cheaper than doing your own
-            integration
-          </p>
+          <p className="text-3xl my-2">And lots of room to grow</p>
           <Link class="underline" to="">
             Read the API Docs{" "}
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -130,20 +124,19 @@ For Automated Digital Lending.
           </div>
         </div>
       </div>
-
       <OfferSection
         bgColor="bg-gray-100"
         caption="Benefits"
         subheader="Building your neobank with Pavelon"
         featureSubheader={[
-          "Get to market fast",
-          "Easily add new services",
-          "Competitive pricing",
+          "Start building now",
+          "Flexibility",
+          "Full suite of banking services",
         ]}
         explainers={[
-          "Easiest to use and best documented API so you can get your offering in market fast",
-          "Pavelon's deep integration with commercial banking systems makes it simple to add new services like bill pay, cards, or remote deposit capture",
-          "Our usage-based pricing ensures our incentives are aligned with yours",
+          "Get quick sandbox access to the easiest to use and best documented API",
+          "Open an FBO, multiple FBOs, or individual virtual accounts; you choose the model that works for your business",
+          "Access to the full array banking services plus the custom reporting you need for your business",
         ]}
       />
       <OfferSection
@@ -162,12 +155,7 @@ For Automated Digital Lending.
           "If you’re building your business on banking services this is the most important relationship you have",
         ]}
       />
-      <AnimatedSection
-        // marginTop="-285px"
-        // darker
-        customColor={"#11243e"}
-        caption="Ready to Get Started?"
-      >
+      <AnimatedSection customColor={"#11243e"} caption="Ready to Get Started?">
         <div>
           See how Pavelon can help you build, embed or enhance your credit
           products so you can acquire more customers, increase revenue and

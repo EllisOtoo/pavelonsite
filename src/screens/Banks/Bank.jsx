@@ -7,7 +7,7 @@ function Neobanks() {
   return (
     <>
       <Section
-        title="For Neobanks"
+        title="For Banks"
         smallerHeader
         SubCaption="asjjsjsj"
         makeMenuDark
@@ -15,11 +15,7 @@ function Neobanks() {
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
         buttonText="Join the waitlist"
-        Caption={`The Next-Gen Platform
-For Automated Digital Lending.
-
-        `}
-        noButton={false}
+        Caption={`Grow topline revenue with new fintech clients`}
         showImage={true}
         noGradient
         oneImageHeader={true}
@@ -43,21 +39,20 @@ For Automated Digital Lending.
           <div className="flex">
             <h2 className="w-4/12">The Problem</h2>
             <p className="w-8/12">
-              Successful neobanks identify underserved customer segments and
-              tailor offerings to meet their needs. You need a banking partner
-              who can help navigate the complexities of money transfer, mitigate
-              risk, and provide access to the infrastructure of a chartered
-              bank. Additionally, you need a banking as a service partner that
-              handles integrations into the banks’ infrastructure and do it
-              quickly.
+              Emerging fintechs need a banking partner and offer the possibility
+              of topline revenue growth. How do you ensure that your business
+              models are aligned? How do you provide the best experience to
+              these new clients and their clients to drive growth for both of
+              your businesses?
             </p>
           </div>
           <div className="flex">
             <h2 className="w-4/12">The Solution</h2>
             <p className="w-8/12">
-              Use Pavelon APIs to embed a full range of banking services from
-              account opening to payments to cards. Our usage-based pricing
-              ensures our incentives are aligned with yours.
+              Treasury Prime delivers the technology and the fintech
+              partnerships that drive deposits, increase transaction revenue,
+              and build non-interest income without changing any systems or
+              processes.
             </p>
           </div>
         </div>
@@ -136,14 +131,16 @@ For Automated Digital Lending.
         caption="Benefits"
         subheader="Building your neobank with Pavelon"
         featureSubheader={[
-          "Get to market fast",
-          "Easily add new services",
-          "Competitive pricing",
+          "Profitable partnership",
+          "Accelerate your processes",
+          "No system changes",
+          "Maintain compliance",
         ]}
         explainers={[
-          "Easiest to use and best documented API so you can get your offering in market fast",
-          "Pavelon's deep integration with commercial banking systems makes it simple to add new services like bill pay, cards, or remote deposit capture",
-          "Our usage-based pricing ensures our incentives are aligned with yours",
+          "With Pavelon's technology and ecosystem bring in new clients that can drive deposits and build non-interest income",
+          "By automating manual, time consuming, error-prone processes, we streamline your existing processes and give you the ability to accelerate them",
+          "We have deep experience with standard bank systems like FIS, Fiserv, and Jack Henry, and we integrate with or wrap your existing systems so there are no issues with your long-term contracts",
+          "We work with your BSA and risk teams to enforce your governance and risk model",
         ]}
       />
       <OfferSection

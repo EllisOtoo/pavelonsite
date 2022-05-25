@@ -7,17 +7,14 @@ function Neobanks() {
   return (
     <>
       <Section
-        title="For Neobanks"
+        title="For Commercial Fintechs"
         smallerHeader
-        SubCaption="asjjsjsj"
         makeMenuDark
         isDarkHeaderText
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
         buttonText="Join the waitlist"
-        Caption={`The Next-Gen Platform
-For Automated Digital Lending.
-
+        Caption={`For fintech commercial banking
         `}
         noButton={false}
         showImage={true}
@@ -41,23 +38,24 @@ For Automated Digital Lending.
       <div className="bg-gray-100 py-12 w-full">
         <div div className="flex w-8/12 my-12  mx-auto flex-col gap-24">
           <div className="flex">
-            <h2 className="w-4/12">The Problem</h2>
+            <h2 className="w-4/12">Fintech Commercial Banking</h2>
             <p className="w-8/12">
-              Successful neobanks identify underserved customer segments and
-              tailor offerings to meet their needs. You need a banking partner
-              who can help navigate the complexities of money transfer, mitigate
-              risk, and provide access to the infrastructure of a chartered
-              bank. Additionally, you need a banking as a service partner that
-              handles integrations into the banks’ infrastructure and do it
-              quickly.
+              Fintechs serving commercial banking customers need to be able to
+              move money at scale from a single account. For example, a fintech
+              supporting a gig economy business needs to make daily payments to
+              multiple workers, while a fintech supporting intermodal
+              transportation needs to make payments to each company in the
+              delivery chain as their delivery stage is completed.
             </p>
           </div>
           <div className="flex">
-            <h2 className="w-4/12">The Solution</h2>
+            <h2 className="w-4/12">Financial Solution</h2>
             <p className="w-8/12">
-              Use Pavelon APIs to embed a full range of banking services from
-              account opening to payments to cards. Our usage-based pricing
-              ensures our incentives are aligned with yours.
+              An FBO account that enables a single withdrawal to be distributed
+              to multiple recipients and a customized ledger to track payments
+              to each recipient. The fintech sends payment instructions to
+              Pavelon, Pavelon disburses the payments so the fintech’s clients
+              are paid in full in real-time.
             </p>
           </div>
         </div>

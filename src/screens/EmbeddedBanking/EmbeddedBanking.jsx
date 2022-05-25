@@ -7,7 +7,7 @@ function Neobanks() {
   return (
     <>
       <Section
-        title="For Neobanks"
+        title="For Embedded Banking"
         smallerHeader
         SubCaption="asjjsjsj"
         makeMenuDark
@@ -15,11 +15,7 @@ function Neobanks() {
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
         buttonText="Join the waitlist"
-        Caption={`The Next-Gen Platform
-For Automated Digital Lending.
-
-        `}
-        noButton={false}
+        Caption={`Seamless banking solutions for any business`}
         showImage={true}
         noGradient
         oneImageHeader={true}
@@ -43,21 +39,20 @@ For Automated Digital Lending.
           <div className="flex">
             <h2 className="w-4/12">The Problem</h2>
             <p className="w-8/12">
-              Successful neobanks identify underserved customer segments and
-              tailor offerings to meet their needs. You need a banking partner
-              who can help navigate the complexities of money transfer, mitigate
-              risk, and provide access to the infrastructure of a chartered
-              bank. Additionally, you need a banking as a service partner that
-              handles integrations into the banks’ infrastructure and do it
-              quickly.
+              A large commercial builder is paid in installments when they hit
+              specific construction milestones and they get thousands of
+              payments each month from multiple clients. They reconcile
+              everything manually, a time intensive process with a significant
+              error rate.
             </p>
           </div>
           <div className="flex">
             <h2 className="w-4/12">The Solution</h2>
             <p className="w-8/12">
-              Use Pavelon APIs to embed a full range of banking services from
-              account opening to payments to cards. Our usage-based pricing
-              ensures our incentives are aligned with yours.
+              Working with the company’s banking partner, Pavelon creates a
+              virtual bank account number for each client. All payments sent to
+              that account are automatically reconciled and swept into the
+              master account.
             </p>
           </div>
         </div>
@@ -136,12 +131,12 @@ For Automated Digital Lending.
         caption="Benefits"
         subheader="Building your neobank with Pavelon"
         featureSubheader={[
-          "Get to market fast",
-          "Easily add new services",
-          "Competitive pricing",
+          "Increase speed",
+          "Implement quickly",
+          "Customized for your business",
         ]}
         explainers={[
-          "Easiest to use and best documented API so you can get your offering in market fast",
+          "Increase your team’s efficiency by eliminating the time they spend on banking processes",
           "Pavelon's deep integration with commercial banking systems makes it simple to add new services like bill pay, cards, or remote deposit capture",
           "Our usage-based pricing ensures our incentives are aligned with yours",
         ]}
