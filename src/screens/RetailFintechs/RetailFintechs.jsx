@@ -1,9 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { AnimatedSection } from "../../components";
+import { AnimatedSection, Footer } from "../../components";
 import Section from "../../components/HeaderSection/HeaderSection";
+import { gsap } from "gsap";
 
 function Neobanks() {
+  let arrowRef;
+
+  function moveArrowBack() {
+    gsap.to(arrowRef, { rotation: 0, x: 0, duration: 0.5 });
+  }
+
+  function moveArrow() {
+    gsap.to(arrowRef, { rotation: 0, x: 15, duration: 0.5 });
+  }
+
   return (
     <>
       <Section
@@ -65,9 +76,20 @@ function Neobanks() {
           <h3 className="my-4 text-lg font-bold">Products</h3>
           <h2 className="text-5xl my-2">Everything you need to get started</h2>
           <p className="text-3xl my-2">And lots of room to grow</p>
-          <Link class="underline" to="">
+          <Link
+            onMouseOver={() => moveArrow()}
+            onMouseLeave={() => moveArrowBack()}
+            class="underline"
+            to=""
+          >
             Read the API Docs{" "}
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i
+              ref={(node) => {
+                arrowRef = node;
+              }}
+              class="fa fa-long-arrow-right"
+              aria-hidden="true"
+            ></i>
           </Link>
 
           <div className="grid md:grid-cols-4 grid-cols-1 my-12 gap-12">
@@ -168,6 +190,8 @@ function Neobanks() {
           </button>
         </div>
       </AnimatedSection>
+
+      <Footer />
     </>
   );
 }

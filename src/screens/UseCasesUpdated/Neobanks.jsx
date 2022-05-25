@@ -1,9 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import { AnimatedSection } from "../../components";
+import { AnimatedSection, Footer } from "../../components";
 import Section from "../../components/HeaderSection/HeaderSection";
+import { gsap } from "gsap";
 
 function Neobanks() {
+  let arrowRef;
+  // const arrowRef = useRef(null);
+  // console.log("Arrow Ref", arrowRef);
+
+  function moveArrowBack() {
+    gsap.to(arrowRef, { rotation: 0, x: 0, duration: 0.5 });
+  }
+
+  function moveArrow() {
+    gsap.to(arrowRef, { rotation: 0, x: 15, duration: 0.5 });
+  }
+
+  useEffect(() => {}, []);
+
   return (
     <>
       <Section
@@ -71,9 +86,20 @@ For Automated Digital Lending.
             Using Pavelon is 5x faster and cheaper than doing your own
             integration
           </p>
-          <Link class="underline" to="">
+          <Link
+            onMouseOver={() => moveArrow()}
+            onMouseLeave={() => moveArrowBack()}
+            class="underline"
+            to=""
+          >
             Read the API Docs{" "}
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <i
+              ref={(node) => {
+                arrowRef = node;
+              }}
+              class="fa fa-long-arrow-right"
+              aria-hidden="true"
+            ></i>
           </Link>
 
           <div className="grid md:grid-cols-4 grid-cols-1 my-12 gap-12">
@@ -180,6 +206,7 @@ For Automated Digital Lending.
           </button>
         </div>
       </AnimatedSection>
+      <Footer />
     </>
   );
 }
