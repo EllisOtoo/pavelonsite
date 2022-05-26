@@ -79,7 +79,7 @@ function KYC() {
   };
 
   return (
-    <div className="commerceContainer">
+    <div className="bg-gray-100">
       <p>In Development, check back soon</p>
     </div>
   );
