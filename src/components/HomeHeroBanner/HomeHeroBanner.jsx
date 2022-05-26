@@ -195,7 +195,7 @@ function HeaderSection({
             {isLarger && showImage ? (
               <div
                 style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
-                className="flex w-full"
+                className="w-full"
               >
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {
@@ -220,13 +220,7 @@ function HeaderSection({
                         <img
                           key={idx}
                           src={eachImgSrc}
-                          className={`h-2/6 ${
-                            oneImageHeader
-                              ? controlSectionImage
-                                ? "w-6/12"
-                                : "w-full"
-                              : "w-full h-5/6"
-                          }  animate__animated ${
+                          className={`object-cover animate__animated ${
                             animateClasses
                               ? animateClasses
                               : " animate__slideInRight"
