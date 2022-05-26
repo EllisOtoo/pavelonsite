@@ -80,7 +80,7 @@ function KYC() {
 
   return (
     <div className="commerceContainer">
-      <p>In Development</p>
+      <p>In Development, check back soon</p>
     </div>
   );
 }
