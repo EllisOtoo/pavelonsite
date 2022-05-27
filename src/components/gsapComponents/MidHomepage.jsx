@@ -5,7 +5,7 @@ import rightImage from "../../assets/middleSection/middleImage_2_right.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 function MidHomepage() {
   let topImage, belowImage, rightImageRef, containerNodeRef;
