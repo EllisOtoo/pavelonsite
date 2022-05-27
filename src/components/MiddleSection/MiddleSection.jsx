@@ -66,7 +66,7 @@ function MiddleSection() {
           loans, collect loans, access financial data, and much more.
         </div>
       </div>
-      {/* <MidHomepage /> */}
+      <MidHomepage />
       {/*  {!matches ? (
         <div className="">
           <div className="">
