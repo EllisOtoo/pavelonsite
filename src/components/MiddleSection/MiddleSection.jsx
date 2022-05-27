@@ -10,6 +10,7 @@ import middleImage from "../../assets/middleImage.png";
 import middleImage2 from "../../assets/middleImage_2.png";
 import visa from "../../assets/visa.jpg";
 import { Link } from "react-router-dom";
+import MidHomepage from "../gsapComponents/MidHomepage";
 
 function MiddleSection() {
   // * Use Query to change flex to column for smaller screens
@@ -65,7 +66,8 @@ function MiddleSection() {
           loans, collect loans, access financial data, and much more.
         </div>
       </div>
-      {!matches ? (
+      <MidHomepage />
+      {/*  {!matches ? (
         <div className="">
           <div className="">
             <img src={middleImage2} alt="" />
@@ -75,7 +77,7 @@ function MiddleSection() {
         <>
           <img src={middleImage2} alt="" />
         </>
-      )}
+      )} */}
     </div>
   );
 }
