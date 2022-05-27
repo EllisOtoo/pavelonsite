@@ -34,7 +34,7 @@ function MidHomepage() {
   return (
     <div
       ref={(containerNode) => (containerNodeRef = containerNode)}
-      class="flex  w-full mx-auto aniContainer"
+      class="flex    w-full mx-auto aniContainer"
     >
       <div class="flex flex-col">
         <div ref={(node) => (topImage = node)} className="top">

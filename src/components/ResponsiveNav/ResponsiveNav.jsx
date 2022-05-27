@@ -56,13 +56,13 @@ const usecases = [
   },
 ];
 const solutions = [
-  {
+  /*   {
     name: "Commerce API",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "/commerceApi",
     icon: ChartBarIcon,
-  },
+  }, */
   {
     name: "Digital Lending API",
     description: "Speak directly to your customers in a more meaningful way.",
@@ -81,20 +81,20 @@ const solutions = [
     href: "/Kyc",
     icon: ViewGridIcon,
   },
-  {
+  /*   {
     name: "Loans Collections API",
     description:
       "Build strategic funnels that will drive your customers to convert",
     href: "#",
     icon: RefreshIcon,
-  },
-  {
+  }, */
+  /* {
     name: "Financial Data API",
     description:
       "Build strategic funnels that will drive your customers to convert",
     href: "#",
     icon: RefreshIcon,
-  },
+  }, */
   {
     name: "Digital Accounts API",
     description:

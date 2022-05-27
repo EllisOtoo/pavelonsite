@@ -171,7 +171,7 @@ function FooterSection() {
                   </li>
                 </ul>
               </div>
-              <div class="mt-12 md:mt-0">
+              <div class="hidden mt-12 md:mt-0">
                 <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Support
                 </h3>
@@ -217,8 +217,8 @@ function FooterSection() {
                 </ul>
               </div>
             </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
+            <div class="md:grid md:grid-cols-2 md:gap-8 hidden">
+              <div className="hidden">
                 <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Company
                 </h3>
@@ -228,8 +228,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Our Story{" "}
+                      Our Story
                     </a>
                   </li>
 
@@ -238,8 +237,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      About Us{" "}
+                      About Us
                     </a>
                   </li>
 
@@ -268,8 +266,7 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Our Partners{" "}
+                      Our Partners
                     </a>
                   </li>
                   <li>
@@ -277,13 +274,12 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
-                      Join Us{" "}
+                      Join Us
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="mt-12 md:mt-0">
+              <div class="hidden mt-12 md:mt-0">
                 <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Legal
                 </h3>
@@ -293,7 +289,6 @@ function FooterSection() {
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
-                      {" "}
                       Claim{" "}
                     </a>
                   </li>
