@@ -39,7 +39,7 @@ function MiddleSection() {
       <div className="flex gap-8 md:gap-24 my-6">
         <div className="text-md text-gray-500">
           We bring together everything that’s required to build lending into any
-          product - from End User Application using our{" "}
+          produt - from End User Application using our{" "}
           <Link style={{ color: "blue" }} class="" to={"#"}>
             Digital Lending APIs{" "}
           </Link>
