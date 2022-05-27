@@ -31,7 +31,10 @@ function MiddleSection() {
 
   // console.log(matches);
   return (
-    <div ref={refContainer} className="max-w-7xl lg:ml-56 px-12 md:px-0">
+    <div
+      ref={refContainer}
+      className="overflow-x-hidden max-w-7xl lg:ml-56 px-12 md:px-0"
+    >
       {/* BLOCKS STARTS HERE */}
       <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.

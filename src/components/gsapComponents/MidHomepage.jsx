@@ -14,19 +14,19 @@ function MidHomepage() {
     gsap.from(topImage, {
       scrollTrigger: containerNodeRef,
       rotation: 0,
-      x: -150,
+      x: -200,
       duration: 1,
     });
     gsap.from(belowImage, {
       scrollTrigger: containerNodeRef,
       rotation: 0,
-      y: 150,
+      y: 200,
       duration: 1,
     });
     gsap.from(rightImageRef, {
       scrollTrigger: containerNodeRef,
       rotation: 0,
-      x: 150,
+      x: 200,
       duration: 1,
     });
   }, []);
@@ -34,7 +34,7 @@ function MidHomepage() {
   return (
     <div
       ref={(containerNode) => (containerNodeRef = containerNode)}
-      class="flex w-full mx-auto aniContainer"
+      class="flex  w-full mx-auto aniContainer"
     >
       <div class="flex flex-col">
         <div ref={(node) => (topImage = node)} className="top">
