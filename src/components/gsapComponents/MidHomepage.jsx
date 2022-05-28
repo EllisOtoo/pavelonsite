@@ -23,15 +23,15 @@ function MidHomepage() {
   useEffect(() => {
     gsap.from(topImage, {
       scrollTrigger: scrollOptions,
-      x: -300,
+      x: -150,
     });
     gsap.from(belowImage, {
       scrollTrigger: scrollOptions,
-      y: 100,
+      y: 150,
     });
     gsap.from(rightImageRef, {
       scrollTrigger: scrollOptions,
-      x: 300,
+      x: 150,
     });
   }, []);
 
