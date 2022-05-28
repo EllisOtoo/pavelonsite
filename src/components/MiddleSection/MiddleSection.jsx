@@ -33,7 +33,8 @@ function MiddleSection() {
   return (
     <div
       ref={refContainer}
-      className="overflow-x-hidden max-w-7xl lg:ml-56 px-12 md:px-0"
+      //overflow-x-hidden to hide overflown divs from expanding bleeding horizontal viewport
+      className=" max-w-7xl lg:ml-56 px-12 md:px-0"
     >
       {/* BLOCKS STARTS HERE */}
       <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">

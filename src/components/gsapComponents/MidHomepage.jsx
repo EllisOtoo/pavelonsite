@@ -10,24 +10,26 @@ gsap.registerPlugin(ScrollTrigger);
 function MidHomepage() {
   let topImage, belowImage, rightImageRef, containerNodeRef;
 
+  const scrollOptions = {
+    trigger: containerNodeRef,
+    start: "top 90%",
+    scrub: true,
+    toggleActions: "play pause resume pause",
+    markers: true,
+  };
+
   useEffect(() => {
     gsap.from(topImage, {
-      scrollTrigger: containerNodeRef,
-      rotation: 0,
+      scrollTrigger: scrollOptions,
       x: -200,
-      duration: 1,
     });
     gsap.from(belowImage, {
-      scrollTrigger: containerNodeRef,
-      rotation: 0,
+      scrollTrigger: scrollOptions,
       y: 200,
-      duration: 1,
     });
     gsap.from(rightImageRef, {
-      scrollTrigger: containerNodeRef,
-      rotation: 0,
+      scrollTrigger: scrollOptions,
       x: 200,
-      duration: 1,
     });
   }, []);
 
