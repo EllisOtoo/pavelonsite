@@ -12,7 +12,7 @@ function MidHomepage() {
 
   const scrollOptions = {
     trigger: topImage,
-    scrub: true,
+    scrub: 0.2,
     // toggleActions: "play pause resume pause",
     // toggleActions: "play none resume pause",
     // toggleActions: "play none none none",
@@ -23,15 +23,15 @@ function MidHomepage() {
   useEffect(() => {
     gsap.from(topImage, {
       scrollTrigger: scrollOptions,
-      x: -150,
+      x: "-10vw",
     });
     gsap.from(belowImage, {
       scrollTrigger: scrollOptions,
-      y: 150,
+      y: "10vw",
     });
     gsap.from(rightImageRef, {
       scrollTrigger: scrollOptions,
-      x: 150,
+      x: "10vw",
     });
   }, []);
 
