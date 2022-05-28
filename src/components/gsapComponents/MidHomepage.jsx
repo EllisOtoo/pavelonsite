@@ -13,9 +13,9 @@ function MidHomepage() {
   const scrollOptions = {
     trigger: containerNodeRef,
     start: "top 90%",
-    // scrub: true,
+    scrub: true,
     toggleActions: "play pause resume pause",
-    markers: true,
+    // markers: true,
   };
 
   useEffect(() => {
