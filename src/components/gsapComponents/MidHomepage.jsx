@@ -12,13 +12,10 @@ function MidHomepage() {
 
   const scrollOptions = {
     trigger: topImage,
-    start: "top 90%",
-    end: "bottom center",
-    // end: "bottom center",
     scrub: true,
     // toggleActions: "play pause resume pause",
     // toggleActions: "play none resume pause",
-    toggleActions: "play none none none",
+    // toggleActions: "play none none none",
 
     // markers: true,
   };
@@ -41,7 +38,7 @@ function MidHomepage() {
   return (
     <div
       ref={(containerNode) => (containerNodeRef = containerNode)}
-      class="flex w-full mx-auto aniContainer"
+      class="flex w-10/12 mx-auto aniContainer"
     >
       <div class="flex flex-col">
         <div ref={(node) => (topImage = node)} className="top">
