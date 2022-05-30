@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import Section from "../../components/HeaderSection/HeaderSection";
 import CardProgram from "../../assets/cardProgram.png";
 import { FeatureSection, Footer } from "../../components";
+import users from "../../assets/CapitalbyApi/hand-drawn-different-profile-icons-pack_52683-71390.jpg";
+import capitalSource from "../../assets/CapitalbyApi/Wavy_Tech-21_Single-11.jpg";
+import buildingCredit from "../../assets/CapitalbyApi/hand-holding-using-credit-card-payment-online-shopping-pink-background-3d-rendering.jpg";
+import marketfaster from "../../assets/CapitalbyApi/Screenshot 2022-05-30 at 5.03.24 PM.png";
 
 const BreakingHeader = () => {
   console.log("--------------");
@@ -60,7 +64,7 @@ function CapitalByApi() {
             your customers seamless access to the capital they need to grow.
           </>
         }
-        headerImages={[CardProgram]}
+        headerImages={[users]}
         logoBlack
       />
       {/*  */}
@@ -87,7 +91,7 @@ function CapitalByApi() {
             your customers grow their businesses.
           </>
         }
-        headerImages={[CardProgram]}
+        headerImages={[capitalSource]}
         logoBlack
       />
 
@@ -110,7 +114,7 @@ function CapitalByApi() {
             they need to build, embed or enhance credit products.
           </>
         }
-        headerImages={[CardProgram]}
+        headerImages={[buildingCredit]}
         logoBlack
       />
       <Section
@@ -134,7 +138,7 @@ function CapitalByApi() {
             credit operation.
           </>
         }
-        headerImages={[CardProgram]}
+        headerImages={[marketfaster]}
         logoBlack
       />
       <FeatureSection />

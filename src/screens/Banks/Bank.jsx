@@ -25,19 +25,13 @@ function Neobanks() {
         isDarkHeaderText
         animateClasses="animate__fadeIn animate__slow"
         showSingleButton
-        buttonText="Join the waitlist"
+        // buttonText="Join the waitlist"
         Caption={`Grow topline revenue with new fintech clients`}
         showImage={true}
         noGradient
+        noButton={false}
         oneImageHeader={true}
-        BelowCaptionText={
-          <>
-            Utilize Pavelon’s channel partners—like payment apps, payroll
-            services, financial comparison websites, CRM solutions, or tax
-            apps—for effective distribution at lower costs. Get pre-verified
-            leads and offer complete or partial loan application journeys.
-          </>
-        }
+        BelowCaptionText={""}
         headerImages={[]}
         logoBlack
       />

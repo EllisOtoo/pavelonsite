@@ -6,6 +6,10 @@ import credify from "../../assets/credify.png";
 import vroom from "../../assets/vroom.png";
 import bosea from "../../assets/bosea.png";
 import aymicrocredit from "../../assets/ay_2.png";
+import fastLoading from "../../assets/digitalLendingApi/fast-loading-concept-illustration_114360-756.jpg";
+import digitalLending from "../../assets/digitalLendingApi/Screenshot 2022-05-30 at 3.35.52 PM.png";
+import strealineLoans from "../../assets/digitalLendingApi/streamline.jpg";
+import automation from "../../assets/digitalLendingApi/automation.jpg";
 import tffinancialservices from "../../assets/tf.jpg";
 import teachersfund from "../../assets/tf_logo.png";
 import { FeatureSection, Footer, Logos } from "../../components";
@@ -103,10 +107,10 @@ For Automated Digital Lending.
             leads and offer complete or partial loan application journeys.
           </>
         }
-        headerImages={[]}
+        headerImages={[digitalLending]}
         logoBlack
       />
-      <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
+      <div className="w-8/12 mx-auto  mt-32 grid grid-cols-1 ">
         <div>
           <div className="mb-2 text-4xl font-bold">
             The easiest way to offer consumer loans in your own branding
@@ -142,7 +146,7 @@ For Automated Digital Lending.
             exact data structure, lending products and origination workflow.
           </>
         }
-        headerImages={[]}
+        headerImages={[strealineLoans]}
         logoBlack
       />
       <BreakingHeader breakingCaption={"Better Loan Origination"}>
@@ -217,7 +221,7 @@ For Automated Digital Lending.
             code.
           </>
         }
-        headerImages={[]}
+        headerImages={[automation]}
         logoBlack
       />
       <BreakingHeader
@@ -264,7 +268,7 @@ For Automated Digital Lending.
             with a unique design and the ideal workflow for your customers.
           </>
         }
-        headerImages={[]}
+        headerImages={[fastLoading]}
         logoBlack
       />
 

@@ -199,7 +199,7 @@ function HeaderSection({
             </div>
             {isLarger && showImage ? (
               <div
-                style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
+                // style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
                 className="flex w-5/12 justify-center"
               >
                 {headerImages

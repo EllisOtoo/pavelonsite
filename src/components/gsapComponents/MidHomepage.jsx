@@ -9,14 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function MidHomepage() {
   let topImage, belowImage, rightImageRef, containerNodeRef;
-
   const scrollOptions = {
     trigger: topImage,
-    scrub: 0.2,
-    // toggleActions: "play pause resume pause",
+    scrub: true,
+    start: "top center",
+    toggleActions: "restart pause resume pause",
     // toggleActions: "play none resume pause",
     // toggleActions: "play none none none",
-
     // markers: true,
   };
 
@@ -26,8 +25,17 @@ function MidHomepage() {
       x: "-10vw",
     });
     gsap.from(belowImage, {
-      scrollTrigger: scrollOptions,
-      y: "10vw",
+      scrollTrigger: {
+        // ...scrollOptions,
+        trigger: belowImage,
+        start: "top 80%",
+        scrub: true.valueOf,
+        end: () => {
+          return `+=${belowImage.offsetHeight}`;
+        },
+        toggleActions: "restart pause resume pause",
+      },
+      y: "30%",
     });
     gsap.from(rightImageRef, {
       scrollTrigger: scrollOptions,

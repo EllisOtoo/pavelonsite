@@ -38,14 +38,7 @@ For Automated Digital Lending.
         showImage={true}
         noGradient
         oneImageHeader={true}
-        BelowCaptionText={
-          <>
-            Utilize Pavelon’s channel partners—like payment apps, payroll
-            services, financial comparison websites, CRM solutions, or tax
-            apps—for effective distribution at lower costs. Get pre-verified
-            leads and offer complete or partial loan application journeys.
-          </>
-        }
+        BelowCaptionText={""}
         headerImages={[]}
         logoBlack
       />
