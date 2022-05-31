@@ -20,7 +20,7 @@ function AnimatedSection({
           {/* New Section */}
           <div className="relative z-10 mb-8 md:mb-2 md:px-6">
             <div className="text-base max-w-prose lg:max-w-none">
-              <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+              <h2 className="leading-6 text-custom-blue font-semibold tracking-wide uppercase">
                 Building credit products has never been easier
               </h2>
               <p

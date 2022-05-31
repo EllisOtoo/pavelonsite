@@ -237,16 +237,7 @@ function LogosSection({
       <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
         {title}
       </p>
-      <div
-        style={
-          {
-            // gridTemplateColumns: matches
-            //   ? `${_3cols ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr 1fr"}`
-            //   : "1fr 1fr 1fr",
-          }
-        }
-        class={` w-8/12 mx-auto grid grid-cols-2 gap-2 md:grid-cols-4`}
-      >
+      <div class={` w-8/12 mx-auto grid grid-cols-2 gap-2 md:grid-cols-4`}>
         {LogosData.map((item, index) => {
           if (index === 4) {
             return (

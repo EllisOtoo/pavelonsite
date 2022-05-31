@@ -6,6 +6,7 @@ import loansImage from "../../assets/lending _Image.png";
 import loans_dashboard from "../../assets/dashboard_lenders.png";
 import ResponsiveNav from "../ResponsiveNav/ResponsiveNav";
 /* This example requires Tailwind CSS v2.0+ */
+import Buttons from "../Buttons/Buttons";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -53,10 +54,10 @@ function HeaderSection({
   }, [isLarger]);
 
   return (
-    <div className={`headerSectionOnly relative ${noHeader ? "my-24" : ""}`}>
+    <div>
       <div style={{ position: "relative", zIndex: "2" }} className="relative">
         <div>
-          {noHeader ? "" : <ResponsiveNav makeMenuDark={makeMenuDark} />}
+          <ResponsiveNav makeMenuDark={makeMenuDark} />
           <div
             className={`${
               showMenu ? "" : "hidden"
@@ -160,15 +161,6 @@ function HeaderSection({
                 <img src={introLogo} className="w-4/12" alt="Intro Logo" />
               )}
               <p
-                style={
-                  {
-                    // fontSize: !isLarger
-                    //   ? "2rem"
-                    //   : smallerHeader
-                    //   ? "3rem"
-                    //   : "5rem",
-                  }
-                }
                 className={`py-6 mt-1 ${
                   smallerHeader ? "font-bold" : "font-extrabold"
                 }  text-gray-900   text-5xl md:text-8xl  sm:tracking-tight lg:text-6xl`}
@@ -177,19 +169,7 @@ function HeaderSection({
               </p>
               {children ? children : BelowCaptionText}
               <div style={{ flex: 1 }} className="py-6">
-                <button className="p-2 px-4 mt-4 rounded-full bg-black text-white">
-                  {buttonText}
-                </button>
-                {(buttonText === "Read the Docs") | showSingleButton ? (
-                  ""
-                ) : (
-                  <button
-                    style={{ marginLeft: "5px" }}
-                    className="py-2 px-4 mt-4 rounded-full bg-black text-white"
-                  >
-                    Contact Sales
-                  </button>
-                )}
+                <Buttons buttonTitle={["Start Now", "Contact Sales"]} />
               </div>
             </div>
             {isLarger && showImage ? (

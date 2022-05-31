@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { TopBarLoader } from "../components/Loaders";
-import Home from "../screens/Home/home";
+import Home from "../screens/Home/home.jsx";
 import Lenders from "../screens/ForLenders/Lenders";
 import UseCases from "../screens/UseCases/UseCases";
 import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";

@@ -11,6 +11,7 @@ import middleImage2 from "../../assets/middleImage_2.png";
 import visa from "../../assets/visa.jpg";
 import { Link } from "react-router-dom";
 import MidHomepage from "../gsapComponents/MidHomepage";
+import Buttons from "../Buttons/Buttons";
 
 function MiddleSection() {
   // * Use Query to change flex to column for smaller screens
@@ -34,10 +35,10 @@ function MiddleSection() {
     <div
       ref={refContainer}
       //overflow-x-hidden to hide overflown divs from expanding bleeding horizontal viewport
-      className=" max-w-7xl lg:ml-56 px-12 md:px-0"
+      className=" max-w-7xl  lg:ml-56 px-8 md:px-0"
     >
       {/* BLOCKS STARTS HERE */}
-      <h3 className="tracking-tight font-semibold w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
+      <h3 className="tracking-tight font-semibold  w-12/12 md:w-6/12 text-gray-600 sm:text-5xl md:text-4xl">
         A fully integrated suite of Lending, eCommerce, and Payment products.
       </h3>
       <div className="flex gap-8 md:gap-24 my-6">
@@ -53,16 +54,7 @@ function MiddleSection() {
           </Link>{" "}
           virtual and physical and cards.
           <br />
-          <button
-            style={{
-              padding: "10px 15px",
-              margin: "20px 0",
-              fontSize: "15pt",
-            }}
-            className="text-semibold rounded-full rounded-3xl seemore"
-          >
-            Learn About
-          </button>
+          <Buttons buttonTitle={"See more"} btnBGColor={"primary"} />
         </div>
         <div className="text-gray-500">
           Pavelon’s products also power “Buy Now, Pay Later” Services using our
@@ -71,17 +63,6 @@ function MiddleSection() {
         </div>
       </div>
       <MidHomepage />
-      {/*  {!matches ? (
-        <div className="">
-          <div className="">
-            <img src={middleImage2} alt="" />
-          </div>
-        </div>
-      ) : (
-        <>
-          <img src={middleImage2} alt="" />
-        </>
-      )} */}
     </div>
   );
 }

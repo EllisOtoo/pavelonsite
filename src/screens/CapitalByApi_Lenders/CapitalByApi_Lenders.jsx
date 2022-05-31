@@ -26,18 +26,6 @@ function Features({ features }) {
                   </p>
                   <p>{feature.description}</p>
                 </div>
-
-                {/* <ul className=" my-8 ml-4 list-disc">
-                  {feature.list.map((listItem) => (
-                    <li
-                      className="text-base leading-7 text-gray-500"
-                      key={listItem}
-                    >
-                      {" "}
-                      {listItem}
-                    </li>
-                  ))}
-                </ul> */}
               </div>
             ))}
           </dl>
@@ -50,7 +38,7 @@ function Features({ features }) {
 const BreakingHeader = () => {
   console.log("--------------");
   return (
-    <div className="w-8/12 mx-auto  mt-24 grid grid-cols-1 ">
+    <div className="w-8/12 mx-auto mt-24 grid grid-cols-1 ">
       <div className="mb-24">
         <h2 className="text-5xl mb-8 font-bold">Lending, simplified</h2>
         <hr />
@@ -75,7 +63,7 @@ const BreakingHeader = () => {
           Accountant General Platform. Features
         </div>
 
-        <ul className="text-base flex text-xl  mt-8 flex-col gap-2 pl-8">
+        <ul className="text-base flex text-xl  mt-8 flex-col gap-2 ">
           <li> Lend on your Own Controller Code, or Use our Controller Code</li>
           <li>
             Enhanced KYC to prevent Fraud - ID Verification, Address

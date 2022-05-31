@@ -21,10 +21,7 @@ function FooterSection() {
               src={darklogo}
               alt="P name"
             />
-            <p class="text-gray-500 text-base">
-              Making the world a better place through constructing elegant
-              hierarchies.
-            </p>
+            <p class="text-gray-500 text-base">©Pavelon, 2022</p>
             <div class="flex space-x-6">
               <a href="#" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Facebook</span>

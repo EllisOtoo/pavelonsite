@@ -14,6 +14,7 @@ import loansImage from "../../assets/lending _Image.png";
 import loans_dashboard from "../../assets/dashboard_lenders.png";
 import ResponsiveNav from "../ResponsiveNav/ResponsiveNav";
 /* This example requires Tailwind CSS v2.0+ */
+import Buttons from "../../components/Buttons/Buttons";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -179,23 +180,7 @@ function HeaderSection({
                 {Caption}
               </p>
               {children ? children : BelowCaptionText}
-              {noButton && (
-                <div style={{ flex: 1 }} className="py-6">
-                  <button className="p-2 px-4 mt-4 rounded-full bg-black text-white">
-                    {buttonText}
-                  </button>
-                  {(buttonText === "Read the Docs") | showSingleButton ? (
-                    ""
-                  ) : (
-                    <button
-                      style={{ marginLeft: "5px" }}
-                      className="py-2 px-4 mt-4 rounded-full bg-black text-white"
-                    >
-                      Contact Sales
-                    </button>
-                  )}
-                </div>
-              )}
+              <Buttons buttonTitle={"Start Now"} />
             </div>
             {isLarger && showImage ? (
               <div

@@ -3,26 +3,6 @@ import React from "react";
 import stanbic from "../../assets/stanbic.png";
 import { useEffect, useState } from "react";
 
-const LogoItem = ({ imgSrc }) => {
-  const setLogoHeight = () => {
-    if (
-      imgSrc === "/static/media/cml.ec3387f3.png" ||
-      imgSrc === "/static/media/credify.710a0246.jpeg"
-    ) {
-      console.log("condition true");
-      return 50;
-    } else {
-      return 100;
-    }
-  };
-
-  return (
-    <div class="flex justify-center py-8 px-8">
-      <img className="w-5/12" src={imgSrc} alt="In Good Hands" />
-    </div>
-  );
-};
-
 function LogosSection({
   _3cols = false,
   title = "",
@@ -32,14 +12,8 @@ function LogosSection({
     window.matchMedia("(min-width: 768px)").matches
   );
 
-  useEffect(() => {
-    window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-      setMatches(e.matches);
-    });
-  }, [matches]);
-
   return (
-    <div class="max-w-10xl mx-auto mt-24 mb-12 py-12 px-4 lg:py-16 lg:px-8">
+    <div class="max-w-7xl mx-auto mb-12 py-12 px-4 lg:py-16">
       <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
         {title}
       </p>
