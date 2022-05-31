@@ -6,12 +6,14 @@ import Logos from "./LogosSection/LogosSection.jsx";
 import GenericSection from "./Generics/GenericSection";
 import AnimatedSection from "./AnimatedSections/AnimatedSection.jsx";
 import FeatureSection from "./FeatureSection/FeatureSection.jsx";
-import HomeHeroBanner from "./HomeHeroBanner/HomeHeroBanner.jsx";
+import HomeHeroBanner from "./HomeBanner/HomeBanner.jsx";
+import BoldSection from "./BoldSection/BoldSection.jsx";
 
 export {
   Footer,
   Navbar,
   Header,
+  BoldSection,
   MiddleSection,
   Logos,
   GenericSection,

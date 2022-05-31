@@ -13,7 +13,7 @@ function LogosSection({
   );
 
   return (
-    <div class="max-w-7xl mx-auto mb-12 py-12 px-4 lg:py-16">
+    <div class="w-10/12 py-12 ml-12 md:ml-56">
       <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
         {title}
       </p>
@@ -25,7 +25,7 @@ function LogosSection({
             //   : "1fr 1fr 1fr",
           }
         }
-        class={`mt-24 w-10/12 mx-auto grid grid-cols-2 gap-2 md:grid-cols-5`}
+        class={`grid grid-cols-2 gap-2 md:grid-cols-5`}
       >
         {LogosData.map((item, index) => {
           if (index === 4) {

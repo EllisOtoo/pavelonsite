@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import darklogo from "../../assets/pav_logo_mob.png";
 import LogosSection from "../../components/LogosSection/LogosSection";
-
 import landingImage from "../../assets/landing_Image.png";
 import {
   Header,
@@ -17,16 +16,16 @@ import {
 import FooterSection from "../../components/FooterSection/FooterSection";
 // import MiddleSection from "../../components/MiddleSection/MiddleSection";
 
-/*Images Import for React*/
+/** Images Import for React*/
 import creditmall from "../../assets/creditmall.png";
 import credify from "../../assets/credify.png";
 import stanbic from "../../assets/stanbic.png";
 import gcb from "../../assets/gcb_logo.png";
-// import bosea from "../../assets/bosea.png";
-// import tf from "../../assets/teachers_fund.png";
-// import vodafone from "../../assets/vodafone.png";
 import yango from "../../assets/yango.png";
 import { useEffect, useCallback, useMemo } from "react";
+
+/**   */
+
 import NewHeader from "../../components/NewHeader/NewHeader";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import HomePageTab from "../../components/HomePageTab/HomePageTab";
@@ -34,6 +33,7 @@ import UpdatedNavTabs from "../../components/UpdatedNavTabs/UpdatedNavTabs";
 // import { Button } from "@mui/material";
 // import { useMemo } from "react/cjs/react.production.min";
 import Buttons from "../../components/Buttons/Buttons";
+import BoldSection from "../../components/BoldSection/BoldSection";
 //* List Component
 const List = ({ getItems, listSize }) => {
   const [items, setItems] = useState([]);
@@ -83,9 +83,8 @@ function Home() {
 
       <Logos LogosData={[creditmall, credify, stanbic, gcb, yango]} />
       <MiddleSection />
-      <div>
-        <Footer />
-      </div>
+      <BoldSection />
+      <Footer />
     </>
   );
 
