@@ -6,7 +6,7 @@ function FooterSection() {
   return (
     <footer
       style={{ position: "relative", zIndex: 6 }}
-      class="bg-white footerTopMargin"
+      class="bg-white footerTopMargin border-t-2"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" class="sr-only">

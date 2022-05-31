@@ -3,6 +3,8 @@ import logo from "../../assets/logo.png";
 import darklogo from "../../assets/pav_logo_mob.png";
 import LogosSection from "../../components/LogosSection/LogosSection";
 import landingImage from "../../assets/landing_Image.png";
+import api_Image from "../../assets/ReadyStart/api_Image.png";
+
 import {
   Header,
   Footer,
@@ -80,10 +82,48 @@ function Home() {
           </p>
         }
       />
-
       <Logos LogosData={[creditmall, credify, stanbic, gcb, yango]} />
       <MiddleSection />
-      <BoldSection />
+      <BoldSection
+        increaseMargin={24}
+        hrPresent={true}
+        mainCaption={"Build-in minutes launch in weeks"}
+        leadingCaption={"Built for developers"}
+        buttonTitle={"Read the Docs"}
+        description="With modern APIs and webhooks, you can build financial features using our clear, instructive guides in all the languages you use and love, from Node to Shell to Python"
+        features={[
+          {
+            title: "Embeddable components",
+            details:
+              "Integrate our pre-built application widgets in under five minutes",
+          },
+          {
+            title: "Extensive API",
+            details:
+              "Create a deeply immersive and seamless experience within your core product.",
+          },
+          {
+            title: "Webhooks",
+            details:
+              " Get advanced, real-time notifications of offers, terms and more.",
+          },
+          {
+            title: "Security",
+            details:
+              "Breathe easy knowing data security and protection is at the core of what we do.",
+          },
+        ]}
+      />
+      <BoldSection
+        api_Image={api_Image}
+        hrPresent={false}
+        reduceheight={true}
+        altColor={"#f3f3f3"}
+        buttonTitle={"Get Started"}
+        mainCaption={"Ready to get Started?"}
+        leadingCaption={"BUILDING CREDIT PRODUCTS HAS NEVER BEEN EASIER"}
+        description="See how Pavelon can help you build, embed or enhance your credit products so you can acquire more customers, increase revenue and accelerate growth."
+      />
       <Footer />
     </>
   );

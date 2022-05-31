@@ -7,6 +7,7 @@ import UpdatedNavTabs from "../UpdatedNavTabs/UpdatedNavTabs";
 import ImageBox from "../ImageBox/ImageBox.jsx";
 import { FeatureSection } from "..";
 import Features from "../Features/Features";
+import Buttons from "../Buttons/Buttons";
 
 function Shell() {
   return <img src={shell} alt="" />;
@@ -77,58 +78,51 @@ function HomeNavedSection() {
   );
 }
 
-function BoldSection() {
+function BoldSection({
+  increaseMargin,
+  reduceheight,
+  leadingCaption,
+  description,
+  mainCaption,
+  features,
+  altColor,
+  api_Image,
+  hrPresent,
+  buttonTitle,
+}) {
+  console.log("reduce Height", reduceheight);
   return (
     <div
       style={{
-        backgroundColor: "#11243e",
-        color: "white",
+        // height: height ? height : "auto",
+        backgroundColor: altColor ? altColor : "#11243e",
+        color: altColor ? "black" : "white",
       }}
-      className="w-full"
+      className={`w-full mt-${increaseMargin ? increaseMargin : "0"}`}
     >
-      <div className="py-32 w-8/12 my-32 ml-12 md:ml-56">
+      <div
+        className={`py-32 ${
+          altColor ? "text-black" : "text-gray-100"
+        } w-8/12 ${""} ml-12 md:ml-56`}
+      >
         <div className="flex flex-col md:flex-row  gap-4 md:gap-12 ">
           <div className="w-full md:w-6/12 ">
-            <h3 className="text-2xl my-4 font-bold text-gray-100">
-              Built for developers
+            <h3 className="text-lg my-4 font-bold uppercase ">
+              {leadingCaption}
             </h3>
-            <h1 className="text-4xl font-bold text-gray-100">
-              Build-in minutes <br /> launch in weeks
-            </h1>
-            <p className="my-8">
-              With modern APIs and webhooks, you can build financial features
-              using our clear, instructive guides in all the languages you use
-              and love, from Node to Shell to Python
-            </p>
+            <h1 className="text-6xl font-bold ">{mainCaption}</h1>
+            <p className="my-8">{description}</p>
+            <Buttons
+              btnBGColor="secondary"
+              buttonTitle={buttonTitle}
+              darkButton={true}
+            />
           </div>
-          <ImageBox />
+          <ImageBox api_Image={api_Image} />
         </div>
-        <hr className="my-12" />
-        <div className="grid grid-cols-4 py-8 ">
-          <Features
-            features={[
-              {
-                title: "Embeddable components",
-                details:
-                  "Integrate our pre-built application widgets in under five minutes",
-              },
-              {
-                title: "Extensive API",
-                details:
-                  "Create a deeply immersive and seamless experience within your core product.",
-              },
-              {
-                title: "Webhooks",
-                details:
-                  " Get advanced, real-time notifications of offers, terms and more.",
-              },
-              {
-                title: "Security",
-                details:
-                  "Breathe easy knowing data security and protection is at the core of what we do.",
-              },
-            ]}
-          />
+        {hrPresent && <hr className="my-12" />}
+        <div className="grid grid-cols-4 py-8 gap-24">
+          {features && <Features features={features} />}
         </div>
       </div>
     </div>
