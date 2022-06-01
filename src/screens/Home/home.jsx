@@ -4,6 +4,7 @@ import darklogo from "../../assets/pav_logo_mob.png";
 import LogosSection from "../../components/LogosSection/LogosSection";
 import landingImage from "../../assets/landing_Image.png";
 import api_Image from "../../assets/ReadyStart/api_Image.png";
+import pavApi from "../../assets/home/paveApi.png";
 
 import {
   Header,
@@ -14,6 +15,7 @@ import {
   Logos,
   GenericSection,
   AnimatedSection,
+  ImageBoxandList,
 } from "../../components/index";
 import FooterSection from "../../components/FooterSection/FooterSection";
 // import MiddleSection from "../../components/MiddleSection/MiddleSection";
@@ -113,6 +115,31 @@ function Home() {
               "Breathe easy knowing data security and protection is at the core of what we do.",
           },
         ]}
+      />
+      <ImageBoxandList
+        listItems={[
+          {
+            title: "Enhanced KYC & Digital Accounts",
+            description:
+              "See how Pavelon can help you build, embed or enhance your credit products so you can acquire more customers, increase revenue and accelerate growth.",
+          },
+          {
+            title: "Digital Lending & Capital By API",
+            description:
+              "See how Pavelon can help you build, embed or enhance your credit products so you can acquire more customers, increase revenue and accelerate growth.",
+          },
+          {
+            title: "Card Issuance & Disbursement API",
+            description:
+              "See how Pavelon can help you build, embed or enhance your credit products so you can acquire more customers, increase revenue and accelerate growth.",
+          },
+          {
+            title: "Financial Data & Embedded Commerce",
+            description:
+              "See how Pavelon can help you build, embed or enhance your credit products so you can acquire more customers, increase revenue and accelerate growth.",
+          },
+        ]}
+        image={pavApi}
       />
       <BoldSection
         api_Image={api_Image}

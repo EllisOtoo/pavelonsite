@@ -4,7 +4,7 @@ import python from "../../assets/tabbedImages/python.png";
 import js from "../../assets/tabbedImages/js.png";
 import ruby from "../../assets/tabbedImages/ruby.png";
 import UpdatedNavTabs from "../UpdatedNavTabs/UpdatedNavTabs";
-import ImageBox from "../ImageBox/ImageBox.jsx";
+import ImageBox, { SingleImage } from "../ImageBox/ImageBox.jsx";
 import { FeatureSection } from "..";
 import Features from "../Features/Features";
 import Buttons from "../Buttons/Buttons";
@@ -89,12 +89,15 @@ function BoldSection({
   api_Image,
   hrPresent,
   buttonTitle,
+  reverse,
+  showButton = false,
+  singleImage,
+  image,
 }) {
   console.log("reduce Height", reduceheight);
   return (
     <div
       style={{
-        // height: height ? height : "auto",
         backgroundColor: altColor ? altColor : "#11243e",
         color: altColor ? "black" : "white",
       }}
@@ -103,22 +106,36 @@ function BoldSection({
       <div
         className={`py-32 ${
           altColor ? "text-black" : "text-gray-100"
-        } w-8/12 ${""} ml-12 md:ml-56`}
+        } w-8/12 ml-12 md:ml-56`}
       >
-        <div className="flex flex-col md:flex-row  gap-4 md:gap-12 ">
-          <div className="w-full md:w-6/12 ">
+        <div
+          className={`flex ${
+            reverse ? "md:flex-row-reverse" : "flex-row"
+          } flex-col md:flex-row  flex gap-4 md:gap-12`}
+        >
+          <div className="w-full md:w-6/12">
             <h3 className="text-lg my-4 font-bold uppercase ">
               {leadingCaption}
             </h3>
-            <h1 className="text-6xl font-bold ">{mainCaption}</h1>
+            <h1 className="text-6xl font-bold">{mainCaption}</h1>
             <p className="my-8">{description}</p>
-            <Buttons
-              btnBGColor="secondary"
-              buttonTitle={buttonTitle}
-              darkButton={true}
-            />
+            {showButton ? (
+              <Buttons
+                btnBGColor="secondary"
+                buttonTitle={buttonTitle}
+                darkButton={true}
+              />
+            ) : (
+              ""
+            )}
           </div>
-          <ImageBox api_Image={api_Image} />
+          <div>
+            {singleImage ? (
+              <SingleImage image={image}></SingleImage>
+            ) : (
+              <ImageBox api_Image={api_Image} />
+            )}
+          </div>
         </div>
         {hrPresent && <hr className="my-12" />}
         <div className="grid grid-cols-4 py-8 gap-24">

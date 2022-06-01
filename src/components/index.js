@@ -8,6 +8,7 @@ import AnimatedSection from "./AnimatedSections/AnimatedSection.jsx";
 import FeatureSection from "./FeatureSection/FeatureSection.jsx";
 import HomeHeroBanner from "./HomeBanner/HomeBanner.jsx";
 import BoldSection from "./BoldSection/BoldSection.jsx";
+import ImageBoxandList from "./ImageBoxandList/ImageBoxandList";
 
 export {
   Footer,
@@ -15,6 +16,7 @@ export {
   Header,
   BoldSection,
   MiddleSection,
+  ImageBoxandList,
   Logos,
   GenericSection,
   AnimatedSection,

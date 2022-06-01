@@ -180,7 +180,7 @@ function HeaderSection({
                 {Caption}
               </p>
               {children ? children : BelowCaptionText}
-              <Buttons buttonTitle={"Start Now"} />
+              <Buttons />
             </div>
             {isLarger && showImage ? (
               <div

@@ -9,6 +9,7 @@ function NavedSection() {
   const [isLarger, setisLarger] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
+
   const [currentSection, setCurrentSection] = useState(<FirstSection />);
   const firstButton = "Phone Number Verification";
   const SecondButton = "ID Verification";
@@ -30,16 +31,15 @@ function NavedSection() {
 
   return (
     <div
-      className={`px-16 py-12 bg-slate-300 my-16 mx-auto ${
-        isLarger ? "w-10/12" : "w-full"
+      className={`bg-slate-300 mx-auto ${
+        isLarger ? "w-8/12" : "w-full"
       } drop-shadow-sm`}
       style={{
         position: "relative",
-        top: "200px",
       }}
     >
-      <div className="my-12">
-        <h2 className="text-5xl my-12">How it Works</h2>
+      <div>
+        <h2 className="text-5xl">How it Works</h2>
         <p>
           Digital Accounts are bank accounts maintained by a financial
           institution, in which a customer can deposit and withdraw money.

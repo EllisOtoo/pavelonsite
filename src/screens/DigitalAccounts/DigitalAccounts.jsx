@@ -1,18 +1,15 @@
 import React from "react";
-import { Footer, Navbar } from "../../components";
-import HeaderSection from "../../components/HeaderSection/HeaderSection";
-import introLogo from "../../assets/treasury.png";
-import codeSnippet from "../../assets/codeSnippet.png";
+import { BoldSection, Footer } from "../../components";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
-import NavedSection from "../../components/NavedSection/NavedSection";
+import GDPC from "../../assets/DigitalAccounts/digitalAccounts.png";
 
 function BelowCaptionText() {
   return (
     <>
-      Build deposit accounts for your customers to securely store, spend, and
-      send money. Accessible, reliable accounts infrastructure for businesses
-      Custody balances, facilitate transfers, transact globally. Build without
-      the complexity with our flexible Digital Accounts API.
+      Bond Banking powers financial products for B2B and B2C companies across
+      many verticals. Use our accounts center as the control deck for your
+      financial offering whether you're building a neobank, launching easier
+      expense management, or offering early pay access to your customers.
     </>
   );
 }
@@ -20,21 +17,23 @@ function BelowCaptionText() {
 function DigitalAccounts() {
   return (
     <div>
-      {/* <ResponsiveNav makeMenuDark /> */}
-      <HeaderSection
-        smallerHeader
-        makeMenuDark
-        isDarkHeaderText
-        introLogo={introLogo}
-        Caption={"Offer GDPC- Insured accounts with a few lines of code"}
-        showImage={true}
-        noGradient
-        oneImageHeader={true}
-        BelowCaptionText={<BelowCaptionText />}
-        headerImages={[codeSnippet]}
-        logoBlack
+      <ResponsiveNav makeMenuDark />
+      <BoldSection
+        singleImage={true}
+        image={GDPC}
+        description={""}
+        mainCaption={"Offer GDPC-Insuredaccounts with a fewlines of code"}
+        altColor={"#f3f3f3"}
       />
-      <NavedSection />
+      <BoldSection
+        singleImage={true}
+        image={GDPC}
+        reverse={true}
+        mainCaption={"Offer GDPC-Insuredaccounts with a fewlines of code"}
+        altColor={"#fff"}
+        // api_Image = {}
+      />
+
       <Footer />
     </div>
   );

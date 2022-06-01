@@ -10,9 +10,19 @@ function ImageBox({ api_Image }) {
       {api_Image ? (
         ""
       ) : (
-        <div className="bg-gray-600 rounded-md w-56 h-4/5 relative bottom-48 left-72 "></div>
+        <div className="bg-gray-600 rounded-md w-56 h-4/5 relative bottom-48 left-72 ">
+          <img src={api_Image} alt="" />
+        </div>
       )}
     </div>
+  );
+}
+
+export function SingleImage({ image }) {
+  return (
+    <>
+      <img src={image} alt="" />
+    </>
   );
 }
 
