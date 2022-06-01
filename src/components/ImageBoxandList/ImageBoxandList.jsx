@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 function ImageBoxandList({ image, listItems }) {
   return (
@@ -19,9 +19,9 @@ function ImageBoxandList({ image, listItems }) {
   );
 }
 
-ImageBoxandList.propType = {
-  image: PropTypes.string,
-  listItems: PropTypes.array,
-};
+// ImageBoxandList.propType = {
+//   image: PropTypes.string,
+//   listItems: PropTypes.array,
+// };
 
 export default ImageBoxandList;
