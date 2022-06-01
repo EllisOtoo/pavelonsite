@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { AnimatedSection, Footer } from "../../components";
 import Section from "../../components/HeaderSection/HeaderSection";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 function Neobanks() {
   let arrowRef;
@@ -10,11 +10,11 @@ function Neobanks() {
   // console.log("Arrow Ref", arrowRef);
 
   function moveArrowBack() {
-    gsap.to(arrowRef, { rotation: 0, x: 0, duration: 0.5 });
+    // gsap.to(arrowRef, { rotation: 0, x: 0, duration: 0.5 });
   }
 
   function moveArrow() {
-    gsap.to(arrowRef, { rotation: 0, x: 15, duration: 0.5 });
+    // gsap.to(arrowRef, { rotation: 0, x: 15, duration: 0.5 });
   }
 
   useEffect(() => {}, []);
