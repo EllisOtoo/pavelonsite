@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import darklogo from "../../assets/pav_logo_mob.png";
+import { Link } from "react-router-dom";
 
 function FooterSection() {
   return (
@@ -23,7 +24,11 @@ function FooterSection() {
             />
             <p class="text-gray-500 text-base">©Pavelon, 2022</p>
             <div class="flex space-x-6">
-              <a href="#" class="text-gray-400 hover:text-gray-500">
+              <Link
+                to={{ pathname: "https://www.facebook.com/pavelongh" }}
+                target="_blank"
+                class="text-gray-400 hover:text-gray-500"
+              >
                 <span class="sr-only">Facebook</span>
                 <svg
                   class="h-6 w-6"
@@ -37,7 +42,7 @@ function FooterSection() {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
 
               <a href="#" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Instagram</span>
@@ -107,14 +112,14 @@ function FooterSection() {
                   Products
                 </h3>
                 <ul role="list" class="mt-4 space-y-4">
-                  <li>
+                  {/*   <li>
                     <a
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Commerce API
                     </a>
-                  </li>
+                  </li> */}
 
                   <li>
                     <a
@@ -142,22 +147,22 @@ function FooterSection() {
                       KYC/Onboarding API
                     </a>
                   </li>
-                  <li>
+                  {/*  <li>
                     <a
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Loans Collections API{" "}
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a
                       href="#"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Financial Data API{" "}
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="#"

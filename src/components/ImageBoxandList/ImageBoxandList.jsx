@@ -3,12 +3,12 @@ import React from "react";
 
 function ImageBoxandList({ image, listItems }) {
   return (
-    <div className="flex w-8/12 gap-12 sm:ml-12 md:ml-56 py-12">
+    <div className="flex w-10/12  ml-12 md:ml-36 gap-12 py-12">
       <img className="w-6/12 object-contain" src={image} alt="" />
-      <div className="self-center w-6/12">
-        <ul className="grid my-auto grid-cols-1 divide-y gap-12 divide-gray-100">
+      <div className="self-center w-4/12">
+        <ul className="grid grid-cols-1  divide-y divide-gray-500">
           {listItems.map(({ title, description }) => (
-            <li>
+            <li className="py-4">
               <h3 className="font-bold text-lg">{title}</h3>
               <p>{description}</p>
             </li>

@@ -22,7 +22,7 @@ function MidHomepage() {
   useEffect(() => {
     gsap.from(topImage, {
       scrollTrigger: scrollOptions,
-      x: "-10vw",
+      x: "-15vw",
     });
     gsap.from(belowImage, {
       scrollTrigger: {
@@ -39,7 +39,7 @@ function MidHomepage() {
     });
     gsap.from(rightImageRef, {
       scrollTrigger: scrollOptions,
-      x: "10vw",
+      x: "15vw",
     });
   }, []);
 
