@@ -19,9 +19,4 @@ function ImageBoxandList({ image, listItems }) {
   );
 }
 
-// ImageBoxandList.propType = {
-//   image: PropTypes.string,
-//   listItems: PropTypes.array,
-// };
-
 export default ImageBoxandList;
