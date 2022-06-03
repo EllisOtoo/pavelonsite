@@ -1,17 +1,21 @@
 import React from "react";
-import { Navbar } from "../../components";
+import { Footer, Navbar } from "../../components";
 import HeaderSection from "../../components/HeaderSection/HeaderSection";
 import customerHoldingId from "../../assets/custHoldingId.png";
 import codeSnippet from "../../assets/codeSnippet.png";
 // import idVerification from "../../assets/Id Verification.png";
 import idVerification from "../../assets/Id_Verification.png";
+import kycImage from "../../assets/EnhancedKyc/verified-1.webp";
 import gps from "../../assets/gps.png";
 // import consentVerification from "../../assets/consent.png";
 import phoneNumberVerification from "../../assets/EnhancedKyc/Screenshot 2022-06-02 at 2.24.14 PM.png";
 import IDVerification from "../../assets/EnhancedKyc/Screenshot 2022-06-02 at 2.37.05 PM.png";
 import consentVerification from "../../assets/EnhancedKyc/consentVerification.jpg";
+import verified from "../../assets/EnhancedKyc/verified-1.webp";
+import holdingID from "../../assets/EnhancedKyc/HoldingIDtaking picture.jpg";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import NavedSection from "../../components/NavedSection/NavedSection";
+import SectionGrandHeader from "../../components/HeroKYCHeader/SectionGrandHeader";
 
 let captionsJSX = [
   "",
@@ -49,12 +53,43 @@ function LeadInText({ JSXArray }) {
 function KYC() {
   return (
     <div>
-      {/* <ResponsiveNav makeMenuDark /> */}
-      <HeaderSection
+      <ResponsiveNav makeMenuDark />
+      <SectionGrandHeader
+        mainCaption={"Easiest way to Verify and Onboard users."}
+        description={
+          "Verify Phone Numbers, ID Cards, and Addresses. Verify user’s consent in real-time with consent verification. Know that people are who they say they are, Faster."
+        }
+        image={kycImage}
+        showButton={true}
+        buttonTitle={"Explore Docs"}
+      />
+      {/*      <HeaderSection
         smallerHeader
         makeMenuDark
         isDarkHeaderText
         buttonText="Read the Docs"
+        // introLogo={introLogo}
+        Caption={"Easiest way to Verify and Onboard users."}
+        showImage={true}
+        noGradient
+        oneImageHeader={true}
+        BelowCaptionText={captionsJSX[0]}
+        headerImages={[verified]}
+        logoBlack
+      >
+        <>
+          Verify Phone Numbers, ID Cards, and Addresses. Verify user’s consent
+          in real-time with consent verification. Know that people are who they
+          say they are, Faster.
+        </>
+      </HeaderSection> */}
+      <HeaderSection
+        smallerHeader
+        makeMenuDark
+        reverse
+        isDarkHeaderText
+        buttonText="Read the Docs"
+        noHeader
         // introLogo={introLogo}
         Caption={"Phone Number Verification"}
         showImage={true}
@@ -88,7 +123,6 @@ function KYC() {
         </>
       </HeaderSection>
       <HeaderSection
-        reverse
         controlSectionImage
         noHeader
         smallerHeader
@@ -100,10 +134,11 @@ function KYC() {
         noGradient
         oneImageHeader={true}
         BelowCaptionText={captionsJSX[1]}
-        headerImages={[IDVerification]}
+        headerImages={[holdingID]}
         logoBlack
       />
       <HeaderSection
+        reverse
         controlSectionImage
         noHeader
         smallerHeader
@@ -121,7 +156,6 @@ function KYC() {
       />
       <HeaderSection
         controlSectionImage
-        reverse
         noHeader
         smallerHeader
         makeMenuDark
@@ -137,6 +171,7 @@ function KYC() {
         headerImages={[gps]}
         logoBlack
       />
+      <Footer />
     </div>
   );
 }
