@@ -6,7 +6,10 @@ import codeSnippet from "../../assets/codeSnippet.png";
 // import idVerification from "../../assets/Id Verification.png";
 import idVerification from "../../assets/Id_Verification.png";
 import gps from "../../assets/gps.png";
-import consentVerification from "../../assets/consent.png";
+// import consentVerification from "../../assets/consent.png";
+import phoneNumberVerification from "../../assets/EnhancedKyc/Screenshot 2022-06-02 at 2.24.14 PM.png";
+import IDVerification from "../../assets/EnhancedKyc/Screenshot 2022-06-02 at 2.37.05 PM.png";
+import consentVerification from "../../assets/EnhancedKyc/consentVerification.jpg";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import NavedSection from "../../components/NavedSection/NavedSection";
 
@@ -58,7 +61,7 @@ function KYC() {
         noGradient
         oneImageHeader={true}
         BelowCaptionText={captionsJSX[0]}
-        headerImages={[codeSnippet]}
+        headerImages={[phoneNumberVerification]}
         logoBlack
       >
         <>
@@ -97,7 +100,7 @@ function KYC() {
         noGradient
         oneImageHeader={true}
         BelowCaptionText={captionsJSX[1]}
-        headerImages={[idVerification]}
+        headerImages={[IDVerification]}
         logoBlack
       />
       <HeaderSection

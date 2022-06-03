@@ -88,6 +88,7 @@ function BoldSection({
   altColor,
   api_Image,
   hrPresent,
+  children,
   buttonTitle,
   reverse,
   showButton = false,
@@ -113,12 +114,13 @@ function BoldSection({
             reverse ? "md:flex-row-reverse" : "flex-row"
           } flex-col md:flex-row  flex gap-4 md:gap-12`}
         >
-          <div className="w-full md:w-6/12">
+          <div className="w-6/12 ">
             <h3 className="text-lg my-4 font-bold uppercase ">
               {leadingCaption}
             </h3>
             <h1 className="text-6xl font-bold">{mainCaption}</h1>
             <p className="my-8">{description}</p>
+            {children && children}
             {showButton ? (
               <Buttons
                 btnBGColor="secondary"
@@ -129,7 +131,7 @@ function BoldSection({
               ""
             )}
           </div>
-          <div>
+          <div className="w-6/12">
             {singleImage ? (
               <SingleImage image={image}></SingleImage>
             ) : (

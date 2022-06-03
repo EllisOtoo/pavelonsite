@@ -154,7 +154,9 @@ function HeaderSection({
       <div className={`relative  headerContainer`}>
         <div className="max-w-7xl mx-auto py-32 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div
-            className={`${reverse ? "flex flex-row-reverse" : "flex"}`}
+            className={`${
+              reverse ? "flex flex-row-reverse" : "flex"
+            } items-center`}
             style={{
               justifyContent: "space-between",
               padding: "25px",
@@ -180,12 +182,12 @@ function HeaderSection({
                 {Caption}
               </p>
               {children ? children : BelowCaptionText}
-              <Buttons />
+              {false && <Buttons />}
             </div>
             {isLarger && showImage ? (
               <div
                 // style={{ backgroundColor: noHeader ? "#F9F9F9" : "" }}
-                className="flex w-5/12 justify-center"
+                className="flex w-5/12 start-self"
               >
                 {headerImages
                   ? headerImages.map((eachImgSrc, idx, array) => {
@@ -210,7 +212,7 @@ function HeaderSection({
                         <img
                           key={idx}
                           src={eachImgSrc}
-                          className={`${
+                          className={`object-cover${
                             oneImageHeader
                               ? controlSectionImage
                                 ? "w-6/12"
@@ -220,7 +222,7 @@ function HeaderSection({
                             animateClasses
                               ? animateClasses
                               : " animate__slideInRight"
-                          } `}
+                          }`}
                           style={{
                             marginTop: "3rem",
                           }}
