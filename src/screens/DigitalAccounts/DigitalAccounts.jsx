@@ -25,7 +25,7 @@ function DigitalAccounts() {
         singleImage={true}
         image={GDPC}
         description={""}
-        mainCaption={"Offer GDPC-Insuredaccounts with a fewlines of code"}
+        mainCaption={"Offer GDPC-Insured accounts with a few lines of code"}
         altColor={"#f3f3f3"}
       />
       <BoldSection
