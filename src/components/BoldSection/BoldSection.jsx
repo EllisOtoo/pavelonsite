@@ -116,7 +116,7 @@ function BoldSection({
             reverse ? "md:flex-row-reverse" : "flex-row"
           } flex-col md:flex-row  flex gap-4 md:gap-12`}
         >
-          <div className="w-6/12 ">
+          <div className="w-12/12 md:w-6/12 ">
             <h3 className="text-lg my-4 font-bold uppercase ">
               {leadingCaption}
             </h3>
