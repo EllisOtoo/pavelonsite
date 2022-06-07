@@ -87,6 +87,7 @@ function Home() {
       <Logos LogosData={[creditmall, credify, stanbic, gcb, yango]} />
       <MiddleSection />
       <BoldSection
+        motionUI
         increaseMargin={24}
         hrPresent={true}
         mainCaption={"Build-in minutes launch in weeks"}

@@ -8,6 +8,7 @@ import ImageBox, { SingleImage } from "../ImageBox/ImageBox.jsx";
 import { FeatureSection } from "..";
 import Features from "../Features/Features";
 import Buttons from "../Buttons/Buttons";
+import MotionCodeBlock from "../MotionCodeBlock/MotionCodeBlock";
 
 function Shell() {
   return <img src={shell} alt="" />;
@@ -79,6 +80,7 @@ function HomeNavedSection() {
 }
 
 function BoldSection({
+  motionUI,
   increaseMargin,
   reduceheight,
   leadingCaption,
@@ -131,8 +133,10 @@ function BoldSection({
               ""
             )}
           </div>
-          <div className="w-6/12">
-            {singleImage ? (
+          <div className={motionUI ? `w-full md:w-6/12` : `w-6/12`}>
+            {motionUI ? (
+              <MotionCodeBlock />
+            ) : singleImage ? (
               <SingleImage image={image}></SingleImage>
             ) : (
               <ImageBox api_Image={api_Image} />
