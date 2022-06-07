@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import "./MotionCodeBlock.css";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -222,9 +224,11 @@ function MotionCodeBlock() {
       <div class="mt-2">
         <hr />
         <div class="flex justify-end">
-          <button class="bg-primary hover:bg-blue-900 mt-2 text-white font-bold py-2 px-4 rounded">
-            Try it
-          </button>
+          <Link to="/pavelonApi">
+            <button class="bg-primary hover:bg-blue-900 mt-2 text-white font-bold py-2 px-4 rounded">
+              Try it
+            </button>
+          </Link>
         </div>
       </div>
     </div>

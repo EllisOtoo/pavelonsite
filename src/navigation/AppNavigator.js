@@ -54,6 +54,14 @@ function RootNavigator() {
           />
 
           <Route
+            path="/pavelonApi"
+            component={() => {
+              window.location.href =
+                "https://pavelon.readme.io/reference/getting-started-with-your-api";
+              return null;
+            }}
+          />
+          <Route
             component={CommercialFintechs}
             path={"/commercialFintechs"}
             exact={true}
