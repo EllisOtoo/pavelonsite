@@ -17,6 +17,7 @@ import CommercialFintechs from "../screens/CommercialFintechs/CommercialFintechs
 import RetailFintechs from "../screens/RetailFintechs/RetailFintechs";
 import Banks from "../screens/Banks/Bank";
 import EmbeddedBanking from "../screens/EmbeddedBanking/EmbeddedBanking.jsx";
+import InvestmentAsAService from "../screens/InvestmentAsAService/InvestmentAsAService";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -35,6 +36,11 @@ function RootNavigator() {
           <Route
             component={DigitalAccounts}
             path={"/digitalAccounts"}
+            exact={true}
+          />
+          <Route
+            component={InvestmentAsAService}
+            path={"/investmentAsAService"}
             exact={true}
           />
           <Route component={Neobanks} path={"/neobanks"} exact={true} />

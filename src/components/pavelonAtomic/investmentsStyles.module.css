@@ -1,0 +1,47 @@
+.hide {
+  display: none;
+}
+
+@keyframes reduceline {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+.stroke {
+  stroke-dasharray: 1000;
+}
+
+@keyframes reducecircle {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* The element to apply the animation to */
+.animateLine {
+  height: 2px;
+  transform-origin: center;
+  background-color: lightblue;
+  animation-name: reduceline;
+  animation-duration: 2s;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border-radius: 50%;
+  animation: reducecircle 2s;
+}
+.path {
+  /* stroke-dasharray: 200;
+  stroke-dashoffset: 100; */
+}
