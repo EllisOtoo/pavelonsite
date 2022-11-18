@@ -150,15 +150,19 @@ const PavelonAtomic = () => {
                 <Fade in={switched === false} timeout={4000}>
                   <Avatar sx={{ bgcolor: "red" }}>x</Avatar>
                 </Fade>
+                <div>Regulatory Overhead</div>
               </div>
               <div className="flex  flex-col items-center">
-                <Avatar sx={{ bgcolor: "red" }}>x</Avatar> <div>2</div>
+                <Avatar sx={{ bgcolor: "red" }}>x</Avatar>
+                <div>Compliance Management</div>
               </div>
               <div className="flex  flex-col items-center">
-                <Avatar sx={{ bgcolor: "red" }}>x</Avatar> <div>3</div>
+                <Avatar sx={{ bgcolor: "red" }}>x</Avatar>
+                <div>Middle Office Operations</div>
               </div>
               <div className="flex  flex-col items-center">
-                <Avatar sx={{ bgcolor: "red" }}>x</Avatar> <div>4</div>
+                <Avatar sx={{ bgcolor: "red" }}>x</Avatar>
+                <div>Back Office Operations</div>
               </div>
             </>
           )}
