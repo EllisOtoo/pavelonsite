@@ -108,7 +108,7 @@ const solutions = [
     name: "Investment as a Service",
     description:
       "Build strategic funnels that will drive your customers to convert",
-    href: "/digitalAccounts",
+    href: "/investmentAsAService",
     icon: RefreshIcon,
   },
 ];
