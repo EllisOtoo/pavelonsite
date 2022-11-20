@@ -94,7 +94,7 @@ const solutions = [
   {
     name: "BAAS",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "/investmentAsAService",
+    href: "/BAAS",
     icon: CursorClickIcon,
   },
   {

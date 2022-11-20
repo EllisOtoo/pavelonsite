@@ -18,10 +18,10 @@ function ImageBox({ api_Image }) {
   );
 }
 
-export function SingleImage({ image }) {
+export function SingleImage({ image, imageWidth }) {
   return (
     <>
-      <img src={image} alt="" />
+      <img width={!!imageWidth && imageWidth} src={image} alt="" />
     </>
   );
 }

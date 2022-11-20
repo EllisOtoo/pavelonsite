@@ -114,7 +114,7 @@ const InvestmentAsAService = () => (
         </div>
       </div>
     </div>
-    <div className="h-screen flex flex-col justify-center items-center bg-blue-50">
+    <div className="h-screen flex flex-col justify-center gap-12 items-center bg-blue-50">
       <h2 className="text-5xl px-10 py-2">{"Want to launch investing?"}</h2>
       <Button variant="contained">
         <Typography>Request Access</Typography>

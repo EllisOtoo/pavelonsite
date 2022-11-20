@@ -18,6 +18,7 @@ import RetailFintechs from "../screens/RetailFintechs/RetailFintechs";
 import Banks from "../screens/Banks/Bank";
 import EmbeddedBanking from "../screens/EmbeddedBanking/EmbeddedBanking.jsx";
 import InvestmentAsAService from "../screens/InvestmentAsAService/InvestmentAsAService";
+import BAAS from "../screens/BankAsAService/BAAS";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -72,6 +73,7 @@ function RootNavigator() {
             path={"/commercialFintechs"}
             exact={true}
           />
+          <Route component={BAAS} path={"/BAAS"} exact={true} />
           <Route
             component={RetailFintechs}
             path={"/retailFintechs"}

@@ -199,7 +199,7 @@ function Neobanks() {
   );
 }
 
-function FeatureSet({ features }) {
+export function FeatureSet({ features }) {
   return (
     <>
       {features.map((perFeature) => (

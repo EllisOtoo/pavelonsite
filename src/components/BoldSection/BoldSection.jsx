@@ -80,6 +80,7 @@ function HomeNavedSection() {
 }
 
 function BoldSection({
+  imageWidth,
   motionUI,
   increaseMargin,
   reduceheight,
@@ -137,7 +138,7 @@ function BoldSection({
             {motionUI ? (
               <MotionCodeBlock />
             ) : singleImage ? (
-              <SingleImage image={image}></SingleImage>
+              <SingleImage imageWidth={imageWidth} image={image}></SingleImage>
             ) : (
               <ImageBox api_Image={api_Image} />
             )}
