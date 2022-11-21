@@ -132,13 +132,13 @@ const BAAS = () => {
       </BAASSection>
 
       <div className="flex flex-wrap justify-center my-32 ">
-        <div className="flex w-8/12 gap-8 ">
-          <div className="flex h-12 gap-4">
-            <img src={shield} />
+        <div className="flex w-8/12 flex-col md:flex-row gap-8 ">
+          <div className="flex flex-col md:flex-row gap-4">
+            <img className="h-12 w-12" src={shield} />
             <p className="text-3xl font-black ">A Secure BAAS platform</p>
           </div>
 
-          <p className="w-6/12">
+          <p className="md:w-6/12">
             Data security and integrity are extremely important to our clients,
             and Pavelon is aware of this. SOC 2, Type II attestation and PCI-DSS
             certification, both obtained in Q4 2021, are among the independent
