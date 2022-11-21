@@ -3,6 +3,7 @@ import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import ModernChart from "../../assets/BAAS/modernFin.png";
 import shield from "../../assets/BAAS/shield.png";
 import phoneImage from "../../assets/BAAS/phone.png";
+import dashboard from "../../assets/BAAS/dashboard.png";
 import { Link } from "@mui/material";
 import FooterSection from "../../components/FooterSection/FooterSection";
 
@@ -34,11 +35,11 @@ const BAAS = () => {
           "Banking as a Service -  We support the full account lifecycle"
         }
       />
-      <>
+      <div>
         <p className="text-center text-4xl font-light my-12">
           Why build with Pavelon’s Baas Platform
         </p>
-        <div className="flex  gap-12 h-72  justify-center">
+        <div className="flex  flex-col items-center md:items-start md:flex-row  gap-12 py-12 justify-center">
           <FeatureSet
             features={[
               {
@@ -72,7 +73,7 @@ const BAAS = () => {
             ]}
           />
         </div>
-      </>
+      </div>
       <BAASSection
         {...{
           ...BAAS_Section_Defaults,
@@ -110,8 +111,7 @@ const BAAS = () => {
           description: "Easy, seamless workflow management",
           showButton: false,
           mainCaption: "Pavelon Cases",
-          image: phoneImage,
-          imageWidth: 300,
+          image: dashboard,
         }}
       >
         <ul className="list-disc ml-4">
@@ -131,7 +131,7 @@ const BAAS = () => {
         </ul>
       </BAASSection>
 
-      <div className="flex justify-center my-32 ">
+      <div className="flex flex-wrap justify-center my-32 ">
         <div className="flex w-8/12 gap-8 ">
           <div className="flex h-12 gap-4">
             <img src={shield} />
