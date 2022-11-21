@@ -78,12 +78,12 @@ const InvestmentAsAService = () => (
     </BoldSection>
 
     <div className="my-32">
-      <div className="flex flex-col w-full h-56 gap-12 justify-center items-center">
+      <div className="flex flex-col w-full gap-12 justify-center items-center">
         <h2 className="text-5xl px-10 py-2">
           {"Cutting-edge investing capabilities"}
         </h2>
 
-        <div className="flex w-8/12 gap-8">
+        <div className="flex flex-col md:flex-row w-8/12 gap-8">
           <MUICard
             caption={"Direct Indexing"}
             MUIIconComp={
