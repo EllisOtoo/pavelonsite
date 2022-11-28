@@ -52,7 +52,7 @@ function MiddleSection() {
           <Link style={{ color: "blue" }} class="" to={"#"}>
             Card Issuing API for both
           </Link>{" "}
-          virtual and physical and cards.
+          virtual and physical cards.
           <br />
           <Buttons buttonTitle={"See more"} btnBGColor={"primary"} />
         </div>

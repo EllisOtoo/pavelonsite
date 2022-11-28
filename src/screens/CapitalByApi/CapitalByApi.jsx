@@ -23,7 +23,7 @@ const BreakingHeader = () => {
         Instant, Embedded Lending designed for fintech, neobanks, and gig
         platforms.
       </div>
-      <ul className="text-2xl flex flex-col gap-2 pl-8">
+      <ul className="text-2xl flex list-disc flex-col gap-2 pl-4">
         <li>Scales in real-time</li>
         <li>Instant eligibility</li>
         <li>Seamless for your users</li>

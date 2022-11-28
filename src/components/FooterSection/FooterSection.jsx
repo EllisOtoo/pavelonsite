@@ -122,54 +122,39 @@ function FooterSection() {
                   </li> */}
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/digitalLending"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Digital Lending API
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/capitalByApi"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Capital by API
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/kyc"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       KYC/Onboarding API
-                    </a>
+                    </Link>
                   </li>
-                  {/*  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Loans Collections API{" "}
-                    </a>
-                  </li> */}
-                  {/* <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Financial Data API{" "}
-                    </a>
-                  </li> */}
+
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/digitalAccounts"
                       class="text-base text-gray-500 hover:text-gray-900"
                     >
                       Digital Accounts API{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

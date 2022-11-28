@@ -12,7 +12,7 @@ import phoneNumberVerification from "../../assets/EnhancedKyc/Screenshot 2022-06
 import IDVerification from "../../assets/EnhancedKyc/Screenshot 2022-06-02 at 2.37.05 PM.png";
 import consentVerification from "../../assets/EnhancedKyc/consentVerification.jpg";
 import verified from "../../assets/EnhancedKyc/verified-1.webp";
-import holdingID from "../../assets/EnhancedKyc/HoldingIDtaking picture.jpg";
+import holdingID from "../../assets/EnhancedKyc/HoldingIDtaking picture.png";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
 import NavedSection from "../../components/NavedSection/NavedSection";
 import SectionGrandHeader from "../../components/HeroKYCHeader/SectionGrandHeader";
@@ -68,7 +68,7 @@ function KYC() {
         buttonTitle={"Explore Docs"}
       />
 
-      <KYCSection />
+      {/* <KYCSection /> */}
       <HeaderSection
         smallerHeader
         makeMenuDark
@@ -108,28 +108,14 @@ function KYC() {
           </div>
         </>
       </HeaderSection>
-
-      {/* <BoldSection */}
-      {/* <HeaderSection
-        controlSectionImage
-        noHeader
-        smallerHeader
-        makeMenuDark
-        isDarkHeaderText
-        buttonText="Read the Docs"
-        Caption={"ID Verification"}
-        showImage={true}
-        noGradient
-        oneImageHeader={true}
-        BelowCaptionText={captionsJSX[1]}
-        headerImages={[holdingID]}
-        logoBlack
-      /> */}
       <BoldSection
+        imageWidth={300}
         singleImage={true}
         image={holdingID}
-        description={""}
         mainCaption={"ID Verification"}
+        description={
+          "Validate users by allowing users to upload a picture of their national ID. Details and the photograph on the ID must match that of the details provided by a new user as well as a live photograph of the new user to prevent fraudsters and impersonators from gaining access to the platform.  "
+        }
         altColor={"#f3f3f3"}
       />
       <HeaderSection
