@@ -10,8 +10,8 @@ import { HomeHeroBanner } from "../../components";
 import { Input, Button } from "@mui/material";
 
 const client = axios.create({
-  // baseURL: "https://pavelon-server.herokuapp.com/",
-  baseURL: "http://localhost:8000/",
+  baseURL: "https://pavelon-server.herokuapp.com/",
+  // baseURL: "http://localhost:8000/",
 });
 
 /* 
