@@ -1,7 +1,7 @@
 import { EditSharp } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import * as Yup from "yup";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
@@ -29,6 +29,7 @@ const validate = (values) => {
 }; */
 
 export default function Contact_form() {
+  const [showSuccess, setShowSuccess] = useState(false);
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -45,10 +46,18 @@ export default function Contact_form() {
       email: Yup.string().email("Invalid email address").required("Required"),
     }),
 
-    onSubmit: (values) => {
-      // console.log(values);
+    onSubmit: (values, { resetForm }) => {
       // send post data with axios!
-      client.post("", values).then(({ data }) => console.log(data));
+      client.post("", values).then(() => {
+        resetForm({
+          values: {
+            email: "",
+            name: "",
+            business_Name: "",
+          },
+        });
+        setShowSuccess(true);
+      });
       // const testServer = async () => {
       //   console.log("fetch started!");
       //   const response = await fetch("https://pavelon-server.herokuapp.com/");
@@ -113,7 +122,9 @@ export default function Contact_form() {
             {formik.touched.business_Name && formik.errors.business_Name ? (
               <div className="text-red-900">{formik.errors.business_Name}</div>
             ) : null}
+
             <Button type="submit">Submit</Button>
+            {showSuccess && <p className="text-green-400">Message Sent!</p>}
           </form>
         </div>
       </div>
