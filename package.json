@@ -15,7 +15,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "animejs": "^3.2.1",
-    "axios": "^0.26.1",
+    "axios": "^1.2.0",
+    "formik": "^2.2.9",
     "gsap": "./gsap-bonus.tgz",
     "js-cookie": "^2.2.1",
     "react": "^17.0.2",
@@ -29,7 +30,8 @@
     "react-topbar-progress-indicator": "^4.1.0",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.11"
   },
   "resolutions": {
     "//": "See https://github.com/facebook/create-react-app/issues/11773",

@@ -26,9 +26,9 @@ function HeaderSection({
   isDarkHeaderText = false,
   introLogo = null,
   headerGradientClass,
-  BelowCaptionText = "lorem ",
+  BelowCaptionText = null,
   animateClasses,
-  Caption = "Pavelon Page Caption",
+  Caption = null,
   oneImageHeader = false,
   SubCaption = "",
   LeadIn = "Lead In Text Sample",
@@ -37,6 +37,7 @@ function HeaderSection({
   logoBlack = false,
   showImage = true,
   noGradient = false,
+  showButtons = true,
   headerImages = [loansImage, loans_dashboard],
 }) {
   const [showMenu, setMenu] = useState(false);
@@ -169,7 +170,9 @@ function HeaderSection({
               </p>
               {children ? children : BelowCaptionText}
               <div style={{ flex: 1 }} className="py-6">
-                <Buttons buttonTitle={["Start Now", "Contact Sales"]} />
+                {showButtons && (
+                  <Buttons buttonTitle={["Start Now", "Contact Sales"]} />
+                )}
               </div>
             </div>
             {isLarger && showImage ? (

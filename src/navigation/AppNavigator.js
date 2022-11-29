@@ -19,6 +19,8 @@ import Banks from "../screens/Banks/Bank";
 import EmbeddedBanking from "../screens/EmbeddedBanking/EmbeddedBanking.jsx";
 import InvestmentAsAService from "../screens/InvestmentAsAService/InvestmentAsAService";
 import BAAS from "../screens/BankAsAService/BAAS";
+import contact_form from "../screens/contact_form/contact_form";
+import contactSalesAgent from "../screens/ContactSalesAgent/contactSalesAgent";
 // import DigitalAccounts from "../screens/DigitalAccounts/DigitalAccounts";
 
 function RootNavigator() {
@@ -27,6 +29,11 @@ function RootNavigator() {
       <Suspense fallback={TopBarLoader()}>
         <Switch>
           <Route component={Home} path={"/"} exact={true} />
+          <Route
+            component={contactSalesAgent}
+            path={"/contactSalesAgent"}
+            exact={true}
+          />
           {/* <Route component={Lenders} path={"/forLenders"} exact={true} /> */}
           <Route component={CaseStudy} path={"/use_cases"} exact={true} />
           <Route
@@ -44,6 +51,7 @@ function RootNavigator() {
             path={"/investmentAsAService"}
             exact={true}
           />
+          <Route component={contact_form} path={"/contactForm"} exact={true} />
           <Route component={Neobanks} path={"/neobanks"} exact={true} />
           <Route
             component={DigitalLending}
