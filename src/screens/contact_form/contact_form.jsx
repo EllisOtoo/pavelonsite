@@ -88,10 +88,10 @@ export default function Contact_form() {
           className={`${styles.bgPattern} p-12 h-screen w-screen absolute top-0 right-0 z-0`}
         ></div>
         <div
-          className={`flex flex-col md:flex-row w-8/12 p-12   bg-gray-50 justify-between items-center m-auto max-h-screen rounded-lg absolute left-72 top-64 py-24 z-10`}
+          className={`flex flex-col md:flex-row w-10/12 md:w-8/12 p-12   bg-gray-50 justify-between items-center m-auto max-h-screen rounded-lg absolute left-12 top-24 md:left-72 md:top-64 py-24 z-10`}
         >
-          <div className="w-full md:w-6/12 h-72">
-            <Typography variant="h2">Contact Us </Typography>
+          <div className="w-full w-full md:w-6/12 h-72">
+            <Typography variant="h3">Contact Us </Typography>
             <Typography variant="p">
               Please fill form with details required and one of our
               representatives will be with you shortly
