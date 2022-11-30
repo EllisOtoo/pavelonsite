@@ -92,10 +92,10 @@ export default function Contact_form() {
         >
           <div className="w-full w-full md:w-6/12 h-72">
             <Typography variant="h3">Contact Us </Typography>
-            <Typography variant="p">
-              Please fill form with details required and one of our
+            <p className="text-3xl">
+              Please fill form with details required and one <br /> of our
               representatives will be with you shortly
-            </Typography>
+            </p>
           </div>
           <div className=" flex flex-col justify-center w-full h-full md:w-6/12  p-3">
             <form
