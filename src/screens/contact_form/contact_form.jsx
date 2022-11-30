@@ -130,9 +130,6 @@ export default function Contact_form() {
               )}
             </InputMask>
 
-            {/* {formik.touched.name && formik.errors.name ? (
-              <div className="text-red-900 px-2">{formik.errors.name}</div>
-            ) : null} */}
             <TextField
               error={formik.touched.email && formik.errors.email}
               helperText={
@@ -148,9 +145,7 @@ export default function Contact_form() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {/*       {formik.touched.email && formik.errors.email ? (
-              <div className="text-red-900 px-2">{formik.errors.email}</div>
-            ) : null} */}
+
             <TextField
               error={
                 formik.touched.business_Name &&
@@ -170,14 +165,12 @@ export default function Contact_form() {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {/*   {formik.touched.business_Name && formik.errors.business_Name ? (
-              <div className="text-red-900 px-2">
-                {formik.errors.business_Name}
-              </div>
-            ) : null} */}
 
             <Button type="submit">Submit</Button>
-            {showSuccess && <p className="text-green-400">Message Sent!</p>}
+
+            {showSuccess && (
+              <p className="text-center text-green-400 w-full">Message Sent!</p>
+            )}
           </form>
         </div>
       </div>
