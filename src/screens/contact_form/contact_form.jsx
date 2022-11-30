@@ -80,7 +80,7 @@ export default function Contact_form() {
 
   return (
     <>
-      <ResponsiveNav makeMenuDark />
+      {/* <ResponsiveNav makeMenuDark /> */}
       <div className="flex flex-col md:flex-row w-8/12 items-center justify-around m-auto min-h-screen">
         <div className="w-full md:w-6/12">
           <Typography variant="h2">Contact Us </Typography>
