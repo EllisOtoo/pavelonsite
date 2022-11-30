@@ -194,9 +194,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ResponsiveNav({ makeMenuDark = false }) {
+export default function ResponsiveNav({ makeMenuDark = false, fixed }) {
   return (
-    <Popover className="relative ">
+    <Popover className={`w-full z-40 ${fixed && "fixed bg-gray-50"} `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
