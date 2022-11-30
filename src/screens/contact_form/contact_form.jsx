@@ -1,7 +1,7 @@
 import { EditSharp } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { useFormik } from "formik";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import * as Yup from "yup";
 import ResponsiveNav from "../../components/ResponsiveNav/ResponsiveNav";
@@ -30,6 +30,15 @@ const validate = (values) => {
 
 export default function Contact_form() {
   const [showSuccess, setShowSuccess] = useState(false);
+
+  useEffect(() => {
+    if (showSuccess) {
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 3000);
+    }
+  }, [showSuccess]);
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -72,11 +81,6 @@ export default function Contact_form() {
   return (
     <>
       <ResponsiveNav makeMenuDark />
-      <HomeHeroBanner
-        showButtons={false}
-        showImage={false}
-        headerGradientClass={"gradient__bg__blue"}
-      />
       <div className="flex flex-col md:flex-row w-8/12 items-center justify-around m-auto min-h-screen">
         <div className="w-full md:w-6/12">
           <Typography variant="h2">Contact Us </Typography>
