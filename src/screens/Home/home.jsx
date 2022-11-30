@@ -118,6 +118,7 @@ function Home() {
         ]}
       />
       <ImageBoxandList
+        flexCol={true}
         listItems={[
           {
             title: "Enhanced KYC & Digital Accounts",

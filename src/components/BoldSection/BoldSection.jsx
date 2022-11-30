@@ -145,7 +145,7 @@ function BoldSection({
           </div>
         </div>
         {hrPresent && <hr className="my-12" />}
-        <div className="grid grid-cols-4 py-8 gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-4 py-8 gap-24">
           {features && <Features features={features} />}
         </div>
       </div>
